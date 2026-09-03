@@ -64,7 +64,6 @@ make mcp              # MCP server on stdio (see .mcp.json)
 
 make golden           # build both golden sets
 make eval             # 80 questions: recall@k, citations, judged answers
-make eval-agg         # 12 complete-answer questions: set precision and recall
 make graph-eval       # measure the graph itself: coverage, recall, precision
 ```
 
@@ -478,7 +477,7 @@ worse at aggregation than at everything else.
 Retrieval and citation checks are arithmetic. Only the answer judgements need a
 model, and they are marked as estimates wherever they appear.
 
-| | | Target |
+| Metric | Result | Target |
 |---|---|---|
 | recall@10 | 0.738 | ≥0.90 |
 | recall@20 | 0.799 | — |
@@ -520,10 +519,13 @@ rank 10, because everything the first five seeds pull in sits directly behind th
 abstention is one negative question short of 0.90. recall@20 is 0.799, so the
 gap is not a ranking artefact — it is evidence that is not retrieved at all.
 
-**The aggregation numbers in the table above are not meaningful.** Those questions
-are generated from clauses, so "all Supplier obligations with a deadline under 5
-Working Days" gets three arbitrary clauses as ground truth when thirty satisfy it.
-The second golden set below exists to measure that properly.
+**The aggregation row is not meaningful.** Those questions are generated from
+clauses, so "all Supplier obligations with a deadline under 5 Working Days" gets
+three arbitrary clauses as ground truth when thirty satisfy it. A second golden
+set measures it properly — every clause satisfying a Cypher predicate, scored as a
+set rather than top-k. `make eval-agg`: set recall 0.484, set precision 0.239. The
+agent returns 25.6 clauses for a 12.3-clause answer, and recall is 1.00 where a
+question maps onto `get_obligations` and 0.09 where no route reaches the tool.
 
 
 ## Stage 4b — testing the graph itself
