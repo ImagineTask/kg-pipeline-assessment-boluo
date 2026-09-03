@@ -487,7 +487,6 @@ model, and they are marked as estimates wherever they appear.
 | **multi_hop** | 12 | 0.708 | **0.917** |
 | cross_page | 8 | 0.875 | 0.625 |
 | negative | 8 | — | 0.875 |
-| aggregation | 12 | 0.056 | 0.333 |
 
 **The two citation checks are structural and they pass exactly.** Every citation
 the agent produced names a real clause and one it had actually seen — computed in
@@ -504,12 +503,6 @@ rank 10, because everything the first five seeds pull in sits directly behind th
 **Where it falls short.** recall@10 of 0.738 misses the 0.90 target, and
 abstention is one negative question short of 0.90. recall@20 is 0.799, so the
 gap is not a ranking artefact — it is evidence that is not retrieved at all.
-
-**The aggregation row is not meaningful.** Those questions are generated from
-clauses, so "all Supplier obligations with a deadline under 5 Working Days" gets
-three arbitrary clauses as ground truth when thirty satisfy it. Recall against
-three arbitrary members of a thirty-member set measures nothing. `make eval-agg`
-scores the same capability properly, against complete ground truth.
 
 
 ## Stage 4b — testing the graph itself
