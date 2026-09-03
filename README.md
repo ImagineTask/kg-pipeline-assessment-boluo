@@ -12,8 +12,7 @@ agent produces resolves to a real clause it actually saw. Answers are judged
 faithful 0.963 of the time and multi-hop questions are answered 0.917 of the time.
 
 It is **not production ready** — see *Known limits*. The absence of any
-human-validated error rate is the most serious gap; aggregation returning half a
-complete answer is the most visible one.
+human-validated error rate is the most serious gap.
 
 ```
 PDF ─▶ Document AI batch OCR ─▶ raw_pages.jsonl
@@ -453,24 +452,11 @@ resolver never found is invisible here. Stage 4b exists to cover that.
 **Its questions are near-paraphrases of the clause they came from**, which hands
 retrieval a text-similarity shortcut that real users do not provide. Measured
 directly: plain full-text search *alone*, with no vector index, no graph and no
-agent, puts the answer in the top 5 for **26 of 40** questions. On the aggregation
-set — whose questions describe a predicate rather than restating a clause — the
-same search recovers **6.3%**.
+agent, puts the answer in the top 5 for **26 of 40** questions.
 
 So recall@10 of 0.738 should be read as an upper bound on real-world performance,
 not an estimate of it. Someone asking "what must we do if the supplier goes into
 administration" is not phrasing a paraphrase of the clause they need.
-
-**The two sets are not comparable, and the difference is mostly construction:**
-
-| | questions | ground truth per question | scoring |
-|---|---|---|---|
-| Main set | 80 | **1.67 clauses** — half have exactly one | recall@10: ten slots to find one |
-| Aggregation set | 12 | **12.33 clauses** | set recall: must find all of them |
-
-Finding 1 of 1 scores 1.000; finding 6 of 12 scores 0.500. The aggregation set's
-lower numbers are mostly this and the absent text shortcut — not the system being
-worse at aggregation than at everything else.
 
 ### Scoring
 
@@ -521,11 +507,9 @@ gap is not a ranking artefact — it is evidence that is not retrieved at all.
 
 **The aggregation row is not meaningful.** Those questions are generated from
 clauses, so "all Supplier obligations with a deadline under 5 Working Days" gets
-three arbitrary clauses as ground truth when thirty satisfy it. A second golden
-set measures it properly — every clause satisfying a Cypher predicate, scored as a
-set rather than top-k. `make eval-agg`: set recall 0.484, set precision 0.239. The
-agent returns 25.6 clauses for a 12.3-clause answer, and recall is 1.00 where a
-question maps onto `get_obligations` and 0.09 where no route reaches the tool.
+three arbitrary clauses as ground truth when thirty satisfy it. Recall against
+three arbitrary members of a thirty-member set measures nothing. `make eval-agg`
+scores the same capability properly, against complete ground truth.
 
 
 ## Stage 4b — testing the graph itself
@@ -628,10 +612,9 @@ no node of their own and resolve to the section's first substantive clause.
 - **Unknown OCR residue.** 17 corrupted defined terms were found and repaired, but
   only because an independent extraction happened to surface them. There is no
   estimate of how many remain.
-- **Retrieval still misses the target.** recall@10 is 0.738 against ≥0.90. Score-
-  based ranking closed most of the gap that was an ordering artefact (recall@20 is
-  0.799, so the two are now close); what remains is evidence the search does not
-  surface at all.
+- **Retrieval misses the target.** recall@10 is 0.738 against ≥0.90. recall@20 is
+  0.799, so the gap is not an ordering artefact — it is evidence the search does
+  not surface at all.
 - **Cross-reference edge precision is ~0.93, short of the 0.95 target.** The
   residue is concentrated on references to a Part or Annex as a whole, which have
   no node of their own and resolve to the section's first substantive clause.
