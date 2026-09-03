@@ -1,0 +1,56 @@
+document:
+  doc_name: "RM6116 Network Services 3 - Framework Agreement"
+  version: "3.0.11"
+  expected_pages: 475
+
+paths:
+  raw_pdf: data/raw/rm6116.pdf
+  raw_pages: data/interim/raw_pages.jsonl
+  pdftotext_pages: data/interim/pdftotext_pages.jsonl
+  boilerplate_report: data/reports/boilerplate_report.json
+  document_stream: data/interim/document_stream.jsonl
+  tables: data/interim/tables.jsonl
+  clauses: data/interim/clauses.jsonl
+  definitions: data/processed/definitions.jsonl
+  term_edges: data/processed/term_edges.jsonl
+  edges: data/processed/edges.jsonl
+  unresolved: data/processed/unresolved.jsonl
+  records: data/processed/records.jsonl
+  quarantine: data/processed/quarantine.jsonl
+  rejected_values: data/processed/rejected_values.jsonl
+  reports: data/reports
+
+boilerplate:
+  # repetition is measured as density over the page span a pattern occupies,
+  # not as a fraction of the whole document: running headers change per schedule
+  min_pages: 3
+  min_density: 0.5
+  top_band: 0.08
+  bottom_band: 0.12
+  y_round: 20
+
+chunk:
+  max_leaf_chars: 1500
+  soft_min_chars: 40
+  soft_max_chars: 2000
+
+crossrefs:
+  max_range_expansion: 40
+  traversal_depth_cap: 3
+
+llm:
+  model: gemini-2.5-pro
+  temperature: 0
+  max_retries: 2
+  concurrency: 8
+
+embeddings:
+  model: gemini-embedding-001
+  dimensions: 1536
+  batch_size: 16
+
+retrieval:
+  default_top_k: 5
+  max_rows: 10
+  max_chars: 8000
+  max_hops: 3

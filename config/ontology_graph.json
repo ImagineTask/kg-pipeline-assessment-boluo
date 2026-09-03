@@ -1,0 +1,196 @@
+{
+  "schema_name": "RM6116_Graph_Model",
+  "version": "2.0",
+  "purpose": "The target graph model. Records from ontology_extraction.json are mapped onto this mechanically by src/graph/loader.py; change this mapping, not the extraction schema, as the model evolves.",
+  "nodes": {
+    "Document": {
+      "key": "doc_id",
+      "properties": [
+        "title",
+        "doc_type",
+        "page_start",
+        "page_end",
+        "is_optional",
+        "jurisdiction_variant"
+      ],
+      "note": "One per constituent part of the pack. 48 of them, derived from the running headers."
+    },
+    "Clause": {
+      "key": "clause_id",
+      "properties": [
+        "doc_id",
+        "doc_type",
+        "number",
+        "depth",
+        "heading",
+        "text",
+        "hierarchy_path",
+        "section",
+        "page_start",
+        "page_end",
+        "spans_pages",
+        "chunk_type",
+        "is_split",
+        "char_count",
+        "embedding",
+        "embedding_model",
+        "embedding_version"
+      ],
+      "note": "The retrieval unit. chunk_type is clause | definition | preamble | table. page_start/page_end replace a single page: clauses span page breaks."
+    },
+    "Definition": {
+      "key": "key = defined_in + ':' + term",
+      "properties": [
+        "term",
+        "term_lower",
+        "definition_text",
+        "scope",
+        "defined_in",
+        "clause_id",
+        "hierarchy_path",
+        "page_start",
+        "page_end",
+        "embedding"
+      ],
+      "note": "term alone is NOT unique - 16 terms are defined both globally (Joint Schedule 1) and locally in a schedule that overrides it within its own document."
+    },
+    "Actor": {
+      "key": "name",
+      "values": [
+        "CCS",
+        "Buyer",
+        "Supplier",
+        "Subcontractor",
+        "Guarantor",
+        "Auditor",
+        "Other"
+      ]
+    },
+    "Obligation": {
+      "key": "id (= clause_id)",
+      "properties": [
+        "actor",
+        "counterparty",
+        "modality",
+        "summary",
+        "trigger",
+        "deadline",
+        "duration_iso",
+        "duration_value",
+        "duration_unit",
+        "working_days",
+        "confidence"
+      ]
+    },
+    "Remedy": {
+      "key": "id",
+      "properties": [
+        "actor",
+        "counterparty",
+        "trigger",
+        "summary",
+        "confidence"
+      ]
+    },
+    "Liability_Cap": {
+      "key": "id",
+      "properties": [
+        "cap_amount",
+        "amount",
+        "amount_currency",
+        "amount_kind",
+        "uncapped",
+        "summary"
+      ]
+    },
+    "Financial_Term": {
+      "key": "id",
+      "properties": [
+        "amount_value",
+        "amount_currency",
+        "payment_window",
+        "summary"
+      ]
+    },
+    "Provision": {
+      "key": "id",
+      "note": "provision_type in (definition, procedure, statement) - kept so every record is materialised and nothing is silently dropped."
+    },
+    "Defined_Event": {
+      "key": "name",
+      "note": "A trigger, verbatim from the clause."
+    }
+  },
+  "relationships": {
+    "PART_OF": "(:Clause)-[:PART_OF]->(:Clause|:Document)  - the numbering hierarchy, for small-to-big retrieval",
+    "IN_DOCUMENT": "(:Clause)-[:IN_DOCUMENT]->(:Document)",
+    "CROSS_REFERENCES": "(:Clause)-[:CROSS_REFERENCES {reference_text, ref_class, scope_rule, resolution, page}]->(:Clause)  - stored once, directed; queried both ways. Cycles exist: traversal must be acyclic and depth-capped.",
+    "REFERENCES_DOCUMENT": "(:Clause)-[:REFERENCES_DOCUMENT {reference_text, ref_class}]->(:Document)",
+    "USES_TERM": "(:Clause)-[:USES_TERM {occurrences, definition_scope}]->(:Definition)",
+    "DEFINED_IN": "(:Definition)-[:DEFINED_IN]->(:Clause)",
+    "STATED_IN": "(semantic node)-[:STATED_IN]->(:Clause)  - every semantic node has one; zero orphans is a load-time assertion",
+    "BOUND_BY": "(:Actor)-[:BOUND_BY]->(:Obligation)",
+    "OWED_TO": "(:Obligation)-[:OWED_TO]->(:Actor)",
+    "HAS_REMEDY": "(:Actor)-[:HAS_REMEDY]->(:Remedy)",
+    "TRIGGERED_BY": "(:Remedy)-[:TRIGGERED_BY]->(:Defined_Event)",
+    "PAYS": "(:Actor)-[:PAYS]->(:Financial_Term)",
+    "EXCLUDED_FROM_CAP": "(:Liability_Cap)-[:EXCLUDED_FROM_CAP]->(:Clause)  - where the clause expressly excludes a cap"
+  },
+  "normalisation": {
+    "note": "Money and durations are normalised in src/graph/normalise.py at load time, never by the LLM. The LLM copies verbatim so the value can be checked character-for-character against the source.",
+    "money": "'£1m' -> {amount_value: 1000000, amount_currency: 'GBP'}",
+    "duration": "'30 days' -> P30D; '3 Working Days' -> P3D with working_days: true, kept distinct from calendar days"
+  },
+  "indexes": {
+    "fulltext": [
+      "clause_fulltext (text, heading, hierarchy_path)",
+      "definition_fulltext (term, definition_text)"
+    ],
+    "vector": [
+      "clause_embedding (1536, cosine) over hierarchy_path + text",
+      "definition_embedding (1536, cosine)"
+    ],
+    "note": "hierarchy_path is embedded with the text because standard provisions recur near-verbatim across schedules; the path carries the schedule name that separates them."
+  },
+  "materialised_counts_at_build": {
+    "nodes": {
+      "Clause": 3502,
+      "Provision": 1609,
+      "Obligation": 1044,
+      "Defined_Event": 623,
+      "Definition": 514,
+      "Remedy": 237,
+      "Liability_Cap": 156,
+      "Financial_Term": 54,
+      "Document": 48,
+      "Actor": 7
+    },
+    "relationships": {
+      "Clause-[:USES_TERM]->Definition": 9446,
+      "Clause-[:IN_DOCUMENT]->Document": 3502,
+      "Clause-[:PART_OF]->Clause": 2181,
+      "Provision-[:STATED_IN]->Clause": 1609,
+      "Clause-[:PART_OF]->Document": 1321,
+      "Clause-[:CROSS_REFERENCES]->Clause": 1102,
+      "Obligation-[:STATED_IN]->Clause": 1044,
+      "Actor-[:BOUND_BY]->Obligation": 1022,
+      "Obligation-[:OWED_TO]->Actor": 828,
+      "Definition-[:DEFINED_IN]->Clause": 514,
+      "Clause-[:REFERENCES_DOCUMENT]->Document": 442,
+      "Remedy-[:STATED_IN]->Clause": 237,
+      "Actor-[:HAS_REMEDY]->Remedy": 236,
+      "Liability_Cap-[:STATED_IN]->Clause": 156,
+      "Remedy-[:TRIGGERED_BY]->Defined_Event": 113,
+      "Financial_Term-[:STATED_IN]->Clause": 54,
+      "Actor-[:PAYS]->Financial_Term": 47,
+      "Liability_Cap-[:EXCLUDED_FROM_CAP]->Clause": 5
+    }
+  },
+  "deferred_to_v3": [
+    "Lot scoping - prices and specification vary by Lot 1-4; the agent must not state Lot-specific prices as general facts.",
+    "Service_Level / Service Credit modelling for Call-Off Schedule 14.",
+    "VARIES overrides for the jurisdiction variants (MOD Terms, Scottish Law, Northern Ireland Law) - currently only tagged on Document.",
+    "Order of precedence between Core Terms, Schedules and the Order Form as a graph relationship rather than prose.",
+    "Table content extraction - tables are stored as markdown chunks, not as queryable data."
+  ]
+}

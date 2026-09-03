@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "rm6116-graphrag": {
+      "command": ".venv/bin/python",
+      "args": ["-m", "src.retrieval.mcp_server"],
+      "env": { "PYTHONPATH": "." }
+    }
+  }
+}

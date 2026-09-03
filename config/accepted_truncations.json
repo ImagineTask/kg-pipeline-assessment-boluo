@@ -1,0 +1,15 @@
+{
+  "_note": "Chunks that end without terminal punctuation and survived review. Each was checked against `pdftotext -layout` on the cited page. None has lost source text: all are trailing fragments picked up from an adjacent column during row merging, or side-column text in a form template. Remove an entry to make gate 1 fail on it again.",
+  "_reviewed": "2026-09-03",
+  "accepted": {
+    "framework_award_form.1__2": "p25 - side column of the Award Form's incorporated-terms table ('(together these documents form the Framework Contract)'); the sentence is laid out across two columns in the source.",
+    "framework_award_form.2__2": "p25 - same side column, second fragment.",
+    "joint_schedule_1.def.framework_contract": "p123 - Document AI dropped the quote marks around the following term ('Framework Contract Period'), so two consecutive definitions merged into one chunk. No text lost; the boundary between them is.",
+    "joint_schedule_1.def.health_and_social": "p124 - definition ends with a URL and a semicolon in the source; a stray 'at' from the adjacent column is appended.",
+    "joint_schedule_5.part_b.3.4": "p155 - source sentence ends '...superseded by that tool.'; the table caption 'Table A' from the next row is appended.",
+    "joint_schedule_5.def.submission_form": "p157 - definition set inside a nested table; trailing fragment from the adjacent column.",
+    "joint_schedule_5.def.diversity_of_workforce_baseline_data": "p159 - as above.",
+    "call_off_schedule_2.part_c.1.5.2": "p257 - source sentence ends '...minimise any such Employee Liabilities.'; a stray 'all' from the adjacent column is appended.",
+    "call_off_schedule_8.def.critical_national_infrastructure": "p321 - source list ends 'functioning of the UK;'; 'or the' from the next row is appended."
+  }
+}
