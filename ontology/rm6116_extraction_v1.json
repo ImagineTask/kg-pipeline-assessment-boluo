@@ -1,0 +1,79 @@
+{
+  "schema_name": "RM6116_Clause_Extraction",
+  "version": "1.0-slim",
+  "purpose": "LLM-facing extraction schema. One flat record per clause. The graph is built deterministically from these records afterwards — the LLM never emits nodes or edges.",
+
+  "unit_of_extraction": "one Clause (leaf-level numbered provision), passed to the LLM with its parent heading as context",
+
+  "record": {
+    "clause_id": "string  // supplied by the parser, NOT by the LLM",
+    "provision_type": {
+      "type": "enum",
+      "values": ["obligation", "right", "definition", "liability", "payment", "procedure", "statement"],
+      "note": "Pick exactly one — the dominant function of the clause."
+    },
+    "actor": {
+      "type": "enum | null",
+      "values": ["CCS", "Buyer", "Supplier", "Subcontractor", "Guarantor", "Auditor", "Other", null],
+      "note": "Who must act / who holds the right. null if none."
+    },
+    "counterparty": {
+      "type": "enum | null",
+      "values": ["CCS", "Buyer", "Supplier", "Subcontractor", "Guarantor", "Auditor", "Other", null],
+      "note": "Who benefits or is acted against."
+    },
+    "modality": {
+      "type": "enum | null",
+      "values": ["must", "must_not", "may", null]
+    },
+    "summary": "string  // one normalised sentence, max 25 words",
+    "trigger": "string | null  // the condition or defined event that activates this, verbatim if capitalised",
+    "deadline": "string | null  // verbatim, e.g. '30 days', '3 Working Days'",
+    "amount": "string | null  // verbatim money or percentage, e.g. '£1,000,000', '1%'",
+    "refers_to": {
+      "type": "array of string",
+      "note": "Other clauses/schedules named in the text. Leave empty — the parser fills this. Included only so the LLM does not smuggle references into summary."
+    },
+    "uncapped": "boolean | null  // true only where the clause expressly excludes a liability cap",
+    "confidence": "float 0-1"
+  },
+
+  "llm_rules": [
+    "Return exactly one JSON object per clause. No prose, no markdown fences.",
+    "Use null rather than guessing. A null field is correct; an invented one is not.",
+    "Never invent enum values outside the lists above.",
+    "Copy amounts, deadlines and defined terms verbatim from the clause. Do not normalise or convert.",
+    "summary must be a restatement, not a quotation of the whole clause."
+  ],
+
+  "deterministic_layer": {
+    "note": "Built by parser/regex before and after the LLM pass. No model involvement, no error rate.",
+    "steps": [
+      "Split the PDF on schedule headings -> Document nodes.",
+      "Split on the numbering pattern (N.N.N, lettered limbs) -> Clause nodes with parent links and page numbers.",
+      "Load Joint Schedule 1 -> Definition nodes.",
+      "Gazetteer match every capitalised defined term in each clause -> USES_TERM edges.",
+      "Regex 'Clause N', 'Framework/Joint/Call-Off Schedule N', 'Paragraph N' -> CROSS_REFERENCES edges."
+    ]
+  },
+
+  "graph_materialisation": {
+    "note": "Mechanical transformation of records into the graph. Change this mapping, not the extraction schema, as the model evolves.",
+    "rules": [
+      "provision_type=obligation -> (:Obligation) with modality/deadline/summary; (Actor)-[:BOUND_BY]->(Obligation)-[:OWED_TO]->(counterparty)",
+      "provision_type=right     -> (:Remedy) ; (Actor)-[:HAS_REMEDY]->(Remedy); trigger -> (:Defined_Event) via TRIGGERED_BY",
+      "provision_type=liability -> (:Liability_Cap) with parsed cap_amount; uncapped=true -> EXCLUDED_FROM_CAP",
+      "provision_type=payment   -> (:Financial_Term); (Actor)-[:PAYS]->(Financial_Term) with payment_window=deadline",
+      "every record             -> (semantic node)-[:STATED_IN]->(:Clause {clause_id})",
+      "amount/deadline normalisation (£1m -> 1000000 GBP, '30 days' -> P30D) happens HERE, not in the LLM"
+    ]
+  },
+
+  "defer_until_v2": [
+    "Lot scoping — add once you know whether queries actually cross Lots.",
+    "Service_Level / Service Credit modelling — only needed for Call-Off Schedule 14 questions.",
+    "ContractRole (Framework vs Call-Off role separation) — add when role ambiguity shows up in answers.",
+    "VARIES overrides (Scottish Law, MOD Terms, NI Law) — add when you start answering jurisdiction-specific questions.",
+    "Reified TRIGGERED_BY on edges — materialise Remedy instances per trigger instead."
+  ]
+}
