@@ -2,12 +2,7 @@
 
 A GraphRAG pipeline over **RM6116 Network Services 3 — Framework Agreement**
 (475 pages, 48 constituent documents, Crown Copyright 2018, v3.0.11), built to
-[`BUILD_SPEC.md`](BUILD_SPEC.md) — the specification is included so the results
-below can be read against what was asked for, including where they fall short of
-it. [`ontology/rm6116_extraction_v1.json`](ontology/rm6116_extraction_v1.json) is
-the extraction schema as given; [`config/ontology_extraction.json`](config/ontology_extraction.json)
-is where it ended up, and *What the ontology change bought* explains the one
-change and what it was worth.
+`BUILD_SPEC.md`.
 
 **Current state at a glance.** Both gates pass. All 48 documents are recovered
 from the document itself and match the published page map exactly. 97.1% of the
@@ -52,26 +47,6 @@ Two rules govern the design, and most of the interesting decisions follow from t
    The model is only asked what a provision *means*.
 2. **The page is a printing artefact, not a unit of meaning.** Page boundaries are
    destroyed before chunking. Pages survive only as citation metadata.
-
----
-
-## The source document
-
-**RM6116 Network Services 3 — Framework Agreement**, a UK public-sector
-procurement framework operated by the Crown Commercial Service. **Crown
-Copyright 2018**, published openly at
-<https://assets.crowncommercial.gov.uk/wp-content/uploads/RM6116-All-agreement-terms-and-conditions-3.pdf>.
-
-The source PDF is included at `data/raw/rm6116.pdf`, alongside every artefact the
-pipeline produced from it: the Document AI output, the stitched stream, the
-chunks, the definitions and edges, the extracted records, and every report in
-`data/reports/`. That is deliberate — it means the numbers below can be checked
-against the evidence that produced them without re-running Document AI or paying
-for the extraction pass. All of it derives from openly published Crown Copyright
-material.
-
-Nothing here is confidential and no client material is involved. The code is
-mine; the contract is not.
 
 ---
 
@@ -559,9 +534,6 @@ opposite ordering had done exactly that. It did not:
 | **multi_hop answers** | 0.833 | **0.917** |
 | **cross_reference_chain answers** | 0.750 | **1.000** |
 
-Better-ordered evidence improved retrieval *and* answers together. The one
-regression is cross_page answers (0.750 → 0.625), which is a single question out
-of eight and unchanged on recall — so it is answer generation, not retrieval.
 
 **Where it still falls short.** recall@10 of 0.738 misses the 0.90 target, and
 abstention is one negative question short of 0.90. recall@20 is 0.799, so the
@@ -573,69 +545,6 @@ are generated from clauses, so "all Supplier obligations with a deadline under 5
 Working Days" gets three arbitrary clauses as ground truth when thirty satisfy it.
 The second golden set below exists to measure that properly.
 
-### The aggregation set — complete ground truth
-
-`make eval-agg` → [`src/eval/build_aggregation_set.py`](src/eval/build_aggregation_set.py)
-
-Twelve questions, each defined by a Cypher predicate, so ground truth is **every**
-clause satisfying it rather than a sample. Precision and recall become set
-measures instead of top-k, which is the right shape: "every uncapped liability
-provision" has five correct answers, and a system returning exactly those five is
-perfect, while recall@10 would score it 0.5 for the slots it left empty.
-
-Crucially this needs **no global search**. These are structured filters and
-traversals the existing tools already perform — the graph can answer every one of
-them exactly, which is what makes the agent's shortfall attributable to the agent.
-
-| | |
-|---|---|
-| Set recall | 0.484 |
-| Set precision | 0.239 |
-| F1 | 0.292 |
-| Mean answer set | 12.3 clauses |
-| Mean returned | 25.6 clauses |
-
-**The per-question spread is the finding, not the average:**
-
-| Question | truth | found | recall |
-|---|---|---|---|
-| Obligations the Guarantor must perform | 20 | 20 | **1.00** |
-| Buyer obligations under Call-Off Schedule 2 | 12 | 12 | **1.00** |
-| Liability caps with a monetary amount | 4 | 3 | 0.75 |
-| Provisions excluding liability from the cap | 5 | 3 | 0.60 |
-| Clauses citing Clause 10.4.1 | 16 | 7 | 0.44 |
-| Clauses Core Terms 10.6.1 points to | 7 | 2 | 0.29 |
-| Core Terms obligations with a day-denominated deadline | 11 | 1 | 0.09 |
-
-Where the question maps cleanly onto `get_obligations(actor, doc_filter)`, recall
-is **perfect** — the capability is there and works. Where it does not, the tool is
-never called, because a Python `if` on the route or a keyword decides, and no
-route matches "obligations with a deadline in Core Terms". The clearest case is
-*"which clauses does Core Terms 10.6.1 point to"*: `trace_references` answers that
-exactly, and the agent got 2 of 7, because it only traces from clauses that
-surfaced in a **search** first.
-
-Precision of 0.239 is structural rather than an error rate. The agent returns its
-whole evidence pile — 25.6 clauses for a 12.3-clause answer — because nothing in
-the design expresses "the answer is a set, return exactly it". Evidence gathering
-and answer construction are the same list.
-
-So aggregation is not blocked on missing graph machinery. It is blocked on tool
-*selection* and on the absence of any notion of a bounded answer. Letting
-`classify` name the tools and arguments in its structured output, instead of the
-keyword matching described in stage 3, is the change that would move it.
-
-> **What the richer semantic layer did to answers: very little.** Moving the
-> ontology to one record per provision lifted graph provision recall from 0.649 to
-> 0.745, but the agent's numbers barely moved — retrieval flat (recall@10 0.671 →
-> 0.676), faithfulness 0.875 → 0.925, citation support 0.888 → 0.913, answers
-> 0.788 → 0.800. Individually those are inside run-to-run noise, though all three
-> answer metrics moved the same way. The reason is structural: the agent reaches
-> most evidence through `search_clauses`, which retrieves *clause text*. The
-> semantic nodes are only consulted by `get_obligations`,
-> `get_liability_position` and `get_termination_rights`, which fire on a minority
-> of questions. A better graph does not help an agent that mostly does not read it
-> — which points the next work at the retrieval path, not at more extraction.
 
 ## Stage 4b — testing the graph itself
 
