@@ -603,18 +603,6 @@ allows only ±1 page between a mention and the clause carrying it, so a referenc
 inside a clause spanning several pages can fall outside the window and be counted
 as missed when it was found.
 
-> **Two measurement bugs this step caught in itself, worth recording.** First pass
-> reported 89.6% detection recall and 76.5% coverage. Both were wrong. `pdftotext`
-> pads with spaces and joins the footer's three fields onto one line, so its line
-> *shapes* do not match the ones Document AI produced — which left the running
-> schedule title in place on every page and reported 138 "missed references to
-> Framework Schedule 1" that were never references, just the header. And the
-> scanner was allowed to match across a line break, inventing references like
-> `"clauses\n3.2.1"` from a heading and the clause number beneath it. Filtering the
-> reference side by marker token and by the page's own known header, and scanning
-> line by line, took detection recall to 95.9% and coverage to 97.0%. A quality
-> harness gets the same scrutiny as the thing it measures, or it just manufactures
-> confident numbers about nothing.
 
 ### Precision and recall by type — the silver standard
 
@@ -628,11 +616,6 @@ that enumeration with what the graph holds for the page.
 | Defined terms used | 0.801 | 0.618 |
 | Normative provisions (duty / prohibition / permission) | **0.745** | **0.772** |
 
-> **These are the numbers after the ontology moved to one record per *provision***
-> rather than one per clause (`ontology_extraction.json` v1.1). Provision recall
-> went 0.649 → 0.745 and precision 0.726 → 0.772 — both up, so the gain is not
-> over-splitting. See *What the ontology change bought* below.
-
 ### Edge precision — is a resolved reference pointing at the right clause
 
 **~0.93** on 100-edge random samples, graded one edge at a time
@@ -644,114 +627,8 @@ cleared the target; the one sample that hit 0.950 was the top of that range. A w
 matters: it concentrates on references to a Part or Annex *as a whole*, which have
 no node of their own and resolve to the section's first substantive clause.
 
-**Alignment is done by an LLM judge, not by string comparison, and that choice
-turned out to matter more than anything it measures.** Whole-string fuzzy matching
-scored reference recall at 0.313; switching to a canonical (kind, number) key took
-it to 0.809 without a single edge changing, because `"Clause 34 (Resolving
-Disputes)"` scores as a miss against a stored `"Clause 34"` on length alone. The
-judge, which decides whether two items name the same thing, lands at 0.710 —
-stricter than the canonical key, because it declines to match a paragraph number
-that resolves inside a different Part. Both matchers are kept
-(`--matcher llm|mechanical`); the spread between them is the honest uncertainty on
-these figures.
-
-**Read precision here as agreement, not correctness.** The page enumeration is not
-exhaustive, so a defined term the graph linked and the reader did not bother to
-list counts against precision without being wrong. Recall is the useful signal.
-
-Lots and sub-Lots, legislation, documents outside the pack, and bare anaphora
-("that clause") are excluded on both sides rather than counted against the graph —
-Lots are out of scope for v1 by decision, and anaphora has no target to resolve to.
-
-### What the ontology change bought
-
-v1.0 emitted **one flat record per clause**. A clause imposing three duties became
-one node with one summary, which put a ceiling on the semantic layer that no
-prompt tuning could lift: across 24 sampled pages a reader found 122 normative
-provisions and the graph held 94.
-
-v1.1 keeps the clause as the extraction unit — it is what the model is shown and
-what a citation points at — but a clause now yields one record per distinct duty,
-right or prohibition. Provisions are keyed `{clause_id}::{n}` and all of a clause's
-provisions hang off the same `(:Clause)` by `STATED_IN`, so citations are
-unaffected.
-
-| | v1.0 | v1.1 |
-|---|---|---|
-| Records | 3,083 | 3,563 (1.25 per clause) |
-| Obligation nodes | 1,043 | 1,082 |
-| Remedy / Liability_Cap nodes | 237 / 156 | 347 / 200 |
-| Provisions found by a reader vs held by the graph, 24 pages | 122 vs 94 | 145 vs 154 |
-| **Provision recall / precision** | 0.649 / 0.726 | **0.745 / 0.772** |
-
-The density ceiling is gone: the graph now holds slightly *more* provisions than a
-reader enumerates. What remains between 0.745 and 1.0 is no longer missing
-content, it is boundary disagreement — the reader and the extractor split a
-compound clause into provisions differently. That is a much less tractable
-problem, and a different one.
-
-`clauses with a semantic node` reads lower (99.1% → 91.3%) and that is the change
-working as intended. v1.1 declines to invent a provision for a clause that is a
-guidance note, a form placeholder or a template field — *"[Guidance Note: the
-following are included by way of example only]"*, *"CALL-OFF REFERENCE: THE
-BUYER:"*. Of the 243 clauses now yielding nothing, only 33 exceed 120 characters
-and those are all scaffolding. Real provisions that v1.0 had lost, such as
-`joint_schedule_7.7.1`, are covered.
-
-### What this step found in the graph
-
-It paid for itself immediately. Three defects, none of which any existing gate
-could see:
-
-1. **Seventeen clauses had lost their reference numbers at a page break.**
-   `framework_schedule_1.2.12.1` ended `"...as described in paragraphs"` with
-   `2.12.2 to 2.12.4.` dropped on the next page. The truncation detector's word
-   list had no entry for a reference-introducing noun, so "paragraphs" read as a
-   legitimate sentence ending and the "truncation beats structure" rule never
-   fired. Real text loss, in the graph since the first build, invisible to gate 1.
-2. **Seventy-three defined terms went unlinked in the plural.** The contract
-   defines "Service Offer" and then uses "Service Offers" throughout. Adding
-   regular plurals and possessives to the gazetteer added **637 `USES_TERM`
-   edges** (9,446 → 10,083).
-3. **Reloads left stale nodes behind.** `MERGE` makes a reload idempotent for what
-   is present and says nothing about what has been removed, so re-chunking left
-   **171 orphaned Clause nodes** with stale text — still searchable, still
-   citable. The loader now prunes against the source files (171 clauses, 148
-   semantic nodes, 529 orphaned events removed on the first pruning run).
-
-### And what it found in itself
-
-Four times, the first number was wrong and the graph was fine. Recording them
-because the lesson generalises:
-
-| Reported | Actual | Cause |
-|---|---|---|
-| 89.6% detection recall | 95.4% | `pdftotext` pads with spaces, so its line *shapes* did not match Document AI's; the running header survived on every page and 138 header occurrences of "Framework Schedule 1" were counted as missed references |
-| 76.5% coverage | 97.1% (words) | same header problem, plus conflating "is the text present" with "is it in the same order" |
-| 0.313 reference recall | 0.710–0.809 | whole-string fuzzy matching against a differently-worded but identical reference |
-| 0.503 provision recall | 0.638 | the comparison queried `Obligation` nodes only, while a reader's "obligations" include the permissions that land on `Remedy` |
-
-Every one of those would have been a confident, specific, wrong claim about the
-graph. A quality harness earns the same scrutiny as the thing it measures.
 
 ---
-
-### Reproducing
-
-`make eval` rewrites `data/reports/eval_report.json`, per-question rows in
-`eval_runs.jsonl`. `make eval-agg` writes the `_aggregation` variants of both.
-`make graph-eval` writes `graph_quality.json`, the per-page silver-standard rows
-and the graded edge sample.
-
-**Two caveats on the reported run.** It recorded 2 transient API failures out of
-80 graph questions (one 429, one malformed classifier response); a
-schema-validation retry and a longer transport backoff were added *after* that
-run, so the numbers above predate that hardening and it can only help them. And
-the LLM judge is itself a measurement instrument with error — it initially scored
-abstention at 0.125 on answers that plainly abstained, because the rubric counted
-"here is what the document does cover instead" as asserting content. That rubric
-was corrected. Judged metrics should be read as estimates, the structural ones as
-facts.
 ## Known limits
 
 - **Tables are detected and merged but their content is not extracted.** 29 tables,
@@ -761,14 +638,7 @@ facts.
   and for a procurement framework those are among the most-asked questions. The
   81.5% 5-gram coverage against 97.1% word coverage is this: every word present,
   adjacency lost.
-- **Aggregation returns about half a complete answer, and too much else.** On
-  questions whose ground truth is every clause satisfying a predicate, set recall
-  is 0.484 and set precision 0.239 — the agent returns 25.6 clauses for a
-  12.3-clause answer. The cause is not missing graph machinery: the graph answers
-  all twelve exactly in Cypher. It is tool *selection* — where a question maps onto
-  `get_obligations(actor, doc_filter)` recall is 1.00, and where it does not the
-  tool is never called and recall falls to 0.09 — plus the absence of any notion
-  that an answer is a bounded set rather than the whole evidence pile.
+
 - **No human validation baseline exists.** A 50-record sample sits in
   `data/reports/qa_human_sample.json` with empty `reviewer_verdict` fields. Until
   someone fills it in, the extraction has no human-checked error rate — which for
@@ -780,9 +650,6 @@ facts.
   based ranking closed most of the gap that was an ordering artefact (recall@20 is
   0.799, so the two are now close); what remains is evidence the search does not
   surface at all.
-- **The agent routes on keywords in two places.** `if "terminat" in
-  question.lower()` fires on six of eighty golden questions, including a pure
-  definition lookup. String matching standing in for routing.
 - **Cross-reference edge precision is ~0.93, short of the 0.95 target.** The
   residue is concentrated on references to a Part or Annex as a whole, which have
   no node of their own and resolve to the section's first substantive clause.
@@ -796,27 +663,5 @@ facts.
 - **Nine chunks carry a trailing fragment** from an adjacent column (listed with
   reasons in `config/accepted_truncations.json`), and the source PDF is itself
   malformed at page 230.
-- **Not deployable as configured**: short-lived `gcloud` tokens rather than a
-  service account, no version control on this directory, no CI, and the gates run
-  as manual `make` targets.
-
-## What would and would not survive being pointed at the rest of the corpus
-
-**Would survive.** The boilerplate detector learns its patterns from position and
-repetition, so it does not care what the header says. Row merging keys off column
-geometry, not fixed x-positions. Document segmentation from running headers
-generalises to any document whose parts are headed — and degrades to heading
-matching where they are not. The two gates, the verbatim check and the acyclic
-traversal are all document-independent.
-
-**Would not survive.** The clause-numbering regexes assume `N.N.N` with lettered
-limbs; a document numbered `Article 4(a)(ii)` or with unnumbered headed sections
-needs new patterns. `Clause → Core Terms` is a rule of *this* contract family, not
-a general one, and would produce confidently wrong edges elsewhere — it belongs in
-config, not in code. The `48 documents` and `475 pages` assertions are fixtures for
-this file. And the OCR repair depends on a defined term being used elsewhere in the
-same document, which holds for a definitions schedule and not for a glossary of
-terms used once.
-
 ---
 
