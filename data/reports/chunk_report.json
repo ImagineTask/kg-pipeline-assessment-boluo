@@ -1,0 +1,13 @@
+{
+  "documents": 48,
+  "chunks": 3482,
+  "by_type": {
+    "table": 29,
+    "clause": 2702,
+    "preamble": 183,
+    "definition": 568
+  },
+  "spanning_pages": 228,
+  "split_leaves": 65,
+  "mean_chars": 229.9
+}

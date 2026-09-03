@@ -1,0 +1,23 @@
+{
+  "total": 80,
+  "target": 80,
+  "distribution": {
+    "definition": 12,
+    "single_clause": 16,
+    "cross_page": 8,
+    "cross_reference_chain": 12,
+    "multi_hop": 12,
+    "aggregation": 12,
+    "negative": 8
+  },
+  "target_distribution": {
+    "definition": 12,
+    "single_clause": 16,
+    "cross_page": 8,
+    "cross_reference_chain": 12,
+    "multi_hop": 12,
+    "aggregation": 12,
+    "negative": 8
+  },
+  "ground_truth_method": "Questions are generated from structurally-selected clauses, so the ground-truth clause_id is correct by construction. Every ground-truth id is checked to exist in the graph. Negatives are hand-written."
+}

@@ -1,0 +1,403 @@
+{
+  "references_detected": 1677,
+  "resolved": 1541,
+  "unresolved": 136,
+  "unresolvable_by_design": 85,
+  "resolution_rate_all": 0.9189,
+  "resolution_rate": 0.968,
+  "by_class": {
+    "schedule": 293,
+    "clause": 202,
+    "self": 319,
+    "paragraph": 438,
+    "annex": 70,
+    "part": 76,
+    "appendix": 8
+  },
+  "by_scope_rule": {
+    "schedule_to_document": 279,
+    "clause_to_core_terms": 257,
+    "self_clause": 15,
+    "paragraph_to_containing_schedule": 558,
+    "self_schedule": 165,
+    "named_within_containing_schedule": 119,
+    "self_paragraph": 34,
+    "self_part": 59,
+    "self_annex": 20,
+    "paragraph_within_named_section": 32,
+    "self_appendix": 1,
+    "explicit_schedule": 2
+  },
+  "unresolved_reasons": {
+    "bare_direction_word": 73,
+    "no_such_number": 21,
+    "no_enclosing_section": 3,
+    "no_such_section": 19,
+    "no_such_number_in_named_section": 8,
+    "external_legislation": 12
+  },
+  "scope_regression_paragraph_to_core_terms": 0,
+  "acceptance_resolution_ge_95pct": true,
+  "unresolved_sample": [
+    {
+      "source": "framework_award_form.9__2",
+      "reference_text": "above",
+      "ref_class": "relative",
+      "scope_doc": "framework_award_form",
+      "scope_rule": "relative_direction",
+      "reason": "bare_direction_word",
+      "page": 26
+    },
+    {
+      "source": "framework_award_form.def.special_term_1",
+      "reference_text": "Clause 2.11",
+      "ref_class": "clause",
+      "scope_doc": "core_terms",
+      "scope_rule": "clause_to_core_terms",
+      "reason": "no_such_number",
+      "page": 26
+    },
+    {
+      "source": "framework_award_form.def.special_term_9",
+      "reference_text": "clause 3.1.8",
+      "ref_class": "clause",
+      "scope_doc": "core_terms",
+      "scope_rule": "clause_to_core_terms",
+      "reason": "no_such_number",
+      "page": 28
+    },
+    {
+      "source": "framework_award_form.21",
+      "reference_text": "above",
+      "ref_class": "relative",
+      "scope_doc": "framework_award_form",
+      "scope_rule": "relative_direction",
+      "reason": "bare_direction_word",
+      "page": 29
+    },
+    {
+      "source": "framework_schedule_1.pre.359",
+      "reference_text": "below",
+      "ref_class": "relative",
+      "scope_doc": "framework_schedule_1",
+      "scope_rule": "relative_direction",
+      "reason": "bare_direction_word",
+      "page": 31
+    },
+    {
+      "source": "framework_schedule_1.1.2",
+      "reference_text": "paragraph 1.2.3",
+      "ref_class": "paragraph",
+      "scope_doc": "framework_schedule_1",
+      "scope_rule": "paragraph_to_containing_schedule",
+      "reason": "no_such_number",
+      "page": 32
+    },
+    {
+      "source": "framework_schedule_1.1.2.2#p1",
+      "reference_text": "this Part",
+      "ref_class": "self",
+      "scope_doc": "framework_schedule_1",
+      "scope_rule": "self_part",
+      "reason": "no_enclosing_section",
+      "page": 32
+    },
+    {
+      "source": "framework_schedule_1.1.2.2#p1",
+      "reference_text": "this part",
+      "ref_class": "self",
+      "scope_doc": "framework_schedule_1",
+      "scope_rule": "self_part",
+      "reason": "no_enclosing_section",
+      "page": 32
+    },
+    {
+      "source": "framework_schedule_1.2.4.1",
+      "reference_text": "below",
+      "ref_class": "relative",
+      "scope_doc": "framework_schedule_1",
+      "scope_rule": "relative_direction",
+      "reason": "bare_direction_word",
+      "page": 40
+    },
+    {
+      "source": "framework_schedule_1.2.4.3#p1",
+      "reference_text": "above",
+      "ref_class": "relative",
+      "scope_doc": "framework_schedule_1",
+      "scope_rule": "relative_direction",
+      "reason": "bare_direction_word",
+      "page": 40
+    },
+    {
+      "source": "framework_schedule_1.2.4.3#p1",
+      "reference_text": "above",
+      "ref_class": "relative",
+      "scope_doc": "framework_schedule_1",
+      "scope_rule": "relative_direction",
+      "reason": "bare_direction_word",
+      "page": 40
+    },
+    {
+      "source": "framework_schedule_1.3.2",
+      "reference_text": "above",
+      "ref_class": "relative",
+      "scope_doc": "framework_schedule_1",
+      "scope_rule": "relative_direction",
+      "reason": "bare_direction_word",
+      "page": 52
+    },
+    {
+      "source": "framework_schedule_3.annex_1.pre.656",
+      "reference_text": "below",
+      "ref_class": "relative",
+      "scope_doc": "framework_schedule_3",
+      "scope_rule": "relative_direction",
+      "reason": "bare_direction_word",
+      "page": 64
+    },
+    {
+      "source": "framework_schedule_3.def.staff_grade",
+      "reference_text": "below",
+      "ref_class": "relative",
+      "scope_doc": "framework_schedule_3",
+      "scope_rule": "relative_direction",
+      "reason": "bare_direction_word",
+      "page": 64
+    },
+    {
+      "source": "framework_schedule_4.8.3",
+      "reference_text": "above",
+      "ref_class": "relative",
+      "scope_doc": "framework_schedule_4",
+      "scope_rule": "relative_direction",
+      "reason": "bare_direction_word",
+      "page": 77
+    },
+    {
+      "source": "framework_schedule_5.8.3.2",
+      "reference_text": "below",
+      "ref_class": "relative",
+      "scope_doc": "framework_schedule_5",
+      "scope_rule": "relative_direction",
+      "reason": "bare_direction_word",
+      "page": 84
+    },
+    {
+      "source": "framework_schedule_6.def.call_off_reference_the_buyer_buyer_address_supplier_reference_the_supplier_supplier_address_registration_number_duns_number_sid4gov_id#p1",
+      "reference_text": "below",
+      "ref_class": "relative",
+      "scope_doc": "framework_schedule_6",
+      "scope_rule": "relative_direction",
+      "reason": "bare_direction_word",
+      "page": 86
+    },
+    {
+      "source": "framework_schedule_6.def.call_off_reference_the_buyer_buyer_address_supplier_reference_the_supplier_supplier_address_registration_number_duns_number_sid4gov_id#p1",
+      "reference_text": "below",
+      "ref_class": "relative",
+      "scope_doc": "framework_schedule_6",
+      "scope_rule": "relative_direction",
+      "reason": "bare_direction_word",
+      "page": 86
+    },
+    {
+      "source": "framework_schedule_6.5#p1",
+      "reference_text": "below",
+      "ref_class": "relative",
+      "scope_doc": "framework_schedule_6",
+      "scope_rule": "relative_direction",
+      "reason": "bare_direction_word",
+      "page": 88
+    },
+    {
+      "source": "framework_schedule_6.5#p2",
+      "reference_text": "Annex 5",
+      "ref_class": "annex",
+      "scope_doc": "framework_schedule_6",
+      "scope_rule": "named_within_containing_schedule",
+      "reason": "no_such_section",
+      "page": 88
+    },
+    {
+      "source": "framework_schedule_6.5#p2",
+      "reference_text": "paragraph 10 of Part A",
+      "ref_class": "paragraph",
+      "scope_doc": "framework_schedule_6",
+      "scope_rule": "paragraph_within_named_section",
+      "reason": "no_such_number_in_named_section",
+      "page": 88
+    },
+    {
+      "source": "framework_schedule_6.8",
+      "reference_text": "above",
+      "ref_class": "relative",
+      "scope_doc": "framework_schedule_6",
+      "scope_rule": "relative_direction",
+      "reason": "bare_direction_word",
+      "page": 89
+    },
+    {
+      "source": "framework_schedule_7.pre.976",
+      "reference_text": "Part 1",
+      "ref_class": "part",
+      "scope_doc": "framework_schedule_7",
+      "scope_rule": "named_within_containing_schedule",
+      "reason": "no_such_section",
+      "page": 94
+    },
+    {
+      "source": "framework_schedule_7.2.1.4",
+      "reference_text": "above",
+      "ref_class": "relative",
+      "scope_doc": "framework_schedule_7",
+      "scope_rule": "relative_direction",
+      "reason": "bare_direction_word",
+      "page": 95
+    },
+    {
+      "source": "framework_schedule_7.3.1.7",
+      "reference_text": "above",
+      "ref_class": "relative",
+      "scope_doc": "framework_schedule_7",
+      "scope_rule": "relative_direction",
+      "reason": "bare_direction_word",
+      "page": 96
+    },
+    {
+      "source": "framework_schedule_7.4.1",
+      "reference_text": "above",
+      "ref_class": "relative",
+      "scope_doc": "framework_schedule_7",
+      "scope_rule": "relative_direction",
+      "reason": "bare_direction_word",
+      "page": 98
+    },
+    {
+      "source": "framework_schedule_7.8.6",
+      "reference_text": "Paragraphs 8.1 to 8.5",
+      "ref_class": "paragraph",
+      "scope_doc": "framework_schedule_7",
+      "scope_rule": "paragraph_to_containing_schedule",
+      "reason": "no_such_number",
+      "page": 101
+    },
+    {
+      "source": "framework_schedule_7.8.6",
+      "reference_text": "Part 2",
+      "ref_class": "part",
+      "scope_doc": "framework_schedule_7",
+      "scope_rule": "named_within_containing_schedule",
+      "reason": "no_such_section",
+      "page": 101
+    },
+    {
+      "source": "framework_schedule_7.1__2",
+      "reference_text": "This Part",
+      "ref_class": "self",
+      "scope_doc": "framework_schedule_7",
+      "scope_rule": "self_part",
+      "reason": "no_enclosing_section",
+      "page": 102
+    },
+    {
+      "source": "joint_schedule_1.def.auditor",
+      "reference_text": "above",
+      "ref_class": "relative",
+      "scope_doc": "joint_schedule_1",
+      "scope_rule": "relative_direction",
+      "reason": "bare_direction_word",
+      "page": 114
+    },
+    {
+      "source": "joint_schedule_1.def.confidential",
+      "reference_text": "above",
+      "ref_class": "relative",
+      "scope_doc": "joint_schedule_1",
+      "scope_rule": "relative_direction",
+      "reason": "bare_direction_word",
+      "page": 117
+    },
+    {
+      "source": "joint_schedule_1.def.costs#p1",
+      "reference_text": "below",
+      "ref_class": "relative",
+      "scope_doc": "joint_schedule_1",
+      "scope_rule": "relative_direction",
+      "reason": "bare_direction_word",
+      "page": 117
+    },
+    {
+      "source": "joint_schedule_1.def.costs#p1",
+      "reference_text": "above",
+      "ref_class": "relative",
+      "scope_doc": "joint_schedule_1",
+      "scope_rule": "relative_direction",
+      "reason": "bare_direction_word",
+      "page": 117
+    },
+    {
+      "source": "joint_schedule_1.def.default_1203",
+      "reference_text": "Paragraph 8.1.1",
+      "ref_class": "paragraph",
+      "scope_doc": "joint_schedule_1",
+      "scope_rule": "paragraph_to_containing_schedule",
+      "reason": "no_such_number",
+      "page": 119
+    },
+    {
+      "source": "joint_schedule_1.def.dotas",
+      "reference_text": "Part 7",
+      "ref_class": "legislation",
+      "scope_doc": null,
+      "scope_rule": "external_legislation",
+      "reason": "external_legislation",
+      "page": 120
+    },
+    {
+      "source": "joint_schedule_1.def.dotas",
+      "reference_text": "Part 7",
+      "ref_class": "legislation",
+      "scope_doc": null,
+      "scope_rule": "external_legislation",
+      "reason": "external_legislation",
+      "page": 120
+    },
+    {
+      "source": "joint_schedule_1.def.end_date",
+      "reference_text": "above",
+      "ref_class": "relative",
+      "scope_doc": "joint_schedule_1",
+      "scope_rule": "relative_direction",
+      "reason": "bare_direction_word",
+      "page": 120
+    },
+    {
+      "source": "joint_schedule_1.def.general_anti_abuse_rule",
+      "reference_text": "Part 5",
+      "ref_class": "legislation",
+      "scope_doc": null,
+      "scope_rule": "external_legislation",
+      "reason": "external_legislation",
+      "page": 124
+    },
+    {
+      "source": "joint_schedule_1.def.insolvency_event#p3",
+      "reference_text": "above",
+      "ref_class": "relative",
+      "scope_doc": "joint_schedule_1",
+      "scope_rule": "relative_direction",
+      "reason": "bare_direction_word",
+      "page": 126
+    },
+    {
+      "source": "joint_schedule_1.def.joint_controller_agreement",
+      "reference_text": "Annex 2",
+      "ref_class": "annex",
+      "scope_doc": "joint_schedule_1",
+      "scope_rule": "named_within_containing_schedule",
+      "reason": "no_such_section",
+      "page": 127
+    }
+  ]
+}

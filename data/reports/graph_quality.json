@@ -1,0 +1,363 @@
+{
+  "coverage": {
+    "method": "overlap against `pdftotext -layout`, per page, boilerplate excluded from the denominator",
+    "word_coverage_mean": 0.9707,
+    "shingle_coverage_mean": 0.8149,
+    "text_coverage_including_boilerplate": 0.7159,
+    "pages_compared": 465,
+    "pages_below_90pct_words": 16,
+    "thin_pages": [
+      {
+        "page": 361,
+        "word_coverage": 0.0,
+        "shingle_coverage": 0.0,
+        "clauses_on_page": 1,
+        "has_table": false
+      },
+      {
+        "page": 176,
+        "word_coverage": 0.2,
+        "shingle_coverage": 0.0,
+        "clauses_on_page": 1,
+        "has_table": false
+      },
+      {
+        "page": 457,
+        "word_coverage": 0.5,
+        "shingle_coverage": 0.0,
+        "clauses_on_page": 1,
+        "has_table": false
+      },
+      {
+        "page": 177,
+        "word_coverage": 0.625,
+        "shingle_coverage": 0.118,
+        "clauses_on_page": 1,
+        "has_table": false
+      },
+      {
+        "page": 234,
+        "word_coverage": 0.684,
+        "shingle_coverage": 0.625,
+        "clauses_on_page": 1,
+        "has_table": false
+      },
+      {
+        "page": 235,
+        "word_coverage": 0.684,
+        "shingle_coverage": 0.625,
+        "clauses_on_page": 0,
+        "has_table": false
+      },
+      {
+        "page": 411,
+        "word_coverage": 0.789,
+        "shingle_coverage": 0.475,
+        "clauses_on_page": 4,
+        "has_table": true
+      },
+      {
+        "page": 58,
+        "word_coverage": 0.8,
+        "shingle_coverage": 0.75,
+        "clauses_on_page": 1,
+        "has_table": false
+      },
+      {
+        "page": 286,
+        "word_coverage": 0.833,
+        "shingle_coverage": 0.6,
+        "clauses_on_page": 1,
+        "has_table": false
+      },
+      {
+        "page": 332,
+        "word_coverage": 0.845,
+        "shingle_coverage": 0.284,
+        "clauses_on_page": 21,
+        "has_table": false
+      },
+      {
+        "page": 192,
+        "word_coverage": 0.857,
+        "shingle_coverage": 0.414,
+        "clauses_on_page": 5,
+        "has_table": false
+      },
+      {
+        "page": 25,
+        "word_coverage": 0.86,
+        "shingle_coverage": 0.548,
+        "clauses_on_page": 6,
+        "has_table": false
+      },
+      {
+        "page": 29,
+        "word_coverage": 0.864,
+        "shingle_coverage": 0.506,
+        "clauses_on_page": 7,
+        "has_table": false
+      },
+      {
+        "page": 474,
+        "word_coverage": 0.867,
+        "shingle_coverage": 0.438,
+        "clauses_on_page": 2,
+        "has_table": false
+      },
+      {
+        "page": 473,
+        "word_coverage": 0.889,
+        "shingle_coverage": 0.476,
+        "clauses_on_page": 2,
+        "has_table": false
+      },
+      {
+        "page": 415,
+        "word_coverage": 0.894,
+        "shingle_coverage": 0.71,
+        "clauses_on_page": 3,
+        "has_table": false
+      }
+    ],
+    "thin_pages_with_a_table": 1,
+    "page_coverage": 0.9853,
+    "pages_with_no_clause": [
+      106,
+      111,
+      147,
+      222,
+      235,
+      316,
+      431
+    ],
+    "documents": 48,
+    "clauses_with_a_semantic_node": 0.9126,
+    "clauses_without_a_semantic_node": 272
+  },
+  "reference_detection": {
+    "method": "reference regex run over `pdftotext` text, matched against what the resolver saw",
+    "mentions_in_reference_extraction": 1430,
+    "matched_in_graph": 1364,
+    "detection_recall": 0.9538,
+    "missed": 66,
+    "missed_by_leading_token": {
+      "annex": 26,
+      "part": 11,
+      "paragraphs": 7,
+      "paragraph": 7,
+      "call-off": 6,
+      "joint": 4,
+      "this schedule": 3,
+      "framework": 1,
+      "clauses": 1
+    },
+    "missed_sample": [
+      {
+        "page": 43,
+        "reference_text": "paragraphs 2.6.2"
+      },
+      {
+        "page": 50,
+        "reference_text": "paragraphs 2.11.2"
+      },
+      {
+        "page": 91,
+        "reference_text": "Call-Off Schedule 5"
+      },
+      {
+        "page": 91,
+        "reference_text": "Call-Off Schedule 5"
+      },
+      {
+        "page": 91,
+        "reference_text": "Paragraphs 4, 5 and 6"
+      },
+      {
+        "page": 91,
+        "reference_text": "Framework Schedule 3"
+      },
+      {
+        "page": 91,
+        "reference_text": "Call-Off Schedule 16"
+      },
+      {
+        "page": 92,
+        "reference_text": "Call-Off Schedule 7"
+      },
+      {
+        "page": 92,
+        "reference_text": "Call-Off Schedule 14"
+      },
+      {
+        "page": 92,
+        "reference_text": "Joint Schedule 8"
+      },
+      {
+        "page": 93,
+        "reference_text": "Call-Off Schedule 4"
+      },
+      {
+        "page": 104,
+        "reference_text": "Annex B"
+      },
+      {
+        "page": 142,
+        "reference_text": "Joint Schedule 2"
+      },
+      {
+        "page": 150,
+        "reference_text": "Part A"
+      },
+      {
+        "page": 154,
+        "reference_text": "Part B"
+      },
+      {
+        "page": 174,
+        "reference_text": "Clauses 10.6.1"
+      },
+      {
+        "page": 176,
+        "reference_text": "Annex 1"
+      },
+      {
+        "page": 177,
+        "reference_text": "Annex 2"
+      },
+      {
+        "page": 178,
+        "reference_text": "Annex 3"
+      },
+      {
+        "page": 187,
+        "reference_text": "this Schedule"
+      },
+      {
+        "page": 195,
+        "reference_text": "Annex 1"
+      },
+      {
+        "page": 206,
+        "reference_text": "Annex 2"
+      },
+      {
+        "page": 218,
+        "reference_text": "paragraphs 18"
+      },
+      {
+        "page": 223,
+        "reference_text": "Annex 2"
+      },
+      {
+        "page": 229,
+        "reference_text": "Annex 2"
+      },
+      {
+        "page": 232,
+        "reference_text": "Annex 1"
+      },
+      {
+        "page": 234,
+        "reference_text": "Annex A"
+      },
+      {
+        "page": 236,
+        "reference_text": "Part E"
+      },
+      {
+        "page": 241,
+        "reference_text": "Paragraphs 1.4, 2.3 and 2.8"
+      },
+      {
+        "page": 260,
+        "reference_text": "Part D"
+      }
+    ]
+  },
+  "silver_standard": {
+    "method": "a model enumerates each sampled page from raw text; a second pass aligns that enumeration with the graph's contents for the page",
+    "matcher": "llm",
+    "pages_sampled": 24,
+    "pages_failed": 0,
+    "by_type": {
+      "internal_references": {
+        "recall": 0.7081,
+        "precision": 0.8384,
+        "pages": 24
+      },
+      "defined_terms_used": {
+        "recall": 0.8007,
+        "precision": 0.6184,
+        "pages": 24
+      },
+      "obligations": {
+        "recall": 0.7453,
+        "precision": 0.7718,
+        "pages": 24
+      }
+    },
+    "matching": {
+      "internal_references": "reduced on both sides to (kind, number), so 'Clause 34 (Resolving Disputes)' and 'Clause 34' agree; unstructured mentions (Lots, 'the Order Form', anaphora) are excluded rather than counted against the graph",
+      "defined_terms_used": "90% fuzzy on the term",
+      "obligations": "content-word overlap >= 0.5"
+    },
+    "caveat": "The silver standard is model-generated and carries its own error rate, and the model is not exhaustive. Precision against a non-exhaustive annotator is not precision: a term the graph linked and the model did not list is not thereby wrong. Read recall as the useful signal and precision as agreement."
+  },
+  "edge_precision": {
+    "sample_size": 100,
+    "graded": 100,
+    "precision": 0.93,
+    "incorrect": [
+      {
+        "source": "joint_schedule_7.annex_5.4.1",
+        "target": "joint_schedule_7.annex_5.1",
+        "reference_text": "this Annex",
+        "scope_rule": "self_annex",
+        "reason": "The reference is to 'this Annex 5'. The source clause is joint_schedule_7.annex_5.4.1, which is part of Annex 5 of Joint Schedule 7. The resolved target is joint_schedule_7.annex_5.1, which is the first paragraph of Annex 5. However, the reference text is 'this Annex', not 'this Annex 5'. The full text of the source clause explicitly says 'this Annex 5'. The provided reference text 'this Annex' is incomplete and therefore does not accurately represent the reference made in the source text."
+      },
+      {
+        "source": "call_off_schedule_14.def.threshold",
+        "target": "call_off_schedule_14.def.unavailable",
+        "reference_text": "Annex 1",
+        "scope_rule": "named_within_containing_schedule",
+        "reason": "The reference is to 'Annex 1 to Part A of this Schedule'. The resolved target is the definition of 'Unavailable', which is not part of Annex 1."
+      },
+      {
+        "source": "call_off_schedule_23.8.6",
+        "target": "call_off_schedule_23.8.6",
+        "reference_text": "this Paragraph",
+        "scope_rule": "self_paragraph",
+        "reason": "The reference is to 'this Paragraph 8', but the source clause is 'call_off_schedule_23.8.6'. The reference 'this Paragraph' should point to the paragraph it is in, which is paragraph 8.6, not the entire paragraph 8. The text explicitly mentions 'Paragraph 8', which is a different, higher-level paragraph."
+      },
+      {
+        "source": "call_off_schedule_6.9.3.3",
+        "target": "call_off_schedule_6.9.3.3",
+        "reference_text": "this Paragraph",
+        "scope_rule": "self_paragraph",
+        "reason": "The reference is to \"this Paragraph\", which should resolve to the paragraph it is in, 9.3.3. However, the reference text explicitly says \"this Paragraph 9.3\", which is a different paragraph. The resolved target is 9.3.3, which matches the location of the reference but contradicts the explicit number \"9.3\" mentioned in the reference text. The reference is internally inconsistent, but resolving to the paragraph it is in (9.3.3) is incorrect because the text specifies a different paragraph (9.3)."
+      },
+      {
+        "source": "joint_schedule_7.annex_5.3.1",
+        "target": "joint_schedule_7.def.entity_1849",
+        "reference_text": "Appendix 2",
+        "scope_rule": "named_within_containing_schedule",
+        "reason": "The reference is to 'Appendix 2', which is a section of the document. The resolved target is a definition for 'Entity', which is not what 'Appendix 2' refers to. The reference should point to the start of Appendix 2 of this schedule."
+      },
+      {
+        "source": "joint_schedule_11.annex_2.1.1",
+        "target": "joint_schedule_11.annex_2.4",
+        "reference_text": "paragraphs 3-16",
+        "scope_rule": "paragraph_to_containing_schedule",
+        "reason": "The reference is to \"paragraphs 3-16 of Joint Schedule 11\". The resolved target is joint_schedule_11.annex_2.4, which is a paragraph within Annex 2 of Joint Schedule 11, not a paragraph directly within Joint Schedule 11 itself. The correct targets should be paragraphs 3 through 16 of Joint Schedule 11."
+      },
+      {
+        "source": "framework_schedule_3.4.5",
+        "target": "framework_schedule_3.def.staff_grade",
+        "reference_text": "Annex 1",
+        "scope_rule": "named_within_containing_schedule",
+        "reason": "The reference is to 'Annex 1'. The resolved target is a definition for 'Staff Grade' within Schedule 3. This is incorrect. The reference should point to the document or section titled 'Annex 1'."
+      }
+    ]
+  }
+}

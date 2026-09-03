@@ -1,0 +1,10 @@
+{
+  "model": "gemini-embedding-001",
+  "dimensions": 1536,
+  "version": "v1",
+  "embedded": {
+    "clauses": 236,
+    "definitions": 0
+  },
+  "clauses_still_missing": 0
+}

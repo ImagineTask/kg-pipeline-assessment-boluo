@@ -1,11 +1,9 @@
+# Credentials. Never commit: this holds the Neo4j password and GCP identifiers.
 .env
+
+# Machine-specific and regenerable
 .venv/
 __pycache__/
 *.pyc
-data/interim/*
-data/processed/*
-data/reports/*
-data/raw/*.pdf
-!data/**/.gitkeep
 .pytest_cache/
 .DS_Store

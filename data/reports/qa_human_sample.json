@@ -1,0 +1,1202 @@
+[
+  {
+    "provision_id": "joint_schedule_1.def.framework_start::1",
+    "clause_id": "joint_schedule_1.def.framework_start",
+    "hierarchy_path": "Joint Schedule 1 (Definitions) > \"Framework Start\"",
+    "pages": [
+      123,
+      123
+    ],
+    "clause_text": "\"Framework Start\" the date of start of the Framework Contract as stated in the Framework Award Form; Date\"",
+    "extracted": {
+      "provision_type": "definition",
+      "actor": null,
+      "counterparty": null,
+      "modality": null,
+      "summary": "Defines \"Framework Start Date\" as the start date of the Framework Contract stated in the Framework Award Form.",
+      "trigger": null,
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "call_off_schedule_6.3.1.2::1",
+    "clause_id": "call_off_schedule_6.3.1.2",
+    "hierarchy_path": "Call-Off Schedule 6 (ICT Services) > 3 > 3.1 > 3.1.2",
+    "pages": [
+      305,
+      305
+    ],
+    "clause_text": "operating processes and procedures and the working methods of the Buyer;",
+    "extracted": {
+      "provision_type": "obligation",
+      "actor": "Supplier",
+      "counterparty": "Buyer",
+      "modality": "must",
+      "summary": "The Supplier must satisfy itself of the Buyer's operating processes, procedures, and working methods.",
+      "trigger": "where the Buyer has conducted a Further Competition Procedure",
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "call_off_schedule_9.part_b.5.2::2",
+    "clause_id": "call_off_schedule_9.part_b.5.2",
+    "hierarchy_path": "Call-Off Schedule 9 (Security) > Part B: Long Form Security Requirements > 5 Amendment of the ISMS and Security Management Plan > 5.2",
+    "pages": [
+      352,
+      352
+    ],
+    "clause_text": "The Supplier shall provide the Buyer with the results of such reviews as soon\nas reasonably practicable after their completion and amend the ISMS and\nSecurity Management Plan at no additional cost to the Buyer. The results of\nthe review shall include, without limitation:",
+    "extracted": {
+      "provision_type": "obligation",
+      "actor": "Supplier",
+      "counterparty": "Buyer",
+      "modality": "must",
+      "summary": "The Supplier must amend the ISMS and Security Management Plan based on review results at no additional cost to the Buyer.",
+      "trigger": null,
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "call_off_schedule_2.def.csps_admission_agreement::1",
+    "clause_id": "call_off_schedule_2.def.csps_admission_agreement",
+    "hierarchy_path": "Call-Off Schedule 2 (Staff Transfer) > \"CSPS Admission Agreement\"",
+    "pages": [
+      271,
+      271
+    ],
+    "clause_text": "\"CSPS Admission Agreement\" an admission agreement in the form available on the Civil Service Pensions website immediately prior to the Relevant Transfer Date to be entered into for the CSPS in respect of the Services;",
+    "extracted": {
+      "provision_type": "definition",
+      "actor": null,
+      "counterparty": null,
+      "modality": null,
+      "summary": "Defines \"CSPS Admission Agreement\" as an agreement for the CSPS in respect of the Services, in a specific form.",
+      "trigger": null,
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "joint_schedule_8.annex_1.8.1::1",
+    "clause_id": "joint_schedule_8.annex_1.8.1",
+    "hierarchy_path": "Joint Schedule 8 (Guarantee) > Annex 1 - Form of Guarantee > 8 DEFERRAL OF RIGHTS > 8.1",
+    "pages": [
+      201,
+      201
+    ],
+    "clause_text": "Until all amounts which may be or become payable by the Supplier under or in connection with the Guaranteed Agreement have been irrevocably paid in full, the Guarantor agrees that, without the prior written consent of the Beneficiary, it will not:",
+    "extracted": {
+      "provision_type": "statement",
+      "actor": "Guarantor",
+      "counterparty": "Buyer",
+      "modality": null,
+      "summary": "The Guarantor agrees not to perform certain actions without the Beneficiary's prior written consent until the Supplier's dues are fully paid.",
+      "trigger": "Until all amounts which may be or become payable by the Supplier under or in connection with the Guaranteed Agreement have been irrevocably paid in full",
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "framework_schedule_1.1.2.2#p2::1",
+    "clause_id": "framework_schedule_1.1.2.2#p2",
+    "hierarchy_path": "Framework Schedule 1 (Specification) > 1 Specification > 1.2 > 1.2.2",
+    "pages": [
+      32,
+      33
+    ],
+    "clause_text": "and (ii) the technology, equipment and solutions from\na given Lot is used exclusively for the delivery\nof the Primary Service in a separate Lot. f) Technology, equipment and solutions from a given\nLot cannot be procured: (i) as a standalone Primary Service from a\nseparate Lot; (ii) as standalone technology, equipment and\nsolutions from a separate Lot; and (iii) as an Ancillary Service in a separate Lot.",
+    "extracted": {
+      "provision_type": "obligation",
+      "actor": "Supplier",
+      "counterparty": "Buyer",
+      "modality": "must_not",
+      "summary": "Technology, equipment and solutions from one Lot cannot be procured as a standalone service or as an Ancillary Service in another Lot.",
+      "trigger": null,
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "call_off_schedule_13.part_b.11.2.1::1",
+    "clause_id": "call_off_schedule_13.part_b.11.2.1",
+    "hierarchy_path": "Call-Off Schedule 13 (Implementation Plan and Testing) > Part B - Testing > 11 Outcome of the testing > 11.2 > 11.2.1",
+    "pages": [
+      388,
+      388
+    ],
+    "clause_text": "the Buyer may issue a Satisfaction Certificate conditional upon\nthe remediation of the Test Issues;",
+    "extracted": {
+      "provision_type": "right",
+      "actor": "Buyer",
+      "counterparty": "Supplier",
+      "modality": "may",
+      "summary": "The Buyer may issue a conditional Satisfaction Certificate pending the remediation of Test Issues.",
+      "trigger": "the Deliverables (or any relevant part) do not satisfy the Test Success Criteria",
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "call_off_schedule_2.part_a.2.1.1::1",
+    "clause_id": "call_off_schedule_2.part_a.2.1.1",
+    "hierarchy_path": "Call-Off Schedule 2 (Staff Transfer) > PART A: STAFF TRANSFER AT THE START DATE > 2 Indemnities the Buyer must give > 2.1 > 2.1.1",
+    "pages": [
+      242,
+      242
+    ],
+    "clause_text": "any act or omission by the Buyer in respect of any Transferring Buyer Employee or any appropriate employee representative (as defined in the Employment Regulations) of any Transferring Buyer Employee occurring before the Relevant Transfer Date;",
+    "extracted": {
+      "provision_type": "liability",
+      "actor": "Buyer",
+      "counterparty": "Supplier",
+      "modality": "must",
+      "summary": "The Buyer must indemnify the Supplier and any Subcontractor against Employee Liabilities from the Buyer's acts or omissions before the Relevant Transfer Date.",
+      "trigger": "any act or omission by the Buyer in respect of any Transferring Buyer Employee or any appropriate employee representative",
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "call_off_schedule_9.part_b.3.3.3::1",
+    "clause_id": "call_off_schedule_9.part_b.3.3.3",
+    "hierarchy_path": "Call-Off Schedule 9 (Security) > Part B – Annex 1: > 3 Data Processing, Storage, Management and Destruction > 3.3 > 3.3.3",
+    "pages": [
+      359,
+      359
+    ],
+    "clause_text": "securely destroy all media that has held Government Data at the end\nof life of that media in line with Good Industry Practice; and",
+    "extracted": {
+      "provision_type": "obligation",
+      "actor": "Supplier",
+      "counterparty": "Buyer",
+      "modality": "must",
+      "summary": "The Supplier must securely destroy all media that has held Government Data at the end of its life.",
+      "trigger": "at the end of life of that media",
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "joint_schedule_7.4.8::1",
+    "clause_id": "joint_schedule_7.4.8",
+    "hierarchy_path": "Joint Schedule 7 (Financial Difficulties) > 4 Consequences of Financial Distress events > 4.8",
+    "pages": [
+      168,
+      168
+    ],
+    "clause_text": "The Supplier shall use reasonable endeavours to put in place the necessary\nmeasures to ensure that the information specified at paragraph 4.3.2(b) is\navailable when required and on request from the Relevant Authority and within\nreasonable timescales. Such measures may include:",
+    "extracted": {
+      "provision_type": "obligation",
+      "actor": "Supplier",
+      "counterparty": "Other",
+      "modality": "must",
+      "summary": "The Supplier must use reasonable endeavours to ensure specified information is available to the Relevant Authority on request.",
+      "trigger": "on request from the Relevant Authority",
+      "deadline": "within reasonable timescales",
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "call_off_schedule_13.part_a.7.5.1::1",
+    "clause_id": "call_off_schedule_13.part_a.7.5.1",
+    "hierarchy_path": "Call-Off Schedule 13 (Implementation Plan and Testing) > Part A - Implementation > 7 > 7.5 > 7.5.1",
+    "pages": [
+      380,
+      380
+    ],
+    "clause_text": "appoint a Supplier Authorised Representative who shall be responsible for the management of the Implementation Period,\nto ensure that the Implementation Period is planned and\nresourced adequately, and who will act as a point of contact\nfor the Buyer;",
+    "extracted": {
+      "provision_type": "obligation",
+      "actor": "Supplier",
+      "counterparty": "Buyer",
+      "modality": "must",
+      "summary": "The Supplier must appoint an Authorised Representative to manage the Implementation Period and act as a point of contact for the Buyer.",
+      "trigger": null,
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "call_off_schedule_10.10.1::1",
+    "clause_id": "call_off_schedule_10.10.1",
+    "hierarchy_path": "Call-Off Schedule 10 (Exit Management) > 10 > 10.1",
+    "pages": [
+      371,
+      371
+    ],
+    "clause_text": "All outgoings, expenses, rents, royalties and other periodical payments\nreceivable in respect of the Transferring Assets and Transferring Contracts\nshall be apportioned between the Buyer and/or the Replacement and the\nSupplier as follows:",
+    "extracted": {
+      "provision_type": "procedure",
+      "actor": null,
+      "counterparty": null,
+      "modality": "must",
+      "summary": "Periodical payments for Transferring Assets and Contracts must be apportioned between the Buyer, Replacement Supplier, and Supplier.",
+      "trigger": null,
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "call_off_schedule_2.part_d.annex_d3.5.4.3::1",
+    "clause_id": "call_off_schedule_2.part_d.annex_d3.5.4.3",
+    "hierarchy_path": "Call-Off Schedule 2 (Staff Transfer) > PART D: PENSIONS > Annex D3: > 5 LGPS RISK SHARING & > 5.4 > 5.4.3",
+    "pages": [
+      283,
+      283
+    ],
+    "clause_text": "any payment of Fund benefits to deferred or deferred pensioner members on the grounds of ill health or infirmity of mind or body under Regulation 38 of the 2013 Regulations or otherwise;",
+    "extracted": {
+      "provision_type": "liability",
+      "actor": "Supplier",
+      "counterparty": null,
+      "modality": "must",
+      "summary": "The Supplier and any Subcontractors are responsible for Fund benefit payments to deferred members on ill health grounds.",
+      "trigger": null,
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "joint_schedule_1.def.tax::1",
+    "clause_id": "joint_schedule_1.def.tax",
+    "hierarchy_path": "Joint Schedule 1 (Definitions) > \"Tax\"",
+    "pages": [
+      138,
+      138
+    ],
+    "clause_text": "Tax\" a) all forms of taxation whether direct or indirect;",
+    "extracted": {
+      "provision_type": "definition",
+      "actor": null,
+      "counterparty": null,
+      "modality": null,
+      "summary": "Defines 'Tax' as all forms of direct or indirect taxation.",
+      "trigger": null,
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "core_terms.11.7::1",
+    "clause_id": "core_terms.11.7",
+    "hierarchy_path": "Core Terms > 11 How much you can be held responsible for > 11.7",
+    "pages": [
+      12,
+      12
+    ],
+    "clause_text": "Each Party must use all reasonable endeavours to mitigate any Loss or damage which it suffers under or\nin connection with each Contract, including any indemnities.",
+    "extracted": {
+      "provision_type": "obligation",
+      "actor": "Other",
+      "counterparty": null,
+      "modality": "must",
+      "summary": "Each Party must use all reasonable endeavours to mitigate any Loss or damage it suffers under the Contract.",
+      "trigger": null,
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "call_off_schedule_9.part_b.1.1::1",
+    "clause_id": "call_off_schedule_9.part_b.1.1",
+    "hierarchy_path": "Call-Off Schedule 9 (Security) > Part B: Long Form Security Requirements > 1 Definitions > 1.1",
+    "pages": [
+      346,
+      346
+    ],
+    "clause_text": "In this Schedule the following words shall have the following meanings and\nthey shall supplement Joint Schedule 1 (Definitions):",
+    "extracted": {
+      "provision_type": "statement",
+      "actor": null,
+      "counterparty": null,
+      "modality": null,
+      "summary": "This clause states that the definitions provided supplement those in Joint Schedule 1.",
+      "trigger": null,
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "framework_schedule_1.3.3.2::3",
+    "clause_id": "framework_schedule_1.3.3.2",
+    "hierarchy_path": "Framework Schedule 1 (Specification) > 3 Social Value > 3.3 > 3.3.2 Equal opportunity",
+    "pages": [
+      53,
+      54
+    ],
+    "clause_text": "The Supplier shall, in agreeing to this Framework Agreement, actively seek\nto develop their company policies and practices to comply with the Equal\nOpportunities Act of 2010. The key principles being: • Eliminate discrimination. • Advance equality of opportunity. • Foster good relations between different people when carrying out\ntheir activities. The Supplier shall note that by law, all organisations with 250 or more\nemployees must publish and report specific figures about their gender pay\ngap, and the Authority expects our Suppliers to progress towards\nequalising this. The Supplier shall note that the Authority expects Suppliers and Supplier\nSupply Chains to support and encourage employment",
+    "extracted": {
+      "provision_type": "statement",
+      "actor": "Supplier",
+      "counterparty": "Buyer",
+      "modality": null,
+      "summary": "The Authority expects Suppliers to progress towards equalising their gender pay gap.",
+      "trigger": null,
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "call_off_schedule_21.2.1.3::1",
+    "clause_id": "call_off_schedule_21.2.1.3",
+    "hierarchy_path": "Call-Off Schedule 21 (Northern Ireland Law) > 2 Changes to the Core Terms > 2.1 > 2.1.3",
+    "pages": [
+      438,
+      438
+    ],
+    "clause_text": "Clause 34.4: the seat or legal place of the arbitration shall be amended,\nso that it takes place in Belfast as opposed to London.",
+    "extracted": {
+      "provision_type": "statement",
+      "actor": null,
+      "counterparty": null,
+      "modality": null,
+      "summary": "The seat of arbitration in Clause 34.4 is amended to be Belfast instead of London.",
+      "trigger": null,
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "call_off_schedule_6.10.1.2::1",
+    "clause_id": "call_off_schedule_6.10.1.2",
+    "hierarchy_path": "Call-Off Schedule 6 (ICT Services) > 10 > 10.1 Software Licence Terms > 10.1.2",
+    "pages": [
+      313,
+      313
+    ],
+    "clause_text": "Terms for licensing of COTS software in accordance with Paragraph 9.3 are detailed in Part 1B of Call Off Schedule 24 (Supplier Furnished Terms) i) 11. Customer Premises",
+    "extracted": {
+      "provision_type": "statement",
+      "actor": null,
+      "counterparty": null,
+      "modality": null,
+      "summary": "Terms for licensing COTS software are detailed in Call Off Schedule 24 (Supplier Furnished Terms).",
+      "trigger": null,
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "framework_schedule_7.3.2.4::1",
+    "clause_id": "framework_schedule_7.3.2.4",
+    "hierarchy_path": "Framework Schedule 7 (Call-Off Award Procedure) > 3 How a further competition works > 3.2 > 3.2.4",
+    "pages": [
+      97,
+      98
+    ],
+    "clause_text": "(a) The Supplier agrees that: all tenders submitted by the Supplier in relation to a Further\nCompetition Procedure held pursuant to this Paragraph 3\nshall remain open for acceptance by the Buyer for ninety\n(90) Working Days (or such other period specified in the\ninvitation to tender issued by the Buyer in accordance with\nthe Call-Off Procedure); and (b all tenders submitted by the Supplier are made and will be made in good faith and that the Supplier has not fixed or adjusted and will not fix or adjust the price of the tender by or in accordance with any agreement or arrangement with any other person. The Supplier certifies that it has not and undertakes that it will not: (i communicate to a",
+    "extracted": {
+      "provision_type": "obligation",
+      "actor": "Supplier",
+      "counterparty": "Buyer",
+      "modality": "must",
+      "summary": "The Supplier must ensure its tenders for a Further Competition remain open for acceptance for a specified period.",
+      "trigger": "all tenders submitted by the Supplier in relation to a Further Competition Procedure",
+      "deadline": "ninety (90) Working Days (or such other period specified in the invitation to tender issued by the Buyer in accordance with the Call-Off Procedure)",
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "call_off_schedule_9.part_b.3.6::2",
+    "clause_id": "call_off_schedule_9.part_b.3.6",
+    "hierarchy_path": "Call-Off Schedule 9 (Security) > Part B: Long Form Security Requirements > 3 Information Security Management System (ISMS) > 3.6",
+    "pages": [
+      349,
+      349
+    ],
+    "clause_text": "In the event that the Supplier becomes aware of any inconsistency in the\nprovisions of the standards, guidance and policies set out in Paragraph 3.4,\nthe Supplier shall immediately notify the Buyer Representative of such\ninconsistency and the Buyer Representative shall, as soon as practicable,\nnotify the Supplier as to which provision the Supplier shall comply with.",
+    "extracted": {
+      "provision_type": "obligation",
+      "actor": "Buyer",
+      "counterparty": "Supplier",
+      "modality": "must",
+      "summary": "The Buyer must notify the Supplier which provision to comply with after being informed of an inconsistency.",
+      "trigger": "the Supplier shall immediately notify the Buyer Representative of such inconsistency",
+      "deadline": "as soon as practicable",
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "framework_schedule_7.1.3.1::1",
+    "clause_id": "framework_schedule_7.1.3.1",
+    "hierarchy_path": "Framework Schedule 7 (Call-Off Award Procedure) > 1 How a Call-Off Contract is awarded > 1.3 > 1.3.1",
+    "pages": [
+      94,
+      94
+    ],
+    "clause_text": "requires the Supplier to develop proposals or a solution in\nrespect of such Deliverables; and/or",
+    "extracted": {
+      "provision_type": "statement",
+      "actor": null,
+      "counterparty": null,
+      "modality": null,
+      "summary": "This clause describes a situation where the Buyer requires the Supplier to develop proposals or a solution for the Deliverables.",
+      "trigger": null,
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "call_off_schedule_14.part_b.1.1.2::1",
+    "clause_id": "call_off_schedule_14.part_b.1.1.2",
+    "hierarchy_path": "Call-Off Schedule 14 (Service Levels) > PART B: Long Form Service Levels and Service Credits > 1 General provisions > 1.1 > 1.1.2",
+    "pages": [
+      401,
+      401
+    ],
+    "clause_text": "quality of the Services;",
+    "extracted": {
+      "provision_type": "obligation",
+      "actor": "Supplier",
+      "counterparty": "Buyer",
+      "modality": "must",
+      "summary": "The Supplier must provide support and advice on the quality of the Services when required by the Buyer.",
+      "trigger": "when required by the Buyer",
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "call_off_schedule_2.part_a.2.1.3::1",
+    "clause_id": "call_off_schedule_2.part_a.2.1.3",
+    "hierarchy_path": "Call-Off Schedule 2 (Staff Transfer) > PART A: STAFF TRANSFER AT THE START DATE > 2 Indemnities the Buyer must give > 2.1 > 2.1.3",
+    "pages": [
+      243,
+      243
+    ],
+    "clause_text": "any claim by any trade union or other body or person representing the Transferring Buyer Employees arising from or connected with any failure by the Buyer to comply with any legal obligation to such trade union, body or person arising before the Relevant Transfer Date;",
+    "extracted": {
+      "provision_type": "liability",
+      "actor": "Buyer",
+      "counterparty": "Supplier",
+      "modality": "must",
+      "summary": "The Buyer must indemnify the Supplier for claims from trade unions or employee representatives due to the Buyer's pre-transfer legal failures.",
+      "trigger": null,
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "joint_schedule_5.def.modern_slavery_helpline::1",
+    "clause_id": "joint_schedule_5.def.modern_slavery_helpline",
+    "hierarchy_path": "Joint Schedule 5 (Corporate Social Responsibility) > \"Modern Slavery Helpline\"",
+    "pages": [
+      150,
+      150
+    ],
+    "clause_text": "\"Modern Slavery Helpline\" means the mechanism for reporting suspicion, seeking help or advice and information on the subject of modern slavery available online at https://www.modernslaveryhelpline.org/report or by\ntelephone on 08000 121 700;",
+    "extracted": {
+      "provision_type": "definition",
+      "actor": null,
+      "counterparty": null,
+      "modality": null,
+      "summary": "Defines 'Modern Slavery Helpline' as the mechanism for reporting and seeking advice on modern slavery, providing a web address and phone number.",
+      "trigger": null,
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "framework_schedule_1.3.3.5#p2::6",
+    "clause_id": "framework_schedule_1.3.3.5#p2",
+    "hierarchy_path": "Framework Schedule 1 (Specification) > 3 Social Value > 3.3 > 3.3.5 Other Social Value Considerations",
+    "pages": [
+      55,
+      56
+    ],
+    "clause_text": "The Supplier must provide an implementation plan to the Buyer detailing\nhow the required Social Value commitments will be delivered through the\nCall-Off Contract. Buyers and Suppliers will jointly agree the timeline for delivering the\ntargets and measures that were committed to by the Supplier during the\nCall Off Procedure. The Buyer can identify specific social value priorities at call-off. The Supplier shall note that in delivering Social Value, the following\nmeasures may be used: The Supplier must manage, measure and report on the delivery of Social\nValue throughout the life of all Call-Off Contracts under this Framework\nAgreement. The Supplier must provide an annual Social Value delivery",
+    "extracted": {
+      "provision_type": "right",
+      "actor": "CCS",
+      "counterparty": "Supplier",
+      "modality": "may",
+      "summary": "The Authority may publish information on Social Value delivery and request case studies from Suppliers to increase awareness.",
+      "trigger": null,
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "call_off_schedule_2.part_e.2.3.1::1",
+    "clause_id": "call_off_schedule_2.part_e.2.3.1",
+    "hierarchy_path": "Call-Off Schedule 2 (Staff Transfer) > Part E: Staff Transfer on Exit > 2 Staff Transfer when the contract ends > 2.3 > 2.3.1",
+    "pages": [
+      290,
+      290
+    ],
+    "clause_text": "any act or omission of the Supplier or any Subcontractor in\nrespect of any Transferring Supplier Employee or any\nappropriate employee representative (as defined in the\nEmployment Regulations) of any Transferring Supplier Employee\nwhether occurring before, on or after the Service Transfer Date;\nthe breach or non-observance by the Supplier or any\nSubcontractor occurring on or before the Service Transfer Date\nof: 2.3.2 (a any collective agreement applicable to the Transferring Supplier Employees; and/or (b any other custom or practice with a trade union or staff association in respect of any Transferring Supplier Employees which the Supplier or any Subcontractor is contractually bound to honour",
+    "extracted": {
+      "provision_type": "liability",
+      "actor": "Supplier",
+      "counterparty": "Buyer",
+      "modality": "must",
+      "summary": "The Supplier indemnifies the Buyer for liabilities from its act or omission regarding a Transferring Supplier Employee or their representative.",
+      "trigger": null,
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "joint_schedule_8.annex_1.7.1::1",
+    "clause_id": "joint_schedule_8.annex_1.7.1",
+    "hierarchy_path": "Joint Schedule 8 (Guarantee) > Annex 1 - Form of Guarantee > 7 RIGHTS OF SUBROGATION > 7.1",
+    "pages": [
+      201,
+      201
+    ],
+    "clause_text": "The Guarantor shall, at any time when there is any default in the performance of any of the Guaranteed Obligations by the Supplier and/or any default by the Guarantor in the performance of any of its obligations under this Deed of Guarantee, exercise any rights it may have:",
+    "extracted": {
+      "provision_type": "statement",
+      "actor": null,
+      "counterparty": null,
+      "modality": null,
+      "summary": "This clause introduces the conditions under which the Guarantor must exercise certain rights.",
+      "trigger": null,
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "joint_schedule_1.def.transparency_nformation::1",
+    "clause_id": "joint_schedule_1.def.transparency_nformation",
+    "hierarchy_path": "Joint Schedule 1 (Definitions) > \"Transparency nformation\"",
+    "pages": [
+      139,
+      139
+    ],
+    "clause_text": "\"Transparency nformation\" the Transparency Reports and the content of a Contract, including any changes to this Contract agreed from time to time, except for (i)\nany information which is exempt from disclosure in\naccordance with the provisions of the FOIA, which shall be\ndetermined by the Relevant Authority; and (ii) Commercially Sensitive Information;",
+    "extracted": {
+      "provision_type": "definition",
+      "actor": null,
+      "counterparty": null,
+      "modality": null,
+      "summary": "Defines \"Transparency Information\" as Transparency Reports and contract content, excluding information exempt under FOIA and Commercially Sensitive Information.",
+      "trigger": null,
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "core_terms.14.8::4",
+    "clause_id": "core_terms.14.8",
+    "hierarchy_path": "Core Terms > 14 Data protection > 14.8",
+    "pages": [
+      14,
+      14
+    ],
+    "clause_text": "The Supplier: (a) must provide the Relevant Authority with all Government Data in an agreed open format within 10\nWorking Days of a written request; (b) must have documented processes to guarantee prompt availability of Government Data if the\nSupplier stops trading; (c) must securely destroy all Storage Media that has held Government Data at the end of life of that\nmedia using Good Industry Practice; (d) securely erase all Government Data and any copies it holds when asked to do so by CCS or the Buyer\nunless required by Law to retain it; and (e) indemnifies CCS and each Buyer against any and all Losses incurred if the Supplier breaches Clause\n14 and any Data Protection Legislation.",
+    "extracted": {
+      "provision_type": "obligation",
+      "actor": "Supplier",
+      "counterparty": "Other",
+      "modality": "must",
+      "summary": "The Supplier must securely erase all Government Data and its copies when asked, unless required by Law to retain it.",
+      "trigger": "when asked to do so by CCS or the Buyer",
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "call_off_schedule_9.part_a.2.4::3",
+    "clause_id": "call_off_schedule_9.part_a.2.4",
+    "hierarchy_path": "Call-Off Schedule 9 (Security) > Part A: Short Form Security Requirements > 2 Complying with security requirements and updates to them > 2.4",
+    "pages": [
+      341,
+      341
+    ],
+    "clause_text": "If the Supplier believes that a change or proposed change to the Security\nPolicy will have a material and unavoidable cost implication to the provision of\nthe Deliverables it may propose a Variation to the Buyer. In doing so, the\nSupplier must support its request by providing evidence of the cause of any\nincreased costs and the steps that it has taken to mitigate those costs. Any\nchange to the Charges shall be subject to the Variation Procedure.",
+    "extracted": {
+      "provision_type": "procedure",
+      "actor": null,
+      "counterparty": null,
+      "modality": null,
+      "summary": "Any change to the Charges is subject to the Variation Procedure.",
+      "trigger": null,
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "call_off_schedule_6.9.3.3::1",
+    "clause_id": "call_off_schedule_6.9.3.3",
+    "hierarchy_path": "Call-Off Schedule 6 (ICT Services) > 9 Intellectual Property Rights in ICT > 9.3 > 9.3.3",
+    "pages": [
+      310,
+      310
+    ],
+    "clause_text": "Where a third party is the owner of COTS Software licensed in\naccordance with this Paragraph 9.3 the Supplier shall support the\nReplacement Supplier to make arrangements with the owner or\nauthorised licencee to renew the license at a price and on terms no\nless favourable than those standard commercial terms on which such\nsoftware is usually made commercially available.",
+    "extracted": {
+      "provision_type": "obligation",
+      "actor": "Supplier",
+      "counterparty": "Other",
+      "modality": "must",
+      "summary": "The Supplier must support a Replacement Supplier in renewing third-party COTS Software licences on terms no less favourable than standard commercial terms.",
+      "trigger": null,
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "joint_schedule_9.1.3::2",
+    "clause_id": "joint_schedule_9.1.3",
+    "hierarchy_path": "Joint Schedule 9 (Minimum Standards of Reliability) > 1 Standards > 1.3",
+    "pages": [
+      209,
+      209
+    ],
+    "clause_text": "In the event that the Supplier does not demonstrate that it meets the Minimum\nStandards of Reliability in an assessment carried out pursuant to Paragraph 1.2, CCS\nshall so notify the Supplier (and any Buyer in writing) and the CCS reserves the right\nto terminate its Framework Contract for material Default under Clause 10.4 of the Core\nTerms (When CCS or the Buyer can end this contract).",
+    "extracted": {
+      "provision_type": "right",
+      "actor": "CCS",
+      "counterparty": "Supplier",
+      "modality": "may",
+      "summary": "CCS may terminate the Framework Contract if the Supplier fails to meet the Minimum Standards of Reliability.",
+      "trigger": "In the event that the Supplier does not demonstrate that it meets the Minimum Standards of Reliability in an assessment",
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "call_off_schedule_6.9.4.1::1",
+    "clause_id": "call_off_schedule_6.9.4.1",
+    "hierarchy_path": "Call-Off Schedule 6 (ICT Services) > 9 Intellectual Property Rights in ICT > 9.4 Buyer's right to assign/novate licences > 9.4.1",
+    "pages": [
+      311,
+      311
+    ],
+    "clause_text": "The Buyer may assign, novate or otherwise transfer its rights and\nobligations under the licences granted pursuant to paragraph 9.2 (to:",
+    "extracted": {
+      "provision_type": "right",
+      "actor": "Buyer",
+      "counterparty": null,
+      "modality": "may",
+      "summary": "The Buyer may assign, novate, or transfer its rights and obligations under licences granted pursuant to paragraph 9.2.",
+      "trigger": null,
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "framework_schedule_4.8.2.3::1",
+    "clause_id": "framework_schedule_4.8.2.3",
+    "hierarchy_path": "Framework Schedule 4 (Framework Management) > 8 Where CCS might oversee parts of the Call-Off Contracts > 8.2 > 8.2.3",
+    "pages": [
+      77,
+      77
+    ],
+    "clause_text": "such other matters as CCS may notify to the Supplier from\ntime to time. Where CCS might manage the process for Buyers collectively",
+    "extracted": {
+      "provision_type": "obligation",
+      "actor": "Supplier",
+      "counterparty": "CCS",
+      "modality": "must",
+      "summary": "The Supplier must cooperate with CCS on other matters related to Supported Schedules as notified by CCS.",
+      "trigger": "such other matters as CCS may notify to the Supplier from time to time",
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "framework_schedule_1.1.2.2#p1::5",
+    "clause_id": "framework_schedule_1.1.2.2#p1",
+    "hierarchy_path": "Framework Schedule 1 (Specification) > 1 Specification > 1.2 > 1.2.2",
+    "pages": [
+      32,
+      33
+    ],
+    "clause_text": "Primary Services: a) Primary Services provide the functionality and\nservices that are fundamental to a Lot; and are set\nout in paragraph 2 of this Part A; b) A Primary Service from a given Lot, can be\nemployed as part of the delivery of a Primary Service\nin a separate Lot, but only where all of the following\napply: (i) the Primary Service from a given Lot is required\nin order to enable the delivery of the Primary\nService in a separate Lot; and (ii the Primary Service from a given Lot is used exclusively for the delivery of the Primary Service in a separate Lot. (iii the Buyer has requested that the Supplier include the Primary service from a given Lot in their Tender. c) A Primary Service fr",
+    "extracted": {
+      "provision_type": "right",
+      "actor": "Supplier",
+      "counterparty": "Buyer",
+      "modality": "may",
+      "summary": "Technology, equipment and solutions from one Lot may be used to deliver a Primary Service in another Lot under specific conditions.",
+      "trigger": null,
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "call_off_schedule_2.part_d.1::1",
+    "clause_id": "call_off_schedule_2.part_d.1",
+    "hierarchy_path": "Call-Off Schedule 2 (Staff Transfer) > PART D: PENSIONS > 1 Definitions",
+    "pages": [
+      259,
+      259
+    ],
+    "clause_text": "In this Part D and Part E, the following words have the following meanings and they\nshall supplement Joint Schedule 1 (Definitions), and shall be deemed to include\nthe definitions set out in the Annexes to this Part D:",
+    "extracted": {
+      "provision_type": "definition",
+      "actor": null,
+      "counterparty": null,
+      "modality": null,
+      "summary": "This clause states that definitions specific to Part D and Part E are provided, supplementing the main definitions schedule.",
+      "trigger": null,
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "call_off_schedule_15.4.3::2",
+    "clause_id": "call_off_schedule_15.4.3",
+    "hierarchy_path": "Call-Off Schedule 15 (Call-Off Contract Management) > 4 ROLE OF THE OPERATIONAL BOARD > 4.3",
+    "pages": [
+      420,
+      420
+    ],
+    "clause_text": "In the event that either Party wishes to replace any of its appointed board\nmembers, that Party shall notify the other in writing for approval by the other\nParty (such approval not to be unreasonably withheld or delayed). Each Buyer\nboard member shall have at all times a counterpart Supplier board member of\nequivalent seniority and expertise.",
+    "extracted": {
+      "provision_type": "right",
+      "actor": "Buyer",
+      "counterparty": "Supplier",
+      "modality": "may",
+      "summary": "The other Party's approval for replacing a board member must not be unreasonably withheld or delayed.",
+      "trigger": null,
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 0.9
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "joint_schedule_11.annex_2.2.2::1",
+    "clause_id": "joint_schedule_11.annex_2.2.2",
+    "hierarchy_path": "Joint Schedule 11 (Processing Data) > Annex 2 - Joint Controller Agreement > 2 Undertakings of both Parties > 2.2",
+    "pages": [
+      225,
+      225
+    ],
+    "clause_text": "Each Joint Controller shall use its reasonable endeavours to assist the other Controller to comply with any obligations under applicable Data Protection Legislation and shall not perform its obligations under this Annex in such a way as to cause the other Joint Controller to breach any of its obligations under applicable Data Protection Legislation to the extent it is aware, or ought reasonably to have been aware, that the same would be a breach of such obligations.",
+    "extracted": {
+      "provision_type": "obligation",
+      "actor": "Other",
+      "counterparty": "Other",
+      "modality": "must",
+      "summary": "Each Joint Controller must use reasonable endeavours to assist the other to comply with Data Protection Legislation.",
+      "trigger": null,
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 0.95
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "call_off_schedule_2.pre.2278::2",
+    "clause_id": "call_off_schedule_2.pre.2278",
+    "hierarchy_path": "Call-Off Schedule 2 (Staff Transfer)",
+    "pages": [
+      236,
+      236
+    ],
+    "clause_text": "If either Part A and/or Part B apply, then consider whether Part D (Pensions) shall\napply and the Buyer shall indicate on the Order Form which Annex shall apply (either\nD1 (CSPS), D2 (NHSPS), D3 (LGPS) or D4 (Other Schemes)). Part D pensions may\nalso apply where there is not a TUPE transfer for example where the incumbent\nprovider is successful.",
+    "extracted": {
+      "provision_type": "statement",
+      "actor": null,
+      "counterparty": null,
+      "modality": null,
+      "summary": "Part D (Pensions) may apply even without a TUPE transfer, such as when the incumbent provider is successful.",
+      "trigger": null,
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "call_off_schedule_3.2.6::1",
+    "clause_id": "call_off_schedule_3.2.6",
+    "hierarchy_path": "Call-Off Schedule 3 (Continuous Improvement) > 2 Supplier's Obligations > 2.6",
+    "pages": [
+      298,
+      298
+    ],
+    "clause_text": "If the Buyer wishes to incorporate any improvement identified by the Supplier\ninto this Contract,including any impact on the Charges declared by the\nSupplier as part of that improvement, it must request a Variation in accordance\nwith the Variation Procedure and the Supplier must implement such Variation\nat no additional cost to the Buyer or CCS.",
+    "extracted": {
+      "provision_type": "procedure",
+      "actor": "Buyer",
+      "counterparty": "Supplier",
+      "modality": "must",
+      "summary": "To incorporate a Supplier-identified improvement, the Buyer must request a Variation according to the Variation Procedure.",
+      "trigger": "If the Buyer wishes to incorporate any improvement identified by the Supplier",
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "joint_schedule_8.annex_1.2.2::1",
+    "clause_id": "joint_schedule_8.annex_1.2.2",
+    "hierarchy_path": "Joint Schedule 8 (Guarantee) > Annex 1 - Form of Guarantee > 2 GUARANTEE AND INDEMNITY > 2.2",
+    "pages": [
+      197,
+      198
+    ],
+    "clause_text": "The Guarantor irrevocably and unconditionally undertakes upon demand to pay to the Beneficiary all monies and liabilities which are now or at any time hereafter shall have become payable by the Supplier to the Beneficiary under or in connection with the Guaranteed Agreement or in\nrespect of the Guaranteed Obligations as if it were a primary obligor.",
+    "extracted": {
+      "provision_type": "obligation",
+      "actor": "Guarantor",
+      "counterparty": "Buyer",
+      "modality": "must",
+      "summary": "The Guarantor must pay the Beneficiary on demand any money the Supplier owes under the Guaranteed Agreement.",
+      "trigger": "demand",
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "call_off_schedule_14.part_b.7.7::1",
+    "clause_id": "call_off_schedule_14.part_b.7.7",
+    "hierarchy_path": "Call-Off Schedule 14 (Service Levels) > PART B: Long Form Service Levels and Service Credits > 7 Service Credits > 7.7",
+    "pages": [
+      408,
+      409
+    ],
+    "clause_text": "Consequently, the Service Credit regime is shown diagrammatically as\nfollows: Maximum\nService\nCredit % d (d) m = (d-c)/(a-b)",
+    "extracted": {
+      "provision_type": "statement",
+      "actor": null,
+      "counterparty": null,
+      "modality": null,
+      "summary": "This clause presents a diagram illustrating the Service Credit regime.",
+      "trigger": null,
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "call_off_schedule_10.4.5::2",
+    "clause_id": "call_off_schedule_10.4.5",
+    "hierarchy_path": "Call-Off Schedule 10 (Exit Management) > 4 Exit Plan > 4.5",
+    "pages": [
+      366,
+      366
+    ],
+    "clause_text": "Only if (by notification to the Supplier in writing) the Buyer agrees with a\ndraft Exit Plan provided by the Supplier under Paragraph 4.2 or 4.4 (as the\ncontext requires), shall that draft become the Exit Plan for this Contract. 4.6A version of an Exit Plan agreed between the parties shall not be\nsuperseded by any draft submitted by the Supplier.",
+    "extracted": {
+      "provision_type": "statement",
+      "actor": null,
+      "counterparty": null,
+      "modality": null,
+      "summary": "An agreed version of an Exit Plan cannot be superseded by a subsequent draft from the Supplier.",
+      "trigger": null,
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 0.95
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "joint_schedule_8.2.3.3::1",
+    "clause_id": "joint_schedule_8.2.3.3",
+    "hierarchy_path": "Joint Schedule 8 (Guarantee) > 2 Obligation to Provide Guarantee > 2.3 > 2.3.3",
+    "pages": [
+      194,
+      194
+    ],
+    "clause_text": "the Guarantor refuses to enter into a Guarantee in accordance with Paragraph 2.1.2 above; or",
+    "extracted": {
+      "provision_type": "statement",
+      "actor": null,
+      "counterparty": null,
+      "modality": null,
+      "summary": "A condition for CCS to terminate the Framework Contract is the Guarantor refusing to enter into a Guarantee.",
+      "trigger": "the Guarantor refuses to enter into a Guarantee in accordance with Paragraph 2.1.2 above",
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "joint_schedule_1.def.dotas::1",
+    "clause_id": "joint_schedule_1.def.dotas",
+    "hierarchy_path": "Joint Schedule 1 (Definitions) > \"DOTAS\"",
+    "pages": [
+      120,
+      120
+    ],
+    "clause_text": "\"DOTAS\" the Disclosure of Tax Avoidance Schemes rules which require a promoter of Tax schemes to tell HMRC of any specified notifiable arrangements or proposals and to provide prescribed information on those arrangements or proposals within set time limits as contained in Part 7 of the Finance Act 2004 and in secondary legislation made under vires contained in Part 7 of the Finance Act 2004 and as extended to National Insurance Contributions;",
+    "extracted": {
+      "provision_type": "definition",
+      "actor": null,
+      "counterparty": null,
+      "modality": null,
+      "summary": "Defines \"DOTAS\" as the Disclosure of Tax Avoidance Schemes rules under the Finance Act 2004.",
+      "trigger": null,
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "joint_schedule_11.25::1",
+    "clause_id": "joint_schedule_11.25",
+    "hierarchy_path": "Joint Schedule 11 (Processing Data) > 25",
+    "pages": [
+      217,
+      217
+    ],
+    "clause_text": "Where a Party receives a request by any Data Subject to exercise any of their rights under the Data Protection Legislation in relation to the Personal Data provided to it by the other Party pursuant to the Contract (“Request Recipient\"): (a the other Party shall provide any information and/or assistance as reasonably requested by the Request Recipient to help it respond to the request or correspondence, at the cost of the Request Recipient; or (b where the request or correspondence is directed to the other Party and/or relates to that other Party's Processing of the Personal Data, the Request Recipient will: (i promptly, and in any event within five (5) Working Days of receipt of the request",
+    "extracted": {
+      "provision_type": "obligation",
+      "actor": "Other",
+      "counterparty": "Other",
+      "modality": "must",
+      "summary": "A Party must assist the Request Recipient in responding to a Data Subject request at the Request Recipient's cost.",
+      "trigger": "Where a Party receives a request by any Data Subject to exercise any of their rights under the Data Protection Legislation",
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 0.9
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "framework_schedule_1.3.3.3::1",
+    "clause_id": "framework_schedule_1.3.3.3",
+    "hierarchy_path": "Framework Schedule 1 (Specification) > 3 Social Value > 3.3 > 3.3.3 COVID-19 Recovery",
+    "pages": [
+      54,
+      54
+    ],
+    "clause_text": "The Supplier shall, in agreeing to this Framework Agreement, seek to help\nlocal communities to manage and recover from the impact of COVID 19. The Supplier shall note the ways in which they may be able to support this\nrecovery, including but are not limited to: a) Create employment, re-training and other return to work opportunities for\nthose left unemployed by COVID-19, particularly new opportunities in high\ngrowth sectors. b) Support people and communities to manage and recover from the impacts\nof COVID-19, including those worst affected or who are shielding. c) Support organisations and businesses to manage and recover from the\nimpacts of COVID-19, including where new ways of working are ",
+    "extracted": {
+      "provision_type": "obligation",
+      "actor": "Supplier",
+      "counterparty": "Buyer",
+      "modality": "must",
+      "summary": "The Supplier must seek to help local communities manage and recover from the impact of COVID-19.",
+      "trigger": null,
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "call_off_schedule_13.part_a.7.5.5::1",
+    "clause_id": "call_off_schedule_13.part_a.7.5.5",
+    "hierarchy_path": "Call-Off Schedule 13 (Implementation Plan and Testing) > Part A - Implementation > 7 > 7.5 > 7.5.5",
+    "pages": [
+      380,
+      380
+    ],
+    "clause_text": "construct and maintain a Implementation risk and issue register in conjunction with the Buyer detailing how risks and\nissues will be effectively communicated to the Buyer in order\nto mitigate them;",
+    "extracted": {
+      "provision_type": "obligation",
+      "actor": "Supplier",
+      "counterparty": "Buyer",
+      "modality": "must",
+      "summary": "The Supplier must construct and maintain an Implementation risk and issue register with the Buyer.",
+      "trigger": null,
+      "deadline": null,
+      "amount": null,
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  },
+  {
+    "provision_id": "call_off_schedule_8.part_c.appendix_2.1.2::1",
+    "clause_id": "call_off_schedule_8.part_c.appendix_2.1.2",
+    "hierarchy_path": "Call-Off Schedule 8 (Business Continuity and Disaster Recovery) > Part C: Corporate Resolution Planning > Appendix 2: UK Public Sector / CNI Contract Information > 1 > 1.2",
+    "pages": [
+      339,
+      339
+    ],
+    "clause_text": "provide the Appropriate Authority with a copy of the latest version of each underlying contract worth more than £5m per contract year and their related key sub-contracts, which shall be included as embedded documents within the CRP Information or via a directly accessible link.",
+    "extracted": {
+      "provision_type": "obligation",
+      "actor": "Supplier",
+      "counterparty": "Other",
+      "modality": "must",
+      "summary": "The Supplier must provide the Appropriate Authority with copies of underlying contracts and key sub-contracts worth over £5m per year.",
+      "trigger": null,
+      "deadline": null,
+      "amount": "£5m",
+      "uncapped": null,
+      "confidence": 1.0
+    },
+    "reviewer_verdict": null,
+    "reviewer_note": null
+  }
+]

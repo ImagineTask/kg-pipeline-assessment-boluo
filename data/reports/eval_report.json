@@ -1,0 +1,63 @@
+{
+  "questions": 80,
+  "errors": 0,
+  "retrieval": {
+    "recall_at_10": 0.7384,
+    "recall_at_20": 0.7986,
+    "precision_at_1": 0.625,
+    "mrr": 0.7044
+  },
+  "citations": {
+    "resolve_to_a_real_clause": 1.0,
+    "present_in_the_evidence": 1.0,
+    "support_their_claim_judged": 0.975
+  },
+  "answers": {
+    "answers_the_question_judged": 0.8375,
+    "faithfulness_judged": 0.9625,
+    "abstention_on_negatives": 0.875,
+    "false_abstention_on_answerable": 0.0139
+  },
+  "by_type": {
+    "definition": {
+      "n": 12,
+      "recall_at_10": 1.0,
+      "answers_the_question": 1.0
+    },
+    "single_clause": {
+      "n": 16,
+      "recall_at_10": 1.0,
+      "answers_the_question": 1.0
+    },
+    "cross_page": {
+      "n": 8,
+      "recall_at_10": 0.875,
+      "answers_the_question": 0.625
+    },
+    "cross_reference_chain": {
+      "n": 12,
+      "recall_at_10": 0.75,
+      "answers_the_question": 1.0
+    },
+    "multi_hop": {
+      "n": 12,
+      "recall_at_10": 0.7083,
+      "answers_the_question": 0.9167
+    },
+    "aggregation": {
+      "n": 12,
+      "recall_at_10": 0.0556,
+      "answers_the_question": 0.3333
+    },
+    "negative": {
+      "n": 8,
+      "recall_at_10": null,
+      "answers_the_question": 0.875
+    }
+  },
+  "targets": {
+    "recall_at_10": 0.9,
+    "citation_accuracy": 1.0,
+    "abstention_on_negatives": 0.9
+  }
+}

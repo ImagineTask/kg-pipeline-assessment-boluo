@@ -1,0 +1,29 @@
+{
+  "questions": 12,
+  "skipped_out_of_range": [
+    {
+      "question": "What must the Supplier do within 5 Working Days or less?",
+      "size": 30
+    },
+    {
+      "question": "Which clauses in Joint Schedule 7 impose obligations on the Supplier?",
+      "size": 30
+    }
+  ],
+  "answer_set_sizes": {
+    "Which provisions exclude the Supplier's liability from the c": 5,
+    "List the payment terms set out in the Core Terms.": 9,
+    "Which clauses across the agreement cite Clause 10.4.1?": 16,
+    "Which clauses refer to Clause 34, the dispute resolution pro": 21,
+    "Which obligations must the Guarantor perform?": 20,
+    "Which obligations fall on the Buyer under Call-Off Schedule ": 12,
+    "Which provisions give the Buyer a right or remedy under the ": 12,
+    "Which clauses in the Core Terms use the defined term 'Delive": 22,
+    "Which clauses does Core Terms 10.6.1 point to?": 7,
+    "Which obligations in the Core Terms carry a deadline express": 11,
+    "Which clauses in Call-Off Schedule 9 (Security) impose oblig": 9,
+    "Which provisions state a liability cap with a monetary amoun": 4
+  },
+  "mean_answer_set_size": 12.3,
+  "note": "Ground truth is every clause satisfying the predicate, so precision and recall are set measures, not top-k. Sets outside 3-25 are skipped: the MCP result caps make them unreachable by construction."
+}

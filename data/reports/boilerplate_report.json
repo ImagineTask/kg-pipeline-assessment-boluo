@@ -1,0 +1,2444 @@
+{
+  "pages": 475,
+  "min_pages": 3,
+  "min_density": 0.5,
+  "patterns_detected": 162,
+  "blocks_stripped": 2045,
+  "blocks_total": 10442,
+  "chars_stripped": 57184,
+  "chars_total": 895117,
+  "pct_chars_stripped": 6.39,
+  "pages_with_nothing_stripped": [],
+  "patterns": [
+    {
+      "y_bucket": 8,
+      "band": [
+        "top"
+      ],
+      "shape": "Crown Copyright ####",
+      "sample_text": "Crown Copyright 2018",
+      "pages": 145,
+      "page_span": [
+        236,
+        381
+      ],
+      "density": 0.993,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 8,
+      "band": [
+        "top"
+      ],
+      "shape": "Crown Copyright ####",
+      "sample_text": "Crown Copyright 2018",
+      "pages": 68,
+      "page_span": [
+        392,
+        460
+      ],
+      "density": 0.986,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 111,
+      "band": [
+        "bottom"
+      ],
+      "shape": "##",
+      "sample_text": "10",
+      "pages": 52,
+      "page_span": [
+        245,
+        296
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 111,
+      "band": [
+        "bottom"
+      ],
+      "shape": "#",
+      "sample_text": "1",
+      "pages": 43,
+      "page_span": [
+        59,
+        102
+      ],
+      "density": 0.977,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 7,
+      "band": [
+        "top"
+      ],
+      "shape": "Call-Off Ref:",
+      "sample_text": "Call-Off Ref:",
+      "pages": 32,
+      "page_span": [
+        340,
+        378
+      ],
+      "density": 0.821,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 111,
+      "band": [
+        "bottom"
+      ],
+      "shape": "#",
+      "sample_text": "1",
+      "pages": 30,
+      "page_span": [
+        140,
+        171
+      ],
+      "density": 0.938,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 112,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Model Version: v#.#",
+      "sample_text": "Model Version: v3.4",
+      "pages": 25,
+      "page_span": [
+        340,
+        369
+      ],
+      "density": 0.833,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 108,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM#### Project Version: vFinal#.# Model Version: v#.#",
+      "sample_text": "Framework Ref: RM6116 Project Version: vFinal1.1 Model Version: v3.3",
+      "pages": 24,
+      "page_span": [
+        392,
+        418
+      ],
+      "density": 0.889,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Framework Schedule # (Specification) Crown Copyright ####",
+      "sample_text": "Framework Schedule 1 (Specification) Crown Copyright 2018",
+      "pages": 23,
+      "page_span": [
+        31,
+        58
+      ],
+      "density": 0.821,
+      "kept_first_at_schedule_boundary": true
+    },
+    {
+      "y_bucket": 109,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM####",
+      "sample_text": "Framework Ref: RM6116",
+      "pages": 23,
+      "page_span": [
+        31,
+        56
+      ],
+      "density": 0.885,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Joint Schedule # (Definitions) Crown Copyright ####",
+      "sample_text": "Joint Schedule 1 (Definitions) Crown Copyright 2018",
+      "pages": 23,
+      "page_span": [
+        112,
+        139
+      ],
+      "density": 0.821,
+      "kept_first_at_schedule_boundary": true
+    },
+    {
+      "y_bucket": 109,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM#### Project Version: v#.# Model Version: v#.#",
+      "sample_text": "Framework Ref: RM6116 Project Version: v1.0 Model Version: v3.0",
+      "pages": 23,
+      "page_span": [
+        233,
+        258
+      ],
+      "density": 0.885,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Crown Copyright ####.",
+      "sample_text": "Crown Copyright 2018.",
+      "pages": 22,
+      "page_span": [
+        1,
+        22
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Version: #.#.##",
+      "sample_text": "Version: 3.0.11",
+      "pages": 22,
+      "page_span": [
+        1,
+        22
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 7,
+      "band": [
+        "top"
+      ],
+      "shape": "Core Terms",
+      "sample_text": "Core Terms",
+      "pages": 22,
+      "page_span": [
+        1,
+        22
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": true
+    },
+    {
+      "y_bucket": 111,
+      "band": [
+        "bottom"
+      ],
+      "shape": "#",
+      "sample_text": "1",
+      "pages": 22,
+      "page_span": [
+        362,
+        384
+      ],
+      "density": 0.957,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 111,
+      "band": [
+        "bottom"
+      ],
+      "shape": "##",
+      "sample_text": "10",
+      "pages": 21,
+      "page_span": [
+        172,
+        192
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Call-Off Schedule # (Security)",
+      "sample_text": "Call-Off Schedule 9 (Security)",
+      "pages": 21,
+      "page_span": [
+        340,
+        361
+      ],
+      "density": 0.955,
+      "kept_first_at_schedule_boundary": true
+    },
+    {
+      "y_bucket": 111,
+      "band": [
+        "bottom"
+      ],
+      "shape": "##",
+      "sample_text": "10",
+      "pages": 19,
+      "page_span": [
+        40,
+        58
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 111,
+      "band": [
+        "bottom"
+      ],
+      "shape": "##",
+      "sample_text": "10",
+      "pages": 19,
+      "page_span": [
+        121,
+        139
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Call-Off Schedule # (Business Continuity and Disaster Recovery) Call-Off Ref:",
+      "sample_text": "Call-Off Schedule 8 (Business Continuity and Disaster Recovery) Call-Off Ref:",
+      "pages": 19,
+      "page_span": [
+        319,
+        339
+      ],
+      "density": 0.905,
+      "kept_first_at_schedule_boundary": true
+    },
+    {
+      "y_bucket": 7,
+      "band": [
+        "top"
+      ],
+      "shape": "Call-Off Ref:",
+      "sample_text": "Call-Off Ref:",
+      "pages": 19,
+      "page_span": [
+        407,
+        435
+      ],
+      "density": 0.655,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Joint Schedule ## (Processing Data) Crown Copyright ####",
+      "sample_text": "Joint Schedule 11 (Processing Data) Crown Copyright 2018",
+      "pages": 18,
+      "page_span": [
+        212,
+        229
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": true
+    },
+    {
+      "y_bucket": 109,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM####",
+      "sample_text": "Framework Ref: RM6116",
+      "pages": 18,
+      "page_span": [
+        340,
+        360
+      ],
+      "density": 0.857,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 110,
+      "band": [
+        "bottom"
+      ],
+      "shape": "##",
+      "sample_text": "10",
+      "pages": 18,
+      "page_span": [
+        401,
+        418
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 111,
+      "band": [
+        "bottom"
+      ],
+      "shape": "#",
+      "sample_text": "1",
+      "pages": 17,
+      "page_span": [
+        23,
+        39
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 112,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Model Version: v#.##",
+      "sample_text": "Model Version: v3.10",
+      "pages": 17,
+      "page_span": [
+        112,
+        136
+      ],
+      "density": 0.68,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 109,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM####",
+      "sample_text": "Framework Ref: RM6116",
+      "pages": 17,
+      "page_span": [
+        112,
+        136
+      ],
+      "density": 0.68,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 111,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Project Version: v#.#",
+      "sample_text": "Project Version: v1.0",
+      "pages": 16,
+      "page_span": [
+        112,
+        136
+      ],
+      "density": 0.64,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Call-Off Schedule # (Staff Transfer)",
+      "sample_text": "Call-Off Schedule 2 (Staff Transfer)",
+      "pages": 16,
+      "page_span": [
+        271,
+        294
+      ],
+      "density": 0.667,
+      "kept_first_at_schedule_boundary": true
+    },
+    {
+      "y_bucket": 7,
+      "band": [
+        "top"
+      ],
+      "shape": "Call-Off Ref:",
+      "sample_text": "Call-Off Ref:",
+      "pages": 16,
+      "page_span": [
+        271,
+        294
+      ],
+      "density": 0.667,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 111,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Project Version:",
+      "sample_text": "Project Version:",
+      "pages": 15,
+      "page_span": [
+        340,
+        360
+      ],
+      "density": 0.714,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 111,
+      "band": [
+        "bottom"
+      ],
+      "shape": "#",
+      "sample_text": "1",
+      "pages": 15,
+      "page_span": [
+        419,
+        433
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 112,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Model Version: v#.#",
+      "sample_text": "Model Version: v3.1",
+      "pages": 15,
+      "page_span": [
+        419,
+        438
+      ],
+      "density": 0.75,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 108,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM#### Project Version: v#.# Model Version: v#.#",
+      "sample_text": "Framework Ref: RM6116 Project Version: v1.0 Model Version: v1.1",
+      "pages": 15,
+      "page_span": [
+        443,
+        460
+      ],
+      "density": 0.833,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 7,
+      "band": [
+        "top"
+      ],
+      "shape": "Call-Off Ref:",
+      "sample_text": "Call-Off Ref:",
+      "pages": 14,
+      "page_span": [
+        299,
+        318
+      ],
+      "density": 0.7,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 112,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Model Version: v#.#",
+      "sample_text": "Model Version: v3.3",
+      "pages": 14,
+      "page_span": [
+        319,
+        336
+      ],
+      "density": 0.778,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 7,
+      "band": [
+        "top"
+      ],
+      "shape": "Call-Off Ref:",
+      "sample_text": "Call-Off Ref:",
+      "pages": 14,
+      "page_span": [
+        382,
+        402
+      ],
+      "density": 0.667,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 107,
+      "band": [
+        "bottom"
+      ],
+      "shape": "##",
+      "sample_text": "10",
+      "pages": 13,
+      "page_span": [
+        10,
+        22
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Framework Schedule # (Call-Off Award Procedure) Crown Copyright ####",
+      "sample_text": "Framework Schedule 7 (Call-Off Award Procedure) Crown Copyright 2018",
+      "pages": 13,
+      "page_span": [
+        94,
+        106
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": true
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Joint Schedule # (Financial Difficulties) Crown Copyright ####",
+      "sample_text": "Joint Schedule 7 (Financial Difficulties) Crown Copyright 2018",
+      "pages": 13,
+      "page_span": [
+        178,
+        192
+      ],
+      "density": 0.867,
+      "kept_first_at_schedule_boundary": true
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Joint Schedule # (Guarantee) Crown Copyright ####",
+      "sample_text": "Joint Schedule 8 (Guarantee) Crown Copyright 2018",
+      "pages": 13,
+      "page_span": [
+        193,
+        207
+      ],
+      "density": 0.867,
+      "kept_first_at_schedule_boundary": true
+    },
+    {
+      "y_bucket": 112,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Model Version: v#.#",
+      "sample_text": "Model Version: v4.5",
+      "pages": 13,
+      "page_span": [
+        212,
+        229
+      ],
+      "density": 0.722,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 111,
+      "band": [
+        "bottom"
+      ],
+      "shape": "#",
+      "sample_text": "1",
+      "pages": 13,
+      "page_span": [
+        461,
+        475
+      ],
+      "density": 0.867,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 111,
+      "band": [
+        "bottom"
+      ],
+      "shape": "#",
+      "sample_text": "1",
+      "pages": 12,
+      "page_span": [
+        109,
+        120
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 111,
+      "band": [
+        "bottom"
+      ],
+      "shape": "#",
+      "sample_text": "1",
+      "pages": 12,
+      "page_span": [
+        233,
+        244
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Call-Off Schedule # (Staff Transfer)",
+      "sample_text": "Call-Off Schedule 2 (Staff Transfer)",
+      "pages": 12,
+      "page_span": [
+        236,
+        256
+      ],
+      "density": 0.571,
+      "kept_first_at_schedule_boundary": true
+    },
+    {
+      "y_bucket": 7,
+      "band": [
+        "top"
+      ],
+      "shape": "Call-Off Ref:",
+      "sample_text": "Call-Off Ref:",
+      "pages": 12,
+      "page_span": [
+        236,
+        256
+      ],
+      "density": 0.571,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Call-Off Schedule # (Staff Transfer) Call-Off Ref:",
+      "sample_text": "Call-Off Schedule 2 (Staff Transfer) Call-Off Ref:",
+      "pages": 12,
+      "page_span": [
+        238,
+        259
+      ],
+      "density": 0.545,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 112,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Model Version: v#.#",
+      "sample_text": "Model Version: v3.4",
+      "pages": 12,
+      "page_span": [
+        302,
+        315
+      ],
+      "density": 0.857,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 111,
+      "band": [
+        "bottom"
+      ],
+      "shape": "##",
+      "sample_text": "10",
+      "pages": 12,
+      "page_span": [
+        328,
+        339
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 112,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Model Version: v#.#",
+      "sample_text": "Model Version: v3.3",
+      "pages": 12,
+      "page_span": [
+        376,
+        391
+      ],
+      "density": 0.75,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 109,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM#### Project Version: v#.# Model Version: v#.#",
+      "sample_text": "Framework Ref: RM6116 Project Version: v1.0 Model Version: v3.1",
+      "pages": 11,
+      "page_span": [
+        142,
+        156
+      ],
+      "density": 0.733,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 112,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Model Version: v#.#",
+      "sample_text": "Model Version: v3.2",
+      "pages": 11,
+      "page_span": [
+        151,
+        166
+      ],
+      "density": 0.688,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Joint Schedule # (Financial Difficulties) Crown Copyright ####",
+      "sample_text": "Joint Schedule 7 (Financial Difficulties) Crown Copyright 2018",
+      "pages": 11,
+      "page_span": [
+        163,
+        174
+      ],
+      "density": 0.917,
+      "kept_first_at_schedule_boundary": true
+    },
+    {
+      "y_bucket": 109,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM#### Project Version: v#.# Model Version: v #.#",
+      "sample_text": "Framework Ref: RM6116 Project Version: v1.0 Model Version: v 3.3",
+      "pages": 11,
+      "page_span": [
+        195,
+        208
+      ],
+      "density": 0.786,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 111,
+      "band": [
+        "bottom"
+      ],
+      "shape": "#",
+      "sample_text": "1",
+      "pages": 11,
+      "page_span": [
+        300,
+        310
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 111,
+      "band": [
+        "bottom"
+      ],
+      "shape": "#",
+      "sample_text": "1",
+      "pages": 11,
+      "page_span": [
+        317,
+        327
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 113,
+      "band": [
+        "bottom"
+      ],
+      "shape": "##",
+      "sample_text": "10",
+      "pages": 11,
+      "page_span": [
+        349,
+        361
+      ],
+      "density": 0.846,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 111,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Project Version: v#.#_## Lots Model Version: v#.#",
+      "sample_text": "Project Version: v1.0_12 Lots Model Version: v1.0",
+      "pages": 10,
+      "page_span": [
+        31,
+        44
+      ],
+      "density": 0.714,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Framework Schedule # (Framework Prices) Crown Copyright ####",
+      "sample_text": "Framework Schedule 3 (Framework Prices) Crown Copyright 2018",
+      "pages": 10,
+      "page_span": [
+        61,
+        70
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": true
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Joint Schedule # (Corporate Social Responsibility) Crown Copyright ####",
+      "sample_text": "Joint Schedule 5 (Corporate Social Responsibility) Crown Copyright 2018",
+      "pages": 10,
+      "page_span": [
+        150,
+        160
+      ],
+      "density": 0.909,
+      "kept_first_at_schedule_boundary": true
+    },
+    {
+      "y_bucket": 109,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM####",
+      "sample_text": "Framework Ref: RM6116",
+      "pages": 10,
+      "page_span": [
+        203,
+        217
+      ],
+      "density": 0.667,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 109,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM####",
+      "sample_text": "Framework Ref: RM6116",
+      "pages": 10,
+      "page_span": [
+        221,
+        232
+      ],
+      "density": 0.833,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Call-Off Schedule # (ICT Services)",
+      "sample_text": "Call-Off Schedule 6 (ICT Services)",
+      "pages": 10,
+      "page_span": [
+        302,
+        315
+      ],
+      "density": 0.714,
+      "kept_first_at_schedule_boundary": true
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Call-Off Schedule ##: (Implementation Plan and Testing) Call-Off Ref:",
+      "sample_text": "Call-Off Schedule 13: (Implementation Plan and Testing) Call-Off Ref:",
+      "pages": 10,
+      "page_span": [
+        376,
+        391
+      ],
+      "density": 0.625,
+      "kept_first_at_schedule_boundary": true
+    },
+    {
+      "y_bucket": 9,
+      "band": [
+        "top"
+      ],
+      "shape": "Crown Copyright ####",
+      "sample_text": "Crown Copyright 2018",
+      "pages": 10,
+      "page_span": [
+        382,
+        391
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 7,
+      "band": [
+        "top"
+      ],
+      "shape": "Call-Off Ref:",
+      "sample_text": "Call-Off Ref:",
+      "pages": 10,
+      "page_span": [
+        446,
+        460
+      ],
+      "density": 0.667,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Call-Off Schedule ## (Lease Terms)",
+      "sample_text": "Call-Off Schedule 22 (Lease Terms)",
+      "pages": 10,
+      "page_span": [
+        446,
+        460
+      ],
+      "density": 0.667,
+      "kept_first_at_schedule_boundary": true
+    },
+    {
+      "y_bucket": 107,
+      "band": [
+        "bottom"
+      ],
+      "shape": "#",
+      "sample_text": "1",
+      "pages": 9,
+      "page_span": [
+        1,
+        9
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Framework Schedule # (Framework Management) Crown Copyright ####",
+      "sample_text": "Framework Schedule 4 (Framework Management) Crown Copyright 2018",
+      "pages": 9,
+      "page_span": [
+        71,
+        79
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": true
+    },
+    {
+      "y_bucket": 109,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM#### Project Version: v#.# Model Version: v#.#",
+      "sample_text": "Framework Ref: RM6116 Project Version: v1.1 Model Version: v3.5",
+      "pages": 9,
+      "page_span": [
+        167,
+        177
+      ],
+      "density": 0.818,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 111,
+      "band": [
+        "bottom"
+      ],
+      "shape": "#",
+      "sample_text": "1",
+      "pages": 9,
+      "page_span": [
+        193,
+        201
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 111,
+      "band": [
+        "bottom"
+      ],
+      "shape": "-#-",
+      "sample_text": "-1-",
+      "pages": 9,
+      "page_span": [
+        212,
+        220
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 111,
+      "band": [
+        "bottom"
+      ],
+      "shape": "-##-",
+      "sample_text": "-10-",
+      "pages": 9,
+      "page_span": [
+        221,
+        229
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 109,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM#### Project Version: v#.# Model Version: v#.#",
+      "sample_text": "Framework Ref: RM6116 Project Version: v1.0 Model Version: v3.3",
+      "pages": 9,
+      "page_span": [
+        284,
+        296
+      ],
+      "density": 0.692,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 109,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM#### Project Version: v#.#",
+      "sample_text": "Framework Ref: RM6116 Project Version: v1.1",
+      "pages": 9,
+      "page_span": [
+        325,
+        336
+      ],
+      "density": 0.75,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 113,
+      "band": [
+        "bottom"
+      ],
+      "shape": "#",
+      "sample_text": "1",
+      "pages": 9,
+      "page_span": [
+        340,
+        348
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 109,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM#### Project Version: v#.#",
+      "sample_text": "Framework Ref: RM6116 Project Version: v1.1",
+      "pages": 9,
+      "page_span": [
+        376,
+        388
+      ],
+      "density": 0.692,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Call-Off Schedule ## (Service Levels)",
+      "sample_text": "Call-Off Schedule 14 (Service Levels)",
+      "pages": 9,
+      "page_span": [
+        392,
+        402
+      ],
+      "density": 0.818,
+      "kept_first_at_schedule_boundary": true
+    },
+    {
+      "y_bucket": 110,
+      "band": [
+        "bottom"
+      ],
+      "shape": "#",
+      "sample_text": "1",
+      "pages": 9,
+      "page_span": [
+        392,
+        400
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 109,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM#### Network Services #",
+      "sample_text": "Framework Ref: RM6116 Network Services 3",
+      "pages": 8,
+      "page_span": [
+        23,
+        30
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 111,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Project Version: vFinal#.#",
+      "sample_text": "Project Version: vFinal1.1",
+      "pages": 8,
+      "page_span": [
+        23,
+        30
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 112,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Model Version: v#.##",
+      "sample_text": "Model Version: v3.10",
+      "pages": 8,
+      "page_span": [
+        23,
+        30
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 109,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM#### Project Version: v#.# Model Version: v#.#",
+      "sample_text": "Framework Ref: RM6116 Project Version: v1.1 Model Version: v3.5",
+      "pages": 8,
+      "page_span": [
+        182,
+        192
+      ],
+      "density": 0.727,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 112,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Model Version: v#.#",
+      "sample_text": "Model Version: v3.3",
+      "pages": 8,
+      "page_span": [
+        259,
+        268
+      ],
+      "density": 0.8,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 109,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM#### Project Version: v#.#",
+      "sample_text": "Framework Ref: RM6116 Project Version: v1.0",
+      "pages": 8,
+      "page_span": [
+        259,
+        268
+      ],
+      "density": 0.8,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 109,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM#### Project Version: V#.#",
+      "sample_text": "Framework Ref: RM6116 Project Version: V1.1",
+      "pages": 8,
+      "page_span": [
+        302,
+        314
+      ],
+      "density": 0.615,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 109,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM#### Project Version: v#.#",
+      "sample_text": "Framework Ref: RM6116 Project Version: v1.2",
+      "pages": 8,
+      "page_span": [
+        363,
+        372
+      ],
+      "density": 0.8,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Call-Off Schedule ## (Service Levels)",
+      "sample_text": "Call-Off Schedule 14 (Service Levels)",
+      "pages": 8,
+      "page_span": [
+        407,
+        418
+      ],
+      "density": 0.667,
+      "kept_first_at_schedule_boundary": true
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Framework Award Form Crown Copyright ####",
+      "sample_text": "Framework Award Form Crown Copyright 2018",
+      "pages": 7,
+      "page_span": [
+        23,
+        29
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": true
+    },
+    {
+      "y_bucket": 111,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Project Version: v#.#_## Lots Model Version: v#.#",
+      "sample_text": "Project Version: v1.0_12 Lots Model Version: v1.0",
+      "pages": 7,
+      "page_span": [
+        48,
+        56
+      ],
+      "density": 0.778,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 109,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM#### Project Version: vFinal#.# Model Version: v#.#",
+      "sample_text": "Framework Ref: RM6116 Project Version: vFinal1.1 Model Version: v3.1",
+      "pages": 7,
+      "page_span": [
+        62,
+        70
+      ],
+      "density": 0.778,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 112,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Model Version: v#.#",
+      "sample_text": "Model Version: v3.6",
+      "pages": 7,
+      "page_span": [
+        80,
+        92
+      ],
+      "density": 0.538,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 111,
+      "band": [
+        "bottom"
+      ],
+      "shape": "##",
+      "sample_text": "10",
+      "pages": 7,
+      "page_span": [
+        202,
+        208
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Call-Off Schedule # (Staff Transfer)",
+      "sample_text": "Call-Off Schedule 2 (Staff Transfer)",
+      "pages": 7,
+      "page_span": [
+        260,
+        266
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": true
+    },
+    {
+      "y_bucket": 7,
+      "band": [
+        "top"
+      ],
+      "shape": "Call-Off Ref:",
+      "sample_text": "Call-Off Ref:",
+      "pages": 7,
+      "page_span": [
+        260,
+        266
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 109,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM#### Project Version: v#.# Model Version: v#.#",
+      "sample_text": "Framework Ref: RM6116 Project Version: v1.0 Model Version: v3.3",
+      "pages": 7,
+      "page_span": [
+        269,
+        275
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 112,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Model Version: v#.#",
+      "sample_text": "Model Version: v3.3",
+      "pages": 7,
+      "page_span": [
+        276,
+        283
+      ],
+      "density": 0.875,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 109,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM#### Project Version: v#.#",
+      "sample_text": "Framework Ref: RM6116 Project Version: v1.0",
+      "pages": 7,
+      "page_span": [
+        276,
+        283
+      ],
+      "density": 0.875,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Call-Off Schedule ## (Exit Management)",
+      "sample_text": "Call-Off Schedule 10 (Exit Management)",
+      "pages": 7,
+      "page_span": [
+        362,
+        371
+      ],
+      "density": 0.7,
+      "kept_first_at_schedule_boundary": true
+    },
+    {
+      "y_bucket": 109,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM#### Project Version: v#.# Model Version: v#.#",
+      "sample_text": "Framework Ref: RM6116 Project Version: v1.2 Model Version: v3.2",
+      "pages": 7,
+      "page_span": [
+        370,
+        381
+      ],
+      "density": 0.583,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 111,
+      "band": [
+        "bottom"
+      ],
+      "shape": "##",
+      "sample_text": "10",
+      "pages": 7,
+      "page_span": [
+        385,
+        391
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Framework Schedule # (Management Charges and Information) Crown Copyright ####",
+      "sample_text": "Framework Schedule 5 (Management Charges and Information) Crown Copyright 2018",
+      "pages": 6,
+      "page_span": [
+        80,
+        85
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": true
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Framework Schedule # (Order Form Template and Call-Off Schedules) Crown Copyright ####",
+      "sample_text": "Framework Schedule 6 (Order Form Template and Call-Off Schedules) Crown Copyright 2018",
+      "pages": 6,
+      "page_span": [
+        86,
+        93
+      ],
+      "density": 0.75,
+      "kept_first_at_schedule_boundary": true
+    },
+    {
+      "y_bucket": 111,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Project Version: v#.#",
+      "sample_text": "Project Version: v1.0",
+      "pages": 6,
+      "page_span": [
+        212,
+        217
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 111,
+      "band": [
+        "bottom"
+      ],
+      "shape": "##",
+      "sample_text": "10",
+      "pages": 6,
+      "page_span": [
+        311,
+        316
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Call-Off Schedule ## (Service Levels) Call-Off Ref:",
+      "sample_text": "Call-Off Schedule 14 (Service Levels) Call-Off Ref:",
+      "pages": 6,
+      "page_span": [
+        403,
+        411
+      ],
+      "density": 0.667,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 112,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Model Version: v#.#",
+      "sample_text": "Model Version: v3.4",
+      "pages": 5,
+      "page_span": [
+        71,
+        76
+      ],
+      "density": 0.833,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 109,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM#### Project Version: vFinal#.# Model Version: v#.#",
+      "sample_text": "Framework Ref: RM6116 Project Version: vFinal1.1 Model Version: v3.8",
+      "pages": 5,
+      "page_span": [
+        87,
+        93
+      ],
+      "density": 0.714,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 109,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM#### Project Version: v#.# Model Version : v#.#",
+      "sample_text": "Framework Ref: RM6116 Project Version: v1.0 Model Version : v3.3",
+      "pages": 5,
+      "page_span": [
+        101,
+        106
+      ],
+      "density": 0.833,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Joint Schedule # (Insurance Requirements) Crown Copyright ####",
+      "sample_text": "Joint Schedule 3 (Insurance Requirements) Crown Copyright 2018",
+      "pages": 5,
+      "page_span": [
+        143,
+        147
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": true
+    },
+    {
+      "y_bucket": 109,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM####",
+      "sample_text": "Framework Ref: RM6116",
+      "pages": 5,
+      "page_span": [
+        157,
+        163
+      ],
+      "density": 0.714,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 111,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Project Version: v#.#",
+      "sample_text": "Project Version: v1.0",
+      "pages": 5,
+      "page_span": [
+        157,
+        163
+      ],
+      "density": 0.714,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 111,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Project Version: v#.#",
+      "sample_text": "Project Version: v1.0",
+      "pages": 5,
+      "page_span": [
+        221,
+        229
+      ],
+      "density": 0.556,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Call-Off Schedule # (Staff Transfer) Call-Off Ref:",
+      "sample_text": "Call-Off Schedule 2 (Staff Transfer) Call-Off Ref:",
+      "pages": 5,
+      "page_span": [
+        288,
+        296
+      ],
+      "density": 0.556,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 109,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM#### Project Version: v#.# Model Version: v#.#",
+      "sample_text": "Framework Ref: RM6116 Project Version: v1.0 Model Version: v3.1",
+      "pages": 5,
+      "page_span": [
+        317,
+        323
+      ],
+      "density": 0.714,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Call-Off Schedule ##: (Implementation Plan and Testing)",
+      "sample_text": "Call-Off Schedule 13: (Implementation Plan and Testing)",
+      "pages": 5,
+      "page_span": [
+        382,
+        390
+      ],
+      "density": 0.556,
+      "kept_first_at_schedule_boundary": true
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Call-Off Schedule ## (Lease Terms) Call-Off Ref:",
+      "sample_text": "Call-Off Schedule 22 (Lease Terms) Call-Off Ref:",
+      "pages": 5,
+      "page_span": [
+        451,
+        457
+      ],
+      "density": 0.714,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 111,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Project Version: v#.#",
+      "sample_text": "Project Version: v1.0",
+      "pages": 4,
+      "page_span": [
+        94,
+        99
+      ],
+      "density": 0.667,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 112,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Model Version : v#.#",
+      "sample_text": "Model Version : v3.3",
+      "pages": 4,
+      "page_span": [
+        94,
+        99
+      ],
+      "density": 0.667,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 111,
+      "band": [
+        "bottom"
+      ],
+      "shape": "##",
+      "sample_text": "10",
+      "pages": 4,
+      "page_span": [
+        103,
+        106
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 112,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Model Version: v#.#",
+      "sample_text": "Model Version: v3.5",
+      "pages": 4,
+      "page_span": [
+        178,
+        181
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 109,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM#### Project Version: v#.#",
+      "sample_text": "Framework Ref: RM6116 Project Version: v1.1",
+      "pages": 4,
+      "page_span": [
+        178,
+        181
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Call-Off Schedule # (Staff Transfer) Call-Off Ref:",
+      "sample_text": "Call-Off Schedule 2 (Staff Transfer) Call-Off Ref:",
+      "pages": 4,
+      "page_span": [
+        267,
+        270
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 112,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Model Version: v#.#",
+      "sample_text": "Model Version: v3.3",
+      "pages": 4,
+      "page_span": [
+        288,
+        293
+      ],
+      "density": 0.667,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Call-Off Schedule ## (MOD Terms)",
+      "sample_text": "Call-Off Schedule 17 (MOD Terms)",
+      "pages": 4,
+      "page_span": [
+        427,
+        430
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": true
+    },
+    {
+      "y_bucket": 109,
+      "band": [
+        "bottom"
+      ],
+      "shape": "v#.#",
+      "sample_text": "v1.0",
+      "pages": 4,
+      "page_span": [
+        428,
+        431
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 109,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM#### Project Version: v#.# Model Version: v#.#",
+      "sample_text": "Framework Ref: RM6116 Project Version: v1.0 Model Version: v3.1",
+      "pages": 4,
+      "page_span": [
+        472,
+        475
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 111,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Project Version: v#.#_## Lots",
+      "sample_text": "Project Version: v1.0_12 Lots",
+      "pages": 3,
+      "page_span": [
+        45,
+        47
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 112,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Model Version: v#.#",
+      "sample_text": "Model Version: v1.0",
+      "pages": 3,
+      "page_span": [
+        45,
+        47
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 109,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM#### Project Version: v#.#",
+      "sample_text": "Framework Ref: RM6116 Project Version: v1.0",
+      "pages": 3,
+      "page_span": [
+        71,
+        75
+      ],
+      "density": 0.6,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 109,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM#### Project Version: v#.# Model Version: v#.#",
+      "sample_text": "Framework Ref: RM6116 Project Version: v1.0 Model Version: v3.4",
+      "pages": 3,
+      "page_span": [
+        77,
+        79
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Framework Schedule # (Cyber Essential Scheme) Crown Copyright ####",
+      "sample_text": "Framework Schedule 9 (Cyber Essential Scheme) Crown Copyright 2018",
+      "pages": 3,
+      "page_span": [
+        109,
+        111
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": true
+    },
+    {
+      "y_bucket": 109,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM#### Project Version: v#.# Model Version v#.#",
+      "sample_text": "Framework Ref: RM6116 Project Version: v1.0 Model Version v3.2",
+      "pages": 3,
+      "page_span": [
+        109,
+        111
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 109,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM#### Project Version: v#.# Model Version: v#.##",
+      "sample_text": "Framework Ref: RM6116 Project Version: v1.0 Model Version: v3.10",
+      "pages": 3,
+      "page_span": [
+        137,
+        139
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 109,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM#### Project Version: v#.#",
+      "sample_text": "Framework Ref: RM6116 Project Version: v1.1",
+      "pages": 3,
+      "page_span": [
+        164,
+        166
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 7,
+      "band": [
+        "top"
+      ],
+      "shape": "Crown Copyright ####",
+      "sample_text": "Crown Copyright 2018",
+      "pages": 3,
+      "page_span": [
+        175,
+        177
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Joint Schedule # (Financial Difficulties)",
+      "sample_text": "Joint Schedule 7 (Financial Difficulties)",
+      "pages": 3,
+      "page_span": [
+        175,
+        177
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": true
+    },
+    {
+      "y_bucket": 112,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Model Version: v#.#",
+      "sample_text": "Model Version: v3.5",
+      "pages": 3,
+      "page_span": [
+        187,
+        190
+      ],
+      "density": 0.75,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 111,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Project Version: v#.#",
+      "sample_text": "Project Version: v1.0",
+      "pages": 3,
+      "page_span": [
+        203,
+        207
+      ],
+      "density": 0.6,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 113,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Model Version: v #.#",
+      "sample_text": "Model Version: v 3.3",
+      "pages": 3,
+      "page_span": [
+        203,
+        207
+      ],
+      "density": 0.6,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 111,
+      "band": [
+        "bottom"
+      ],
+      "shape": "#",
+      "sample_text": "1",
+      "pages": 3,
+      "page_span": [
+        209,
+        211
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 109,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM#### Project Version: v#.# Model Version: v#.#",
+      "sample_text": "Framework Ref: RM6116 Project Version: v1.0 Model Version: v4.5",
+      "pages": 3,
+      "page_span": [
+        218,
+        222
+      ],
+      "density": 0.6,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 107,
+      "band": [
+        "bottom"
+      ],
+      "shape": "#",
+      "sample_text": "1",
+      "pages": 3,
+      "page_span": [
+        230,
+        232
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Call-Off Schedule # (Transparency Reports) Call-Off Ref:",
+      "sample_text": "Call-Off Schedule 1 (Transparency Reports) Call-Off Ref:",
+      "pages": 3,
+      "page_span": [
+        233,
+        235
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": true
+    },
+    {
+      "y_bucket": 9,
+      "band": [
+        "top"
+      ],
+      "shape": "Crown Copyright ####",
+      "sample_text": "Crown Copyright 2018",
+      "pages": 3,
+      "page_span": [
+        233,
+        235
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Call-Off Schedule # (Staff Transfer) Call-Off Ref:",
+      "sample_text": "Call-Off Schedule 2 (Staff Transfer) Call-Off Ref:",
+      "pages": 3,
+      "page_span": [
+        274,
+        279
+      ],
+      "density": 0.5,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 109,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM#### Project Version: v#.#",
+      "sample_text": "Framework Ref: RM6116 Project Version: v1.0",
+      "pages": 3,
+      "page_span": [
+        289,
+        293
+      ],
+      "density": 0.6,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 109,
+      "band": [
+        "bottom"
+      ],
+      "shape": "#",
+      "sample_text": "1",
+      "pages": 3,
+      "page_span": [
+        297,
+        299
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 109,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM####",
+      "sample_text": "Framework Ref: RM6116",
+      "pages": 3,
+      "page_span": [
+        305,
+        310
+      ],
+      "density": 0.5,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 111,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Project Version: V#.#",
+      "sample_text": "Project Version: V1.1",
+      "pages": 3,
+      "page_span": [
+        305,
+        310
+      ],
+      "density": 0.5,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 109,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM#### Project Version: v#.# Model Version: v#.#",
+      "sample_text": "Framework Ref: RM6116 Project Version: v1.1 Model Version: v3.3",
+      "pages": 3,
+      "page_span": [
+        337,
+        339
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Call-Off Schedule ## (Exit Management) Call-Off Ref:",
+      "sample_text": "Call-Off Schedule 10 (Exit Management) Call-Off Ref:",
+      "pages": 3,
+      "page_span": [
+        363,
+        367
+      ],
+      "density": 0.6,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 109,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM#### Project Version: v#.# Model Version: v#.#",
+      "sample_text": "Framework Ref: RM6116 Project Version: v1.0 Model Version: v3.1",
+      "pages": 3,
+      "page_span": [
+        421,
+        426
+      ],
+      "density": 0.5,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Call-Off Schedule ## (Benchmarking)",
+      "sample_text": "Call-Off Schedule 16 (Benchmarking)",
+      "pages": 3,
+      "page_span": [
+        422,
+        426
+      ],
+      "density": 0.6,
+      "kept_first_at_schedule_boundary": true
+    },
+    {
+      "y_bucket": 106,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM#### Project Version:",
+      "sample_text": "Framework Ref: RM6116 Project Version:",
+      "pages": 3,
+      "page_span": [
+        429,
+        431
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 111,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Model Version: v#.#",
+      "sample_text": "Model Version: v1.1",
+      "pages": 3,
+      "page_span": [
+        440,
+        442
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 7,
+      "band": [
+        "top"
+      ],
+      "shape": "Call-Off Ref:",
+      "sample_text": "Call-Off Ref:",
+      "pages": 3,
+      "page_span": [
+        440,
+        442
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Call-Off Schedule ## (Lease Terms)",
+      "sample_text": "Call-Off Schedule 22 (Lease Terms)",
+      "pages": 3,
+      "page_span": [
+        440,
+        442
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": true
+    },
+    {
+      "y_bucket": 108,
+      "band": [
+        "bottom"
+      ],
+      "shape": "Framework Ref: RM#### Project Version: v#.#",
+      "sample_text": "Framework Ref: RM6116 Project Version: v1.0",
+      "pages": 3,
+      "page_span": [
+        440,
+        442
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    },
+    {
+      "y_bucket": 5,
+      "band": [
+        "top"
+      ],
+      "shape": "Call-Off Schedule ## (Lease Terms) Call-Off Ref:",
+      "sample_text": "Call-Off Schedule 22 (Lease Terms) Call-Off Ref:",
+      "pages": 3,
+      "page_span": [
+        443,
+        445
+      ],
+      "density": 1.0,
+      "kept_first_at_schedule_boundary": false
+    }
+  ]
+}

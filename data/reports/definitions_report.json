@@ -1,0 +1,257 @@
+{
+  "definitions": 514,
+  "ocr_corrected_terms": [
+    {
+      "from": "Additional hsurances",
+      "to": "Additional Insurances",
+      "page": 113
+    },
+    {
+      "from": "Call Off Optional Extension Period",
+      "to": "Call-Off Optional Extension Period",
+      "page": 115
+    },
+    {
+      "from": "Commercially Sensitive hformation",
+      "to": "Commercially Sensitive Information",
+      "page": 116
+    },
+    {
+      "from": "Due Diligence nformation",
+      "to": "Due Diligence Information",
+      "page": 120
+    },
+    {
+      "from": "Force Majeure lotice",
+      "to": "Force Majeure Notice",
+      "page": 123
+    },
+    {
+      "from": "MI Reporting emplate",
+      "to": "MI Reporting Template",
+      "page": 129
+    },
+    {
+      "from": "Occasion of Tax Jon-Compliance",
+      "to": "Occasion of Tax Non-Compliance",
+      "page": 129
+    },
+    {
+      "from": "Order Form emplate",
+      "to": "Order Form Template",
+      "page": 130
+    },
+    {
+      "from": "Request For hformation",
+      "to": "Request For Information",
+      "page": 134
+    },
+    {
+      "from": "Supplier Marketing Contact",
+      "to": "Supplier Marketing Contact",
+      "page": 137
+    },
+    {
+      "from": "Supplier Non- Performance",
+      "to": "Supplier Non-Performance",
+      "page": 137
+    },
+    {
+      "from": "Transparency nformation",
+      "to": "Transparency Information",
+      "page": 139
+    },
+    {
+      "from": "Corporate Social Responsibility Reports",
+      "to": "Corporate Social Responsibility Report",
+      "page": 150
+    },
+    {
+      "from": "Modern Slavery Helpline",
+      "to": "Modern Slavery Helpline",
+      "page": 150
+    },
+    {
+      "from": "Supply Chain Information Report Template VCSE",
+      "to": "Supply Chain Information Report Template",
+      "page": 230
+    },
+    {
+      "from": "Administerin g Buyer",
+      "to": "Administering Buyer",
+      "page": 279
+    },
+    {
+      "from": "Test Issue Threshold",
+      "to": "Test Issues Threshold",
+      "page": 382
+    }
+  ],
+  "rejected_term_candidates": 9,
+  "rejected_sample": [
+    {
+      "term": "e) providing funded",
+      "clause_id": "framework_schedule_1.def.e_providing_funded"
+    },
+    {
+      "term": "from CCS to provide a copy of a Call- Off Contract (within five (5) working days",
+      "clause_id": "framework_schedule_4.def.from_ccs_to_provide_a_copy_of_a_call_off_contract_within_five_5_working_days"
+    },
+    {
+      "term": "CALL-OFF REFERENCE: THE BUYER: BUYER ADDRESS SUPPLIER REFERENCE THE SUPPLIER: SU",
+      "clause_id": "framework_schedule_6.def.call_off_reference_the_buyer_buyer_address_supplier_reference_the_supplier_supplier_address_registration_number_duns_number_sid4gov_id#p1"
+    },
+    {
+      "term": "CALL-OFF REFERENCE: THE BUYER: BUYER ADDRESS SUPPLIER REFERENCE THE SUPPLIER: SU",
+      "clause_id": "framework_schedule_6.def.call_off_reference_the_buyer_buyer_address_supplier_reference_the_supplier_supplier_address_registration_number_duns_number_sid4gov_id#p2"
+    },
+    {
+      "term": "for",
+      "clause_id": "joint_schedule_5.def.for"
+    },
+    {
+      "term": "section",
+      "clause_id": "joint_schedule_5.def.section"
+    },
+    {
+      "term": "To demonstrate that Suppliers are engaging with and developing SMEs/VCSES",
+      "clause_id": "joint_schedule_5.def.to_demonstrate_that_suppliers_are_engaging_with_and_developing_smes_vcses"
+    },
+    {
+      "term": "UK Public Sector Business UK Public Sector / CNI Contract Information",
+      "clause_id": "call_off_schedule_8.def.uk_public_sector_business_uk_public_sector_cni_contract_information"
+    },
+    {
+      "term": "Deposit payable by the Buyer Rentals payable by the Buyer",
+      "clause_id": "call_off_schedule_22.def.deposit_payable_by_the_buyer_rentals_payable_by_the_buyer"
+    }
+  ],
+  "by_scope": {
+    "document_local": 277,
+    "global": 237
+  },
+  "documents_with_local_definitions": 28,
+  "local_overrides_of_global_terms": 16,
+  "local_override_terms": [
+    "Buyer System",
+    "Call-Off Contract",
+    "Control",
+    "Core Network",
+    "Framework",
+    "Framework Contract",
+    "Guarantor",
+    "ICT Environment",
+    "Period",
+    "Processor",
+    "SME",
+    "Sites",
+    "Supplier",
+    "Supplier's",
+    "Supporting Documentation",
+    "Test Issue"
+  ],
+  "use_edges": 10083,
+  "clauses_with_terms": 2807,
+  "most_used_terms": [
+    [
+      "Supplier",
+      2065
+    ],
+    [
+      "Buyer",
+      1517
+    ],
+    [
+      "Contract",
+      506
+    ],
+    [
+      "Service",
+      394
+    ],
+    [
+      "Deliverables",
+      346
+    ],
+    [
+      "Subcontractor",
+      343
+    ],
+    [
+      "CCS",
+      309
+    ],
+    [
+      "Party",
+      307
+    ],
+    [
+      "Call-Off Contract",
+      225
+    ],
+    [
+      "Equipment",
+      212
+    ],
+    [
+      "Call-Off",
+      194
+    ],
+    [
+      "Relevant Authority",
+      181
+    ],
+    [
+      "Supplier's",
+      167
+    ],
+    [
+      "Date",
+      151
+    ],
+    [
+      "Working Day",
+      146
+    ],
+    [
+      "Framework",
+      135
+    ],
+    [
+      "Information",
+      127
+    ],
+    [
+      "Personal Data",
+      112
+    ],
+    [
+      "Security",
+      111
+    ],
+    [
+      "Annex",
+      111
+    ],
+    [
+      "Guarantor",
+      110
+    ],
+    [
+      "Relevant Transfer",
+      108
+    ],
+    [
+      "Former Supplier",
+      103
+    ],
+    [
+      "Framework Contract",
+      102
+    ],
+    [
+      "Transferring",
+      101
+    ]
+  ]
+}

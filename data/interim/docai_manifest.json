@@ -1,0 +1,51 @@
+{
+  "manifest": [
+    {
+      "shard": "shard_000.pdf",
+      "page_offset": 0,
+      "page_start": 1,
+      "page_end": 100,
+      "n_pages": 100,
+      "gcs_uri": "gs://rm6116-docai-eval-0902-docai-in/shards/shard_000.pdf"
+    },
+    {
+      "shard": "shard_001.pdf",
+      "page_offset": 100,
+      "page_start": 101,
+      "page_end": 200,
+      "n_pages": 100,
+      "gcs_uri": "gs://rm6116-docai-eval-0902-docai-in/shards/shard_001.pdf"
+    },
+    {
+      "shard": "shard_002.pdf",
+      "page_offset": 200,
+      "page_start": 201,
+      "page_end": 300,
+      "n_pages": 100,
+      "gcs_uri": "gs://rm6116-docai-eval-0902-docai-in/shards/shard_002.pdf"
+    },
+    {
+      "shard": "shard_003.pdf",
+      "page_offset": 300,
+      "page_start": 301,
+      "page_end": 400,
+      "n_pages": 100,
+      "gcs_uri": "gs://rm6116-docai-eval-0902-docai-in/shards/shard_003.pdf"
+    },
+    {
+      "shard": "shard_004.pdf",
+      "page_offset": 400,
+      "page_start": 401,
+      "page_end": 475,
+      "n_pages": 75,
+      "gcs_uri": "gs://rm6116-docai-eval-0902-docai-in/shards/shard_004.pdf"
+    }
+  ],
+  "mapping": {
+    "gs://rm6116-docai-eval-0902-docai-in/shards/shard_000.pdf": "gs://rm6116-docai-eval-0902-docai-out/docai-out/18442724074708662465/0",
+    "gs://rm6116-docai-eval-0902-docai-in/shards/shard_001.pdf": "gs://rm6116-docai-eval-0902-docai-out/docai-out/18442724074708662465/1",
+    "gs://rm6116-docai-eval-0902-docai-in/shards/shard_002.pdf": "gs://rm6116-docai-eval-0902-docai-out/docai-out/18442724074708662465/2",
+    "gs://rm6116-docai-eval-0902-docai-in/shards/shard_003.pdf": "gs://rm6116-docai-eval-0902-docai-out/docai-out/18442724074708662465/3",
+    "gs://rm6116-docai-eval-0902-docai-in/shards/shard_004.pdf": "gs://rm6116-docai-eval-0902-docai-out/docai-out/18442724074708662465/4"
+  }
+}

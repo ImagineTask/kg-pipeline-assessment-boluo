@@ -1,0 +1,482 @@
+[
+  {
+    "doc_id": "core_terms",
+    "title": "Core Terms",
+    "doc_type": "core_terms",
+    "page_start": 1,
+    "page_end": 22,
+    "n_blocks": 256,
+    "n_chunks": 223,
+    "id_collisions": 0
+  },
+  {
+    "doc_id": "framework_award_form",
+    "title": "Framework Award Form",
+    "doc_type": "framework_award_form",
+    "page_start": 23,
+    "page_end": 30,
+    "n_blocks": 98,
+    "n_chunks": 45,
+    "id_collisions": 7
+  },
+  {
+    "doc_id": "framework_schedule_1",
+    "title": "Framework Schedule 1 (Specification)",
+    "doc_type": "framework_schedule",
+    "page_start": 31,
+    "page_end": 58,
+    "n_blocks": 252,
+    "n_chunks": 100,
+    "id_collisions": 0
+  },
+  {
+    "doc_id": "framework_schedule_2",
+    "title": "Framework Schedule 2 (Framework Tender)",
+    "doc_type": "framework_schedule",
+    "page_start": 59,
+    "page_end": 60,
+    "n_blocks": 3,
+    "n_chunks": 3,
+    "id_collisions": 0
+  },
+  {
+    "doc_id": "framework_schedule_3",
+    "title": "Framework Schedule 3 (Framework Prices)",
+    "doc_type": "framework_schedule",
+    "page_start": 61,
+    "page_end": 70,
+    "n_blocks": 108,
+    "n_chunks": 96,
+    "id_collisions": 0
+  },
+  {
+    "doc_id": "framework_schedule_4",
+    "title": "Framework Schedule 4 (Framework Management)",
+    "doc_type": "framework_schedule",
+    "page_start": 71,
+    "page_end": 79,
+    "n_blocks": 89,
+    "n_chunks": 71,
+    "id_collisions": 1
+  },
+  {
+    "doc_id": "framework_schedule_5",
+    "title": "Framework Schedule 5 (Management Charges and Information)",
+    "doc_type": "framework_schedule",
+    "page_start": 80,
+    "page_end": 85,
+    "n_blocks": 58,
+    "n_chunks": 47,
+    "id_collisions": 1
+  },
+  {
+    "doc_id": "framework_schedule_6",
+    "title": "Framework Schedule 6 (Order Form Template and Call-Off Schedules)",
+    "doc_type": "framework_schedule",
+    "page_start": 86,
+    "page_end": 93,
+    "n_blocks": 100,
+    "n_chunks": 19,
+    "id_collisions": 0
+  },
+  {
+    "doc_id": "framework_schedule_7",
+    "title": "Framework Schedule 7 (Call-Off Award Procedure)",
+    "doc_type": "framework_schedule",
+    "page_start": 94,
+    "page_end": 105,
+    "n_blocks": 105,
+    "n_chunks": 71,
+    "id_collisions": 3
+  },
+  {
+    "doc_id": "framework_schedule_8",
+    "title": "Framework Schedule 8 (Self Audit Certificate)",
+    "doc_type": "framework_schedule",
+    "page_start": 107,
+    "page_end": 108,
+    "n_blocks": 12,
+    "n_chunks": 6,
+    "id_collisions": 0
+  },
+  {
+    "doc_id": "framework_schedule_9",
+    "title": "Framework Schedule 9 (Cyber Essentials Scheme)",
+    "doc_type": "framework_schedule",
+    "page_start": 109,
+    "page_end": 110,
+    "n_blocks": 15,
+    "n_chunks": 15,
+    "id_collisions": 0
+  },
+  {
+    "doc_id": "joint_schedule_1",
+    "title": "Joint Schedule 1 (Definitions)",
+    "doc_type": "joint_schedule",
+    "page_start": 112,
+    "page_end": 139,
+    "n_blocks": 310,
+    "n_chunks": 265,
+    "id_collisions": 0
+  },
+  {
+    "doc_id": "joint_schedule_2",
+    "title": "Joint Schedule 2 (Variation Form)",
+    "doc_type": "joint_schedule",
+    "page_start": 140,
+    "page_end": 142,
+    "n_blocks": 22,
+    "n_chunks": 13,
+    "id_collisions": 0
+  },
+  {
+    "doc_id": "joint_schedule_3",
+    "title": "Joint Schedule 3 (Insurance Requirements)",
+    "doc_type": "joint_schedule",
+    "page_start": 143,
+    "page_end": 146,
+    "n_blocks": 37,
+    "n_chunks": 35,
+    "id_collisions": 4
+  },
+  {
+    "doc_id": "joint_schedule_4",
+    "title": "Joint Schedule 4 (Commercially Sensitive Information)",
+    "doc_type": "joint_schedule",
+    "page_start": 148,
+    "page_end": 149,
+    "n_blocks": 7,
+    "n_chunks": 5,
+    "id_collisions": 0
+  },
+  {
+    "doc_id": "joint_schedule_5",
+    "title": "Joint Schedule 5 (Corporate Social Responsibility)",
+    "doc_type": "joint_schedule",
+    "page_start": 150,
+    "page_end": 160,
+    "n_blocks": 108,
+    "n_chunks": 87,
+    "id_collisions": 1
+  },
+  {
+    "doc_id": "joint_schedule_6",
+    "title": "Joint Schedule 6 (Key Subcontractors)",
+    "doc_type": "joint_schedule",
+    "page_start": 161,
+    "page_end": 162,
+    "n_blocks": 32,
+    "n_chunks": 26,
+    "id_collisions": 0
+  },
+  {
+    "doc_id": "joint_schedule_7",
+    "title": "Joint Schedule 7 (Financial Difficulties)",
+    "doc_type": "joint_schedule",
+    "page_start": 163,
+    "page_end": 192,
+    "n_blocks": 217,
+    "n_chunks": 159,
+    "id_collisions": 10
+  },
+  {
+    "doc_id": "joint_schedule_8",
+    "title": "Joint Schedule 8 (Guarantee)",
+    "doc_type": "joint_schedule",
+    "page_start": 193,
+    "page_end": 209,
+    "n_blocks": 165,
+    "n_chunks": 148,
+    "id_collisions": 1
+  },
+  {
+    "doc_id": "joint_schedule_9",
+    "title": "Joint Schedule 9 (Minimum Standards of Reliability)",
+    "doc_type": "joint_schedule",
+    "page_start": 209,
+    "page_end": 209,
+    "n_blocks": 6,
+    "n_chunks": 6,
+    "id_collisions": 0
+  },
+  {
+    "doc_id": "joint_schedule_10",
+    "title": "Joint Schedule 10 (Rectification Plan)",
+    "doc_type": "joint_schedule",
+    "page_start": 210,
+    "page_end": 211,
+    "n_blocks": 21,
+    "n_chunks": 18,
+    "id_collisions": 4
+  },
+  {
+    "doc_id": "joint_schedule_11",
+    "title": "Joint Schedule 11 (Processing Data)",
+    "doc_type": "joint_schedule",
+    "page_start": 212,
+    "page_end": 229,
+    "n_blocks": 192,
+    "n_chunks": 66,
+    "id_collisions": 0
+  },
+  {
+    "doc_id": "joint_schedule_12",
+    "title": "Joint Schedule 12 (Supply Chain Visibility)",
+    "doc_type": "joint_schedule",
+    "page_start": 230,
+    "page_end": 232,
+    "n_blocks": 24,
+    "n_chunks": 21,
+    "id_collisions": 0
+  },
+  {
+    "doc_id": "call_off_schedule_1",
+    "title": "Call-Off Schedule 1 (Transparency Reports)",
+    "doc_type": "call_off_schedule",
+    "page_start": 233,
+    "page_end": 234,
+    "n_blocks": 7,
+    "n_chunks": 5,
+    "id_collisions": 0
+  },
+  {
+    "doc_id": "call_off_schedule_2",
+    "title": "Call-Off Schedule 2 (Staff Transfer)",
+    "doc_type": "call_off_schedule",
+    "page_start": 236,
+    "page_end": 296,
+    "n_blocks": 517,
+    "n_chunks": 408,
+    "id_collisions": 9
+  },
+  {
+    "doc_id": "call_off_schedule_3",
+    "title": "Call-Off Schedule 3 (Continuous Improvement)",
+    "doc_type": "call_off_schedule",
+    "page_start": 297,
+    "page_end": 299,
+    "n_blocks": 26,
+    "n_chunks": 24,
+    "id_collisions": 0
+  },
+  {
+    "doc_id": "call_off_schedule_4",
+    "title": "Call-Off Schedule 4 (Call-Off Tender)",
+    "doc_type": "call_off_schedule",
+    "page_start": 300,
+    "page_end": 300,
+    "n_blocks": 2,
+    "n_chunks": 2,
+    "id_collisions": 0
+  },
+  {
+    "doc_id": "call_off_schedule_5",
+    "title": "Call-Off Schedule 5 (Pricing Details)",
+    "doc_type": "call_off_schedule",
+    "page_start": 301,
+    "page_end": 301,
+    "n_blocks": 2,
+    "n_chunks": 2,
+    "id_collisions": 0
+  },
+  {
+    "doc_id": "call_off_schedule_6",
+    "title": "Call-Off Schedule 6 (ICT Services)",
+    "doc_type": "call_off_schedule",
+    "page_start": 302,
+    "page_end": 315,
+    "n_blocks": 142,
+    "n_chunks": 139,
+    "id_collisions": 0
+  },
+  {
+    "doc_id": "call_off_schedule_7",
+    "title": "Call-Off Schedule 7 (Key Supplier Staff)",
+    "doc_type": "call_off_schedule",
+    "page_start": 317,
+    "page_end": 318,
+    "n_blocks": 15,
+    "n_chunks": 14,
+    "id_collisions": 0
+  },
+  {
+    "doc_id": "call_off_schedule_8",
+    "title": "Call-Off Schedule 8 (Business Continuity and Disaster Recovery)",
+    "doc_type": "call_off_schedule",
+    "page_start": 319,
+    "page_end": 339,
+    "n_blocks": 243,
+    "n_chunks": 208,
+    "id_collisions": 0
+  },
+  {
+    "doc_id": "call_off_schedule_9",
+    "title": "Call-Off Schedule 9 (Security)",
+    "doc_type": "call_off_schedule",
+    "page_start": 340,
+    "page_end": 361,
+    "n_blocks": 207,
+    "n_chunks": 175,
+    "id_collisions": 28
+  },
+  {
+    "doc_id": "call_off_schedule_10",
+    "title": "Call-Off Schedule 10 (Exit Management)",
+    "doc_type": "call_off_schedule",
+    "page_start": 362,
+    "page_end": 371,
+    "n_blocks": 115,
+    "n_chunks": 104,
+    "id_collisions": 0
+  },
+  {
+    "doc_id": "call_off_schedule_11",
+    "title": "Call-Off Schedule 11 (Installation Works)",
+    "doc_type": "call_off_schedule",
+    "page_start": 372,
+    "page_end": 372,
+    "n_blocks": 9,
+    "n_chunks": 9,
+    "id_collisions": 0
+  },
+  {
+    "doc_id": "call_off_schedule_12",
+    "title": "Call-Off Schedule 12 (Clustering)",
+    "doc_type": "call_off_schedule",
+    "page_start": 373,
+    "page_end": 375,
+    "n_blocks": 30,
+    "n_chunks": 27,
+    "id_collisions": 0
+  },
+  {
+    "doc_id": "call_off_schedule_13",
+    "title": "Call-Off Schedule 13 (Implementation Plan and Testing)",
+    "doc_type": "call_off_schedule",
+    "page_start": 376,
+    "page_end": 391,
+    "n_blocks": 210,
+    "n_chunks": 185,
+    "id_collisions": 0
+  },
+  {
+    "doc_id": "call_off_schedule_14",
+    "title": "Call-Off Schedule 14 (Service Levels)",
+    "doc_type": "call_off_schedule",
+    "page_start": 392,
+    "page_end": 418,
+    "n_blocks": 250,
+    "n_chunks": 188,
+    "id_collisions": 12
+  },
+  {
+    "doc_id": "call_off_schedule_15",
+    "title": "Call-Off Schedule 15 (Call-Off Contract Management)",
+    "doc_type": "call_off_schedule",
+    "page_start": 419,
+    "page_end": 421,
+    "n_blocks": 35,
+    "n_chunks": 30,
+    "id_collisions": 0
+  },
+  {
+    "doc_id": "call_off_schedule_16",
+    "title": "Call-Off Schedule 16 (Benchmarking)",
+    "doc_type": "call_off_schedule",
+    "page_start": 422,
+    "page_end": 426,
+    "n_blocks": 51,
+    "n_chunks": 33,
+    "id_collisions": 0
+  },
+  {
+    "doc_id": "call_off_schedule_17",
+    "title": "Call-Off Schedule 17 (MOD Terms)",
+    "doc_type": "call_off_schedule",
+    "page_start": 427,
+    "page_end": 430,
+    "n_blocks": 30,
+    "n_chunks": 20,
+    "id_collisions": 0
+  },
+  {
+    "doc_id": "call_off_schedule_18",
+    "title": "Call-Off Schedule 18 (Background Checks)",
+    "doc_type": "call_off_schedule",
+    "page_start": 432,
+    "page_end": 433,
+    "n_blocks": 14,
+    "n_chunks": 8,
+    "id_collisions": 0
+  },
+  {
+    "doc_id": "call_off_schedule_19",
+    "title": "Call-Off Schedule 19 (Scottish Law)",
+    "doc_type": "call_off_schedule",
+    "page_start": 434,
+    "page_end": 436,
+    "n_blocks": 47,
+    "n_chunks": 24,
+    "id_collisions": 0
+  },
+  {
+    "doc_id": "call_off_schedule_20",
+    "title": "Call-Off Schedule 20 (Call-Off Specification)",
+    "doc_type": "call_off_schedule",
+    "page_start": 437,
+    "page_end": 437,
+    "n_blocks": 2,
+    "n_chunks": 2,
+    "id_collisions": 0
+  },
+  {
+    "doc_id": "call_off_schedule_21",
+    "title": "Call-Off Schedule 21 (Northern Ireland Law)",
+    "doc_type": "call_off_schedule",
+    "page_start": 438,
+    "page_end": 439,
+    "n_blocks": 26,
+    "n_chunks": 24,
+    "id_collisions": 0
+  },
+  {
+    "doc_id": "call_off_schedule_22",
+    "title": "Call-Off Schedule 22 (Lease Terms)",
+    "doc_type": "call_off_schedule",
+    "page_start": 440,
+    "page_end": 460,
+    "n_blocks": 208,
+    "n_chunks": 172,
+    "id_collisions": 0
+  },
+  {
+    "doc_id": "call_off_schedule_23",
+    "title": "Call-Off Schedule 23 (HMRC Terms)",
+    "doc_type": "call_off_schedule",
+    "page_start": 461,
+    "page_end": 472,
+    "n_blocks": 111,
+    "n_chunks": 87,
+    "id_collisions": 4
+  },
+  {
+    "doc_id": "call_off_schedule_24",
+    "title": "RM6116 Call-Off Schedule 24 (Supplier Furnished Terms)",
+    "doc_type": "call_off_schedule",
+    "page_start": 472,
+    "page_end": 474,
+    "n_blocks": 8,
+    "n_chunks": 6,
+    "id_collisions": 0
+  },
+  {
+    "doc_id": "call_off_schedule_25",
+    "title": "RM6116 Call-Off Schedule 25 (Supplier Operational Terms)",
+    "doc_type": "call_off_schedule",
+    "page_start": 475,
+    "page_end": 475,
+    "n_blocks": 2,
+    "n_chunks": 2,
+    "id_collisions": 0
+  }
+]

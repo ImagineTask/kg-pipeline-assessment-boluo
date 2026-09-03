@@ -59,9 +59,12 @@ procurement framework operated by the Crown Commercial Service. **Crown
 Copyright 2018**, published openly at
 <https://assets.crowncommercial.gov.uk/wp-content/uploads/RM6116-All-agreement-terms-and-conditions-3.pdf>.
 
-The PDF is **not included in this repository** — put it at `data/raw/rm6116.pdf`
-to run the pipeline. The golden sets under `src/eval/` contain questions and
-reference answers derived from its content, which is public Crown Copyright
+The source PDF is included at `data/raw/rm6116.pdf`, alongside every artefact the
+pipeline produced from it: the Document AI output, the stitched stream, the
+chunks, the definitions and edges, the extracted records, and every report in
+`data/reports/`. That is deliberate — it means the numbers below can be checked
+against the evidence that produced them without re-running Document AI or paying
+for the extraction pass. All of it derives from openly published Crown Copyright
 material.
 
 Nothing here is confidential and no client material is involved. The code is

@@ -1,0 +1,45 @@
+{
+  "loaded": {
+    "documents": 48,
+    "clauses": 3482,
+    "definitions": 514,
+    "uses_term": 10083,
+    "cross_references": 1541,
+    "obligation": 1378,
+    "remedy": 306,
+    "liability": 195,
+    "financial": 83,
+    "other": 1601,
+    "pruned": {
+      "clauses": 0,
+      "definitions": 0,
+      "events": 762
+    },
+    "semantic_nodes": 3563
+  },
+  "graph_counts": {
+    "clause_nodes": 3482,
+    "document_nodes": 48,
+    "definition_nodes": 514,
+    "cross_reference_edges": 1097,
+    "reference_document_edges": 444,
+    "uses_term_edges": 10083,
+    "orphan_semantic_nodes": 0,
+    "clauses_without_document": 0
+  },
+  "source_counts": {
+    "clauses": 3482,
+    "documents": 48,
+    "definitions": 514,
+    "cross_references_to_clause": 1097,
+    "cross_references_to_document": 444,
+    "records": 3563
+  },
+  "acceptance": {
+    "clause_count_matches": true,
+    "crossref_count_matches": true,
+    "zero_orphan_semantic_nodes": true,
+    "zero_clauses_without_document": true,
+    "semantic_nodes_match_records": true
+  }
+}

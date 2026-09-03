@@ -1,0 +1,51 @@
+{
+  "pages_compared": 475,
+  "pages_within_2pct": 468,
+  "pct_within_2pct": 98.53,
+  "pages_flagged": 7,
+  "flagged": [
+    {
+      "page": 1,
+      "docai_chars": 74,
+      "pdftotext_chars": 52,
+      "delta": 0.2973
+    },
+    {
+      "page": 23,
+      "docai_chars": 176,
+      "pdftotext_chars": 154,
+      "delta": 0.125
+    },
+    {
+      "page": 69,
+      "docai_chars": 1198,
+      "pdftotext_chars": 1286,
+      "delta": 0.0684
+    },
+    {
+      "page": 107,
+      "docai_chars": 1466,
+      "pdftotext_chars": 1580,
+      "delta": 0.0722
+    },
+    {
+      "page": 185,
+      "docai_chars": 874,
+      "pdftotext_chars": 952,
+      "delta": 0.0819
+    },
+    {
+      "page": 232,
+      "docai_chars": 335,
+      "pdftotext_chars": 300,
+      "delta": 0.1045
+    },
+    {
+      "page": 409,
+      "docai_chars": 957,
+      "pdftotext_chars": 788,
+      "delta": 0.1766
+    }
+  ],
+  "acceptance_95pct": true
+}

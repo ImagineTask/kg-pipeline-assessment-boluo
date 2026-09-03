@@ -1,0 +1,151 @@
+{
+  "row_kinds": {
+    "single": 4378,
+    "table_row": 236,
+    "term": 562,
+    "label": 997,
+    "bullet": 65
+  },
+  "footnotes_attached": 5,
+  "page_tables": 33,
+  "logical_tables": 29,
+  "tables_spanning_pages": 4,
+  "boilerplate_blocks_stripped": 2045,
+  "raw_blocks": 10442,
+  "stream_blocks": 4599,
+  "blocks_spanning_pages": 136,
+  "labelled_blocks": 1518,
+  "term_rows": 521,
+  "cross_page_joins": 133,
+  "join_reasons": {
+    "truncated": 43,
+    "lettered_limb": 14,
+    "list_continuation": 8,
+    "unterminated": 68
+  },
+  "raw_chars": 753800,
+  "stream_chars": 703630,
+  "retention_vs_raw": 0.9334,
+  "sample_cross_page_joins": [
+    {
+      "reason": "truncated",
+      "from_page": 3,
+      "to_page": 4,
+      "text": "3.2.9 The Supplier must provide all tools, information and instructions the Buyer needs to make use of the Goods."
+    },
+    {
+      "reason": "truncated",
+      "from_page": 4,
+      "to_page": 5,
+      "text": "he Buyer of a valid, undisputed invoice, in cleared funds using the payment method and details stated in the Order Form."
+    },
+    {
+      "reason": "unterminated",
+      "from_page": 5,
+      "to_page": 6,
+      "text": "oming aware; (b) demonstrates that the Supplier Non-Performance would not have occurred but for the Authority Cause; and"
+    },
+    {
+      "reason": "lettered_limb",
+      "from_page": 9,
+      "to_page": 10,
+      "text": " Clauses 2.10, 9, 14, 15, 27, 32 or Framework Schedule 9 (Cyber Essentials)\n(where applicable) relating to any Contract;"
+    },
+    {
+      "reason": "unterminated",
+      "from_page": 10,
+      "to_page": 11,
+      "text": "for the Relevant Authority's\nreasonable costs of procuring Replacement Deliverables for the rest of the Contract Period."
+    },
+    {
+      "reason": "lettered_limb",
+      "from_page": 11,
+      "to_page": 12,
+      "text": "ollowing events: (a) there is a Change of Control of a Subcontractor which is not pre-approved by the Relevant Authority"
+    },
+    {
+      "reason": "lettered_limb",
+      "from_page": 12,
+      "to_page": 13,
+      "text": "llowing items will not be taken\ninto consideration: (a) Deductions; and (b) any items specified in Clauses 11.5 or 11.6."
+    },
+    {
+      "reason": "truncated",
+      "from_page": 15,
+      "to_page": 16,
+      "text": " rendered ineffective as far as possible without affecting the rest of the Contract, whether it is valid or enforceable."
+    },
+    {
+      "reason": "truncated",
+      "from_page": 17,
+      "to_page": 18,
+      "text": "ontract as they existed immediately\nprior to that Variation and as if the Parties had never entered into that Variation."
+    },
+    {
+      "reason": "lettered_limb",
+      "from_page": 18,
+      "to_page": 19,
+      "text": "ent by the Beneficiary when recovering this\nmoney; or (b) the amount the Indemnifier paid the Beneficiary for the Claim."
+    },
+    {
+      "reason": "truncated",
+      "from_page": 20,
+      "to_page": 21,
+      "text": "nt; and (b) other information relating to the Occasion of Tax Non-Compliance that CCS and the Buyer may reasonably need."
+    },
+    {
+      "reason": "lettered_limb",
+      "from_page": 21,
+      "to_page": 22,
+      "text": "ff must report to CCS or the Buyer any actual or suspected breach of: (a) Law; (b) Clause 12.1; or (c) Clauses 27 to 32."
+    },
+    {
+      "reason": "unterminated",
+      "from_page": 23,
+      "to_page": 24,
+      "text": "work\nServices 3. It summarises the main features of the procurement and includes CCS\nand the Supplier's contact details."
+    },
+    {
+      "reason": "unterminated",
+      "from_page": 26,
+      "to_page": 27,
+      "text": "he Supplier will provide a list of Supplier\nStaff needing access to the Buyer's Premises and say why access is required\""
+    },
+    {
+      "reason": "unterminated",
+      "from_page": 27,
+      "to_page": 28,
+      "text": " to recover costs incurred during the Impact Assessment that the Buyer didn't agree before the\nImpact Assessment began.”"
+    },
+    {
+      "reason": "unterminated",
+      "from_page": 28,
+      "to_page": 29,
+      "text": "Framework\nManager [Insert job title] [Insert email address] [Insert phone number]"
+    },
+    {
+      "reason": "truncated",
+      "from_page": 31,
+      "to_page": 32,
+      "text": "ork Suppliers to support\nmaintenance and continuous improvement of performance levels\nthroughout the framework lifetime."
+    },
+    {
+      "reason": "truncated",
+      "from_page": 33,
+      "to_page": 34,
+      "text": ", system\ndesign, project management and related\nprofessional services associated with the\nprovision of the Services; and"
+    },
+    {
+      "reason": "unterminated",
+      "from_page": 36,
+      "to_page": 37,
+      "text": " solutions • broadband routing and performance\nmonitoring tools (including user self-test\nspeed detection and reporting)"
+    },
+    {
+      "reason": "unterminated",
+      "from_page": 37,
+      "to_page": 38,
+      "text": "and maintenance for Lot 1b services b) mobile radio and two-way transceiver c) point to point and/or point to multipoint"
+    }
+  ]
+}

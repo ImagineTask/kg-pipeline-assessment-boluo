@@ -1,0 +1,426 @@
+{
+  "chunks": 3482,
+  "documents": 48,
+  "coverage": 0.9925,
+  "hard_checks": {
+    "coverage_ge_99pct": true,
+    "no_duplicate_clause_ids": true,
+    "no_orphan_parents": true,
+    "no_empty_chunks": true,
+    "no_boilerplate_residue": true,
+    "sentence_integrity": true,
+    "no_chunk_starts_mid_sentence": true
+  },
+  "hard_checks_passed": true,
+  "soft_checks": {
+    "chunks_under_min_chars": 219,
+    "chunks_over_max_chars": 0,
+    "chunks_with_multiple_clause_numbers": 1,
+    "short_unterminated_fragments": 170,
+    "pct_spanning_pages": 6.5,
+    "numbering_gaps": 51
+  },
+  "duplicates": [],
+  "orphans": [],
+  "empty": [],
+  "boilerplate_residue": [],
+  "unterminated_sample": [
+    {
+      "clause_id": "framework_award_form.1__2",
+      "page": 25,
+      "chars": 15,
+      "tail": "(together these"
+    },
+    {
+      "clause_id": "framework_award_form.2__2",
+      "page": 25,
+      "chars": 123,
+      "tail": "k Special Terms' in this Framework Award Form) documents form the 'the"
+    },
+    {
+      "clause_id": "joint_schedule_1.def.framework_contract",
+      "page": 123,
+      "chars": 358,
+      "tail": "act the period from the Framework Start Date until the End Date of the"
+    },
+    {
+      "clause_id": "joint_schedule_1.def.health_and_social",
+      "page": 124,
+      "chars": 286,
+      "tail": "bed https://digital.nhs.uk/services/health-and-social-care-network; at"
+    },
+    {
+      "clause_id": "joint_schedule_5.part_b.3.4",
+      "page": 155,
+      "chars": 509,
+      "tail": "measures\ndescribed at Table B will be superseded by that tool. Table A"
+    },
+    {
+      "clause_id": "joint_schedule_5.def.submission_form",
+      "page": 157,
+      "chars": 87,
+      "tail": " Governance Policies and Procedures Modern Slavery Risk Assessment and"
+    },
+    {
+      "clause_id": "joint_schedule_5.def.diversity_of_workforce_baseline_data",
+      "page": 159,
+      "chars": 183,
+      "tail": "rrent UK workforce: CCS within 10 calendar days of the submission of a"
+    },
+    {
+      "clause_id": "call_off_schedule_2.part_c.1.5.2",
+      "page": 257,
+      "chars": 432,
+      "tail": "takes, reasonable steps to minimise any such Employee Liabilities. all"
+    },
+    {
+      "clause_id": "call_off_schedule_8.def.critical_national_infrastructure",
+      "page": 321,
+      "chars": 634,
+      "tail": "the national\nsecurity, national defence,\nfunctioning of the UK; or the"
+    }
+  ],
+  "unterminated_count": 9,
+  "unterminated_unreviewed": [],
+  "accepted_truncations": 9,
+  "stale_accepted_entries": [],
+  "starts_mid_sentence_sample": [],
+  "numbering_gaps_sample": [
+    {
+      "doc_id": "framework_award_form",
+      "section": null,
+      "missing": "11",
+      "near_page": 26,
+      "neighbour": "framework_award_form.10__2"
+    },
+    {
+      "doc_id": "framework_award_form",
+      "section": null,
+      "missing": "12",
+      "near_page": null,
+      "neighbour": null
+    },
+    {
+      "doc_id": "framework_award_form",
+      "section": null,
+      "missing": "13",
+      "near_page": null,
+      "neighbour": null
+    },
+    {
+      "doc_id": "framework_award_form",
+      "section": null,
+      "missing": "14",
+      "near_page": null,
+      "neighbour": null
+    },
+    {
+      "doc_id": "framework_award_form",
+      "section": null,
+      "missing": "15",
+      "near_page": 29,
+      "neighbour": "framework_award_form.16"
+    },
+    {
+      "doc_id": "framework_schedule_1",
+      "section": null,
+      "missing": "2.1.3",
+      "near_page": 36,
+      "neighbour": "framework_schedule_1.2.1.2"
+    },
+    {
+      "doc_id": "framework_schedule_1",
+      "section": null,
+      "missing": "2.3.2",
+      "near_page": 38,
+      "neighbour": "framework_schedule_1.2.3.1"
+    },
+    {
+      "doc_id": "framework_schedule_1",
+      "section": null,
+      "missing": "2.4.3",
+      "near_page": 40,
+      "neighbour": "framework_schedule_1.2.4.2"
+    },
+    {
+      "doc_id": "framework_schedule_3",
+      "section": null,
+      "missing": "5.1.3",
+      "near_page": 63,
+      "neighbour": "framework_schedule_3.5.1.2"
+    },
+    {
+      "doc_id": "framework_schedule_4",
+      "section": null,
+      "missing": "7.5",
+      "near_page": 76,
+      "neighbour": "framework_schedule_4.7.4"
+    },
+    {
+      "doc_id": "framework_schedule_5",
+      "section": null,
+      "missing": "3.3",
+      "near_page": 80,
+      "neighbour": "framework_schedule_5.3.2"
+    },
+    {
+      "doc_id": "framework_schedule_5",
+      "section": null,
+      "missing": "4.2",
+      "near_page": 81,
+      "neighbour": "framework_schedule_5.4.1"
+    },
+    {
+      "doc_id": "framework_schedule_5",
+      "section": null,
+      "missing": "8.1.2",
+      "near_page": 83,
+      "neighbour": "framework_schedule_5.8.1.1"
+    },
+    {
+      "doc_id": "framework_schedule_6",
+      "section": null,
+      "missing": "5",
+      "near_page": 88,
+      "neighbour": "framework_schedule_6.4"
+    },
+    {
+      "doc_id": "framework_schedule_7",
+      "section": null,
+      "missing": "7.2",
+      "near_page": 98,
+      "neighbour": "framework_schedule_7.7.1"
+    },
+    {
+      "doc_id": "framework_schedule_7",
+      "section": null,
+      "missing": "8.3",
+      "near_page": 100,
+      "neighbour": "framework_schedule_7.8.2"
+    },
+    {
+      "doc_id": "joint_schedule_5",
+      "section": "part_a",
+      "missing": "3.1.4",
+      "near_page": 151,
+      "neighbour": "joint_schedule_5.part_a.3.1.3"
+    },
+    {
+      "doc_id": "joint_schedule_8",
+      "section": null,
+      "missing": "2.5.3",
+      "near_page": 194,
+      "neighbour": "joint_schedule_8.2.5.2"
+    },
+    {
+      "doc_id": "joint_schedule_8",
+      "section": "annex_1",
+      "missing": "5.5",
+      "near_page": 200,
+      "neighbour": "joint_schedule_8.annex_1.5.4"
+    },
+    {
+      "doc_id": "joint_schedule_11",
+      "section": null,
+      "missing": "6",
+      "near_page": 212,
+      "neighbour": "joint_schedule_11.5"
+    },
+    {
+      "doc_id": "joint_schedule_12",
+      "section": null,
+      "missing": "2.1.4",
+      "near_page": 230,
+      "neighbour": "joint_schedule_12.2.1.3"
+    },
+    {
+      "doc_id": "call_off_schedule_2",
+      "section": "part_a",
+      "missing": "3.1.5",
+      "near_page": 246,
+      "neighbour": "call_off_schedule_2.part_a.3.1.4"
+    },
+    {
+      "doc_id": "call_off_schedule_2",
+      "section": "part_d",
+      "missing": "6",
+      "near_page": 263,
+      "neighbour": "call_off_schedule_2.part_d.5"
+    },
+    {
+      "doc_id": "call_off_schedule_2",
+      "section": "part_e",
+      "missing": "1.6.2",
+      "near_page": 288,
+      "neighbour": "call_off_schedule_2.part_e.1.6.1"
+    },
+    {
+      "doc_id": "call_off_schedule_2",
+      "section": "part_e",
+      "missing": "2.3.2",
+      "near_page": 290,
+      "neighbour": "call_off_schedule_2.part_e.2.3.1"
+    },
+    {
+      "doc_id": "call_off_schedule_2",
+      "section": "part_e",
+      "missing": "2.13.5",
+      "near_page": 294,
+      "neighbour": "call_off_schedule_2.part_e.2.13.4"
+    },
+    {
+      "doc_id": "call_off_schedule_6",
+      "section": null,
+      "missing": "3",
+      "near_page": 305,
+      "neighbour": "call_off_schedule_6.2"
+    },
+    {
+      "doc_id": "call_off_schedule_6",
+      "section": null,
+      "missing": "11",
+      "near_page": 313,
+      "neighbour": "call_off_schedule_6.10"
+    },
+    {
+      "doc_id": "call_off_schedule_6",
+      "section": null,
+      "missing": "12.3",
+      "near_page": 314,
+      "neighbour": "call_off_schedule_6.12.2"
+    },
+    {
+      "doc_id": "call_off_schedule_6",
+      "section": null,
+      "missing": "12.5",
+      "near_page": 314,
+      "neighbour": "call_off_schedule_6.12.4"
+    },
+    {
+      "doc_id": "call_off_schedule_6",
+      "section": null,
+      "missing": "13.2",
+      "near_page": 315,
+      "neighbour": "call_off_schedule_6.13.1"
+    },
+    {
+      "doc_id": "call_off_schedule_6",
+      "section": null,
+      "missing": "13.3",
+      "near_page": null,
+      "neighbour": null
+    },
+    {
+      "doc_id": "call_off_schedule_6",
+      "section": null,
+      "missing": "13.4",
+      "near_page": null,
+      "neighbour": null
+    },
+    {
+      "doc_id": "call_off_schedule_6",
+      "section": null,
+      "missing": "13.5",
+      "near_page": null,
+      "neighbour": null
+    },
+    {
+      "doc_id": "call_off_schedule_6",
+      "section": null,
+      "missing": "13.6",
+      "near_page": 315,
+      "neighbour": "call_off_schedule_6.13.7"
+    },
+    {
+      "doc_id": "call_off_schedule_7",
+      "section": null,
+      "missing": "1.5.4",
+      "near_page": 317,
+      "neighbour": "call_off_schedule_7.1.5.3"
+    },
+    {
+      "doc_id": "call_off_schedule_8",
+      "section": "part_a",
+      "missing": "1.5",
+      "near_page": 324,
+      "neighbour": "call_off_schedule_8.part_a.1.4"
+    },
+    {
+      "doc_id": "call_off_schedule_8",
+      "section": "part_a",
+      "missing": "1.6",
+      "near_page": 324,
+      "neighbour": "call_off_schedule_8.part_a.1.7"
+    },
+    {
+      "doc_id": "call_off_schedule_8",
+      "section": "part_b",
+      "missing": "2.3",
+      "near_page": 327,
+      "neighbour": "call_off_schedule_8.part_b.2.2"
+    },
+    {
+      "doc_id": "call_off_schedule_8",
+      "section": "part_c",
+      "missing": "2.9",
+      "near_page": 335,
+      "neighbour": "call_off_schedule_8.part_c.2.8"
+    }
+  ],
+  "spot_checks": [
+    {
+      "target": "core_terms.2.5",
+      "why": "lettered limbs (a)-(d) held inside the parent clause",
+      "found": true,
+      "pages": [
+        2,
+        2
+      ],
+      "text": "Each Call-Off Contract: (a) is a separate Contract from the Framework Contract; (b) is between a Supplier and a Buyer; (c) includes Core Terms, Schedules and any other changes or items in the completed Order Form; and\n(d"
+    },
+    {
+      "target": "core_terms.3.2.9",
+      "why": "sentence split across a page break",
+      "found": true,
+      "pages": [
+        3,
+        4
+      ],
+      "text": "The Supplier must provide all tools, information and instructions the Buyer needs to make use of the Goods."
+    },
+    {
+      "target": "core_terms.3.2.10",
+      "why": "two-digit sub-number immediately after a page break",
+      "found": true,
+      "pages": [
+        4,
+        4
+      ],
+      "text": "The Supplier must indemnify the Buyer against the costs of any Recall of the Goods and give notice of\nactual or anticipated action about the Recall of the Goods."
+    },
+    {
+      "target": "joint_schedule_1",
+      "why": "definition-style chunking, not numeric",
+      "found": true,
+      "chunks": 270
+    },
+    {
+      "target": "framework_schedule_6",
+      "why": "two-line wrapped heading",
+      "found": true,
+      "chunks": 24
+    },
+    {
+      "target": "framework_schedule_3",
+      "why": "multi-page table in Annex 1",
+      "found": true,
+      "chunks": 96
+    },
+    {
+      "target": "call_off_schedule_2",
+      "why": "nested Parts with Annexes",
+      "found": true,
+      "chunks": 412
+    }
+  ]
+}

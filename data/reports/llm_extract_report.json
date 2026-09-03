@@ -1,0 +1,15 @@
+{
+  "model": "gemini-2.5-pro",
+  "clauses_attempted": 3083,
+  "records": 3563,
+  "quarantined": 0,
+  "schema_valid_rate": 1.1557,
+  "acceptance_ge_98pct": true,
+  "batch_size": 6,
+  "token_usage": {
+    "prompt": 834205,
+    "output": 381413,
+    "calls": 515
+  },
+  "quarantine_sample": []
+}

@@ -1,0 +1,190 @@
+{
+  "records": 3563,
+  "clauses_covered": 2840,
+  "provisions_per_clause": 1.255,
+  "hard_checks": {
+    "enum_conformance_100pct": true,
+    "verbatim_100pct_after_rejection": true,
+    "obligations_have_an_actor_ge_97pct": true,
+    "supplier_obligations_dominate": true
+  },
+  "hard_checks_passed": true,
+  "enum_violations": [],
+  "verbatim_values_checked": 458,
+  "verbatim_failures": 9,
+  "verbatim_rate": 0.9803,
+  "verbatim_failure_sample": [
+    {
+      "provision_id": "joint_schedule_5.def.diversity_of_workforce_baseline_data::1",
+      "clause_id": "joint_schedule_5.def.diversity_of_workforce_baseline_data",
+      "field": "deadline",
+      "value": "within 10 calendar days of the submission of a request",
+      "clause_text": "\"Diversity of Workforce baseline data\" The Supplier shall submit baseline | To be provided to figures of their current UK workforce: CCS within 10 calendar days of the submission of a"
+    },
+    {
+      "provision_id": "joint_schedule_5.part_b.pre.1597::1",
+      "clause_id": "joint_schedule_5.part_b.pre.1597",
+      "field": "deadline",
+      "value": "annually thereafter",
+      "clause_text": "thereafter • Representation of staff who identify as having a disability • Representation leavers of prison • Representation of LBTQIA+"
+    },
+    {
+      "provision_id": "joint_schedule_5.def.smes_vcses::1",
+      "clause_id": "joint_schedule_5.def.smes_vcses",
+      "field": "deadline",
+      "value": "10 calendar days",
+      "clause_text": "\"SMEs/VCSES\" The Supplier shall produce and submit | To be provided to baseline data a SME / VCSE engagement strategy | CCS within 10 detailing how they intend to retain and | calendar days of the\ndev"
+    },
+    {
+      "provision_id": "call_off_schedule_2.part_e.1.7.1::1",
+      "clause_id": "call_off_schedule_2.part_e.1.7.1",
+      "field": "deadline",
+      "value": "5 Working Days",
+      "clause_text": "the most recent month's copy pay slip data;"
+    },
+    {
+      "provision_id": "call_off_schedule_2.part_e.1.7.2::1",
+      "clause_id": "call_off_schedule_2.part_e.1.7.2",
+      "field": "deadline",
+      "value": "5 Working Days",
+      "clause_text": "details of cumulative pay for tax and pension purposes;"
+    },
+    {
+      "provision_id": "call_off_schedule_2.part_e.1.7.3::1",
+      "clause_id": "call_off_schedule_2.part_e.1.7.3",
+      "field": "deadline",
+      "value": "5 Working Days",
+      "clause_text": "details of cumulative tax paid;"
+    },
+    {
+      "provision_id": "call_off_schedule_2.part_e.1.7.4::1",
+      "clause_id": "call_off_schedule_2.part_e.1.7.4",
+      "field": "deadline",
+      "value": "5 Working Days",
+      "clause_text": "tax code;"
+    },
+    {
+      "provision_id": "call_off_schedule_10.4.4.1::1",
+      "clause_id": "call_off_schedule_10.4.4.1",
+      "field": "deadline",
+      "value": "every [six (6) months], [twenty (20) Working Days], [ten (10) Working Days], [twenty (20) Working Days]",
+      "clause_text": "maintain and update the Exit Plan (and risk management plan) no less\nfrequently than: (a every [six (6) months] throughout the Contract Period; and (b no later than [twenty (20) Working Days] after a "
+    },
+    {
+      "provision_id": "call_off_schedule_10.5.1::2",
+      "clause_id": "call_off_schedule_10.5.1",
+      "field": "deadline",
+      "value": "at least four (4) Months prior to the Expiry Date or not later than one (1) Month following the service by either Party of a Termination Notice",
+      "clause_text": "Assistance at any time during the Contract Period by giving written notice to\nthe Supplier (a \"Termination Assistance Notice\") at least four (4) Months\nprior to the Expiry Date or as soon as reasonabl"
+    }
+  ],
+  "values_rejected_and_nulled": 9,
+  "obligations": 1378,
+  "obligations_without_actor": 30,
+  "obligations_without_actor_sample": [
+    "core_terms.9.3",
+    "framework_schedule_1.1.2.4",
+    "framework_schedule_3.4.5",
+    "joint_schedule_11.annex_2.9.1",
+    "joint_schedule_11.annex_2.9.1",
+    "joint_schedule_11.annex_2.10",
+    "joint_schedule_11.annex_2.1.1",
+    "joint_schedule_11.annex_2.1.2",
+    "joint_schedule_11.annex_2.1.2",
+    "joint_schedule_11.annex_2.1.2",
+    "joint_schedule_11.annex_2.1.2",
+    "joint_schedule_11.annex_2.1.2",
+    "joint_schedule_11.annex_2.2.1#p1",
+    "joint_schedule_11.annex_2.2.1#p1",
+    "joint_schedule_11.annex_2.2.1#p1",
+    "joint_schedule_11.annex_2.2.1#p2",
+    "joint_schedule_11.annex_2.2.1#p2",
+    "joint_schedule_11.annex_2.2.1#p2",
+    "joint_schedule_11.annex_2.2.1#p2",
+    "call_off_schedule_8.part_b.2.1.15"
+  ],
+  "obligations_with_actor_rate": 0.9782,
+  "obligations_by_actor": {
+    "Buyer": 132,
+    "Supplier": 1082,
+    "Other": 99,
+    "CCS": 10,
+    "Guarantor": 24,
+    "Subcontractor": 1
+  },
+  "modality_mismatches": 151,
+  "modality_mismatch_sample": [
+    {
+      "clause_id": "core_terms.2.1",
+      "modality": "may"
+    },
+    {
+      "clause_id": "core_terms.2.10",
+      "modality": "must"
+    },
+    {
+      "clause_id": "core_terms.5.2",
+      "modality": "must"
+    },
+    {
+      "clause_id": "core_terms.7.5",
+      "modality": "must"
+    },
+    {
+      "clause_id": "core_terms.8.3",
+      "modality": "must"
+    },
+    {
+      "clause_id": "core_terms.9.1",
+      "modality": "must"
+    },
+    {
+      "clause_id": "core_terms.9.2",
+      "modality": "must"
+    },
+    {
+      "clause_id": "core_terms.9.4",
+      "modality": "must_not"
+    },
+    {
+      "clause_id": "core_terms.9.5",
+      "modality": "must"
+    },
+    {
+      "clause_id": "core_terms.10.2.1",
+      "modality": "may"
+    },
+    {
+      "clause_id": "core_terms.10.2.2",
+      "modality": "may"
+    },
+    {
+      "clause_id": "core_terms.10.7.4",
+      "modality": "must"
+    },
+    {
+      "clause_id": "core_terms.12.2",
+      "modality": "must"
+    },
+    {
+      "clause_id": "core_terms.10.6.2",
+      "modality": "must"
+    },
+    {
+      "clause_id": "core_terms.23.5",
+      "modality": "must"
+    }
+  ],
+  "provision_type_distribution": {
+    "statement": 840,
+    "right": 306,
+    "obligation": 1378,
+    "payment": 83,
+    "liability": 195,
+    "procedure": 179,
+    "definition": 582
+  },
+  "mean_confidence": 0.99,
+  "human_sample_written_to": "data/reports/qa_human_sample.json",
+  "human_sample_size": 50
+}

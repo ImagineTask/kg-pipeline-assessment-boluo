@@ -1,0 +1,9 @@
+{
+  "pages": 475,
+  "expected_pages": 475,
+  "pages_match": true,
+  "shards": 5,
+  "blocks": 10442,
+  "blocks_without_bbox": 0,
+  "chars": 895117
+}
