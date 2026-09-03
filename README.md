@@ -30,8 +30,7 @@ PDF ─▶ Document AI batch OCR ─▶ raw_pages.jsonl
                                      ▼
                     definitions.jsonl · term_edges.jsonl · edges.jsonl
                                      │
-              LLM extraction (Gemini 2.5 Pro, ontology v1.1 — one
-                              record per *provision*, not per clause)
+       LLM extraction (Gemini 2.5 Pro) — one record per *provision*
                                      ▼
                               records.jsonl ──── gate 2 (extraction QA)
                                      │
@@ -331,16 +330,14 @@ All five load acceptance checks pass: clause count matches, cross-reference coun
 matches `edges.jsonl`, semantic node count matches `records.jsonl`, **zero orphaned
 semantic nodes**, zero clauses outside a document.
 
-> **Reloads rebuild rather than merge, and that took two fixes to get right.**
-> `MERGE` is idempotent for what is present and silent about what has been
-> removed, so re-chunking left 171 orphaned Clause nodes behind — still searchable,
-> still citable. Pruning against the source files fixed that. It did not fix the
-> second case: a semantic node is keyed by provision id but *labelled* by
+> **Reloads rebuild rather than merge.** `MERGE` is idempotent for what is present
+> and silent about what has been removed, so re-chunking would leave orphaned
+> Clause nodes behind — still searchable, still citable. Clauses and definitions
+> are therefore pruned against the source files, and the semantic layer is dropped
+> and rebuilt outright: a semantic node is keyed by provision id but *labelled* by
 > provision type, so a provision reclassified between runs (`obligation` →
-> `right`) left its old node under the old label with an id that still looked
-> current. 224 duplicates, and every existing check passed. The semantic layer is
-> now dropped and rebuilt on each load, and `semantic_nodes_match_records` is an
-> acceptance check.
+> `right`) would otherwise survive under its old label with an id that still looked
+> current. `semantic_nodes_match_records` is an acceptance check.
 
 > **Deviation:** the spec's `Definition.term IS UNIQUE` constraint cannot hold,
 > because 16 terms are defined both globally and locally. The key is
@@ -516,29 +513,12 @@ worth more than any of the judged numbers below it.
 search hits keep their fused RRF score, and an expanded neighbour inherits its
 seed's score decayed by how it was reached — a referenced clause 0.85, a traced
 one 0.70, a parent 0.55, a definition 0.50. A clause reached more than one way
-keeps its best score. Before this, evidence sat in the order the tools happened to
-return it, and the sixth search hit fell past rank 10 because everything the first
-five seeds pulled in sat directly behind them.
+keeps its best score. Ordering by arrival instead pushes the sixth search hit past
+rank 10, because everything the first five seeds pull in sits directly behind them.
 
-It was worth doing, and not for the reason expected. The prediction was that it
-would trade multi-hop answer quality for recall, because an earlier attempt at the
-opposite ordering had done exactly that. It did not:
-
-| | before | after |
-|---|---|---|
-| recall@10 | 0.676 | 0.738 |
-| MRR | 0.568 | **0.704** |
-| precision@1 | 0.500 | 0.625 |
-| Citations support their claim | 0.913 | 0.975 |
-| Faithfulness | 0.925 | 0.963 |
-| **multi_hop answers** | 0.833 | **0.917** |
-| **cross_reference_chain answers** | 0.750 | **1.000** |
-
-
-**Where it still falls short.** recall@10 of 0.738 misses the 0.90 target, and
+**Where it falls short.** recall@10 of 0.738 misses the 0.90 target, and
 abstention is one negative question short of 0.90. recall@20 is 0.799, so the
-remaining gap is no longer mostly a ranking artefact — it is evidence that is not
-retrieved at all.
+gap is not a ranking artefact — it is evidence that is not retrieved at all.
 
 **The aggregation numbers in the table above are not meaningful.** Those questions
 are generated from clauses, so "all Supplier obligations with a deadline under 5
