@@ -2,7 +2,9 @@
 
 A GraphRAG pipeline over **RM6116 Network Services 3 — Framework Agreement**
 (475 pages, 48 constituent documents, Crown Copyright 2018, v3.0.11), built to
-`BUILD_SPEC.md`.
+[`BUILD_SPEC.md`](BUILD_SPEC.md) — the specification is included so the results
+below can be read against what was asked for, including where they fall short of
+it.
 
 **Current state at a glance.** Both gates pass. All 48 documents are recovered
 from the document itself and match the published page map exactly. 97.1% of the
