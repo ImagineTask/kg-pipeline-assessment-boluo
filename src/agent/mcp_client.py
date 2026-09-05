@@ -27,8 +27,9 @@ from src.common import ROOT
 
 # The server inherits the full environment. A stripped one loses HOME, and with
 # it the gcloud credentials the embedding call inside `search_clauses` needs.
+# In the container there is no .venv; MCP_PYTHON names the interpreter to use.
 SERVER = StdioServerParameters(
-    command=str(ROOT / ".venv" / "bin" / "python"),
+    command=os.environ.get("MCP_PYTHON") or str(ROOT / ".venv" / "bin" / "python"),
     args=["-m", "src.retrieval.mcp_server"],
     env={**os.environ, "PYTHONPATH": str(ROOT)},
     cwd=str(ROOT),

@@ -76,6 +76,54 @@ tokens from the `gcloud` CLI — no long-lived service-account key on disk.
 
 ---
 
+## Deployment
+
+A Streamlit chat interface on Cloud Run, with Neo4j on a Compute Engine VM.
+Cloud Run reaches the VM over the VPC on its private address; Bolt is never
+exposed publicly.
+
+```
+browser ─▶ Cloud Run (Streamlit + agent + MCP server, one container)
+              │  direct VPC egress
+              ▼
+           Compute Engine VM — Neo4j 5 + APOC, private IP, disk-persisted
+```
+
+**The VM is the only thing that costs money while idle** — about $25/month for an
+`e2-medium`, billed whether or not anyone is using it. Cloud Run scales to zero.
+So stop the VM between demos:
+
+```bash
+# stop — billing drops to the disk only (~$1.20/month), data is kept
+gcloud compute instances stop rm6116-neo4j \
+  --zone=europe-west2-a --project=<your-gcp-project>
+
+# start again before a demo; Neo4j restarts itself, allow a minute or two
+gcloud compute instances start rm6116-neo4j \
+  --zone=europe-west2-a --project=<your-gcp-project>
+```
+
+Stopping does not destroy the graph — the container runs with
+`--restart unless-stopped` on a persistent disk, so it comes back loaded. Deleting
+the VM does destroy it, and rebuilding means re-running the loader and the
+embedding pass (~15 minutes).
+
+**Deploying a change:**
+
+```bash
+gcloud run deploy rm6116-graphrag --source=. \
+  --region=europe-west2 --project=<your-gcp-project> \
+  --service-account=rm6116-run@<your-gcp-project>.iam.gserviceaccount.com \
+  --network=default --subnet=default --vpc-egress=private-ranges-only \
+  --set-env-vars="NEO4J_URI=bolt://<vm-private-ip>:7687,..."
+```
+
+The runtime identity is a service account with `aiplatform.user`, attached by
+Cloud Run — **no key file anywhere**. The UI caps each browser session at 25
+questions, because the endpoint is public and every question costs model calls.
+
+---
+
 ## Stage 1 — data processing
 
 ### 1.1 Document AI
